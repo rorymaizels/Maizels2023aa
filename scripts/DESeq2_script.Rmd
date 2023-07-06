@@ -1,0 +1,155 @@
+---
+title: "4sU_RNA_Seq.Rmd"
+author: "Rory Maizels"
+date: "04/12/2021"
+output: html_document
+---
+
+```{r}
+setwd("/Users/maizelr/Science/Programming/RNA_Seq/")
+```
+
+
+```{r}
+library(DESeq2)
+library(dplyr)
+```
+
+```{r}
+count <- read.csv('RN21099_count_matrix.csv', header=TRUE, row.names = 'X')
+
+count
+```
+
+```{r}
+coldata <- read.csv('RN21099_coldata.csv', row.names = 'X')
+
+coldata
+```
+
+### 1. Controls
+
+```{r}
+d4_count <- count[,rownames(coldata[coldata$day=='D4',])]
+d4_cd <- coldata[coldata$day=='D4',]
+
+As <- c('A1','B1','C1')
+Bs <- c('A2','B2','C2')
+A <- d4_cd[d4_cd$treatment==0 & d4_cd$replicate%in%As,]
+A$rep <- c('A','A','A')
+B <- d4_cd[d4_cd$treatment==0 & d4_cd$replicate%in%Bs,]
+B$rep <- c('B','B','B')
+col <- as.data.frame((rbind(A,B)),stringsAsFactors=TRUE)
+dat <- d4_count[,rownames(col)]
+
+dds <-  DESeqDataSetFromMatrix(countData = (as.matrix(dat)),
+                               colData = col,
+                               design = ~ rep)
+
+dds <- DESeq(dds)
+res <- results(dds, alpha=0.05)
+ord <- res[order(res$padj),]
+
+write.csv(as.data.frame(ord), 
+          file="DE_data/D4_untreated.csv")
+
+ord
+```
+
+```{r}
+d8_count <- count[,rownames(coldata[coldata$day=='D8',])]
+d8_cd <- coldata[coldata$day=='D8',]
+
+As <- c('A1','B1','C1')
+Bs <- c('A2','B2','C2')
+A <- d8_cd[d8_cd$treatment==0 & d8_cd$replicate%in%As,]
+A$rep <- c('A','A','A')
+B <- d8_cd[d8_cd$treatment==0 & d8_cd$replicate%in%Bs,]
+B$rep <- c('B','B','B')
+col <- as.data.frame((rbind(A,B)),stringsAsFactors=TRUE)
+dat <- d8_count[,rownames(col)]
+
+dds <-  DESeqDataSetFromMatrix(countData = (as.matrix(dat)),
+                               colData = col,
+                               design = ~ rep)
+
+dds <- DESeq(dds)
+res <- results(dds, alpha=0.05)
+ord <- res[order(res$padj),]
+
+write.csv(as.data.frame(ord), 
+          file="DE_data/D8_untreated.csv")
+
+ord
+```
+
+```{r}
+run <- function(day, val){
+  As <- c('A1','B1','C1')
+  Bs <- c('A2','B2','C2')
+  
+  d_count <- count[,rownames(coldata[coldata$day==day,])]
+  d_cd <- coldata[coldata$day==day,]
+  
+  ctlA <- d_cd[d_cd$treatment==0 & d_cd$replicate%in%As,]
+  ctlA$rep <- c('0µM','0µM','0µM')
+  tstA <- d_cd[d_cd$treatment==val & d_cd$replicate%in%As,]
+  tstA$rep <- c(paste(val,'µM', sep = ''),
+                paste(val,'µM', sep = ''),
+                paste(val,'µM', sep = ''))
+  colA <- as.data.frame((rbind(ctlA,tstA)),stringsAsFactors=TRUE)
+
+  datA <- d_count[,rownames(colA)]
+  ddsA <- DESeqDataSetFromMatrix(countData = (as.matrix(datA)),
+                                  colData = colA,
+                                  design = ~ rep)
+  ddsA <- DESeq(ddsA)
+  resA <- results(ddsA, alpha=0.05)
+  ordA <- resA[order(resA$padj,decreasing = FALSE),]
+  write.csv(as.data.frame(ordA), 
+            file=paste("DE_data/",day,"_",val,"uM_1.csv",sep=""))
+  
+  ctlB <- d_cd[d_cd$treatment==0 & d_cd$replicate%in%Bs,]
+  ctlB$rep <- c('0µM','0µM','0µM')
+  tstB <- d_cd[d_cd$treatment==val & d_cd$replicate%in%Bs,]
+  tstB$rep <- c(paste(val,'µM', sep = ''),
+                paste(val,'µM', sep = ''),
+                paste(val,'µM', sep = ''))
+  colB <- as.data.frame((rbind(ctlB,tstB)),stringsAsFactors=TRUE)
+  datB <- d_count[,rownames(colB)]
+  ddsB <- DESeqDataSetFromMatrix(countData = (as.matrix(datB)),
+                                  colData = colB,
+                                  design = ~ rep)
+  ddsB <- DESeq(ddsB)
+  resB <- results(ddsB, alpha=0.05)
+  ordB <- resB[order(resB$padj,decreasing = FALSE),]
+  write.csv(as.data.frame(ordB), 
+            file=paste("DE_data/",day,"_",val,"uM_2.csv",sep=""))
+  print(day)
+  print("1) No. Significant Differences:")
+  print(sum(resA$padj < 0.05, na.rm=TRUE))
+  print(ordA)
+  
+  print("2) No. Significant Differences:")
+  print(sum(resB$padj < 0.05, na.rm=TRUE))
+  print(ordB)
+  print('# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ')
+  print(' # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #')
+  print('# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ')
+  print(' # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #')
+  print('# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ')
+}
+```
+
+
+```{r}
+days <- c("D4","D8")
+treatments <- c(200,500,650,800,2000)
+
+for (d in days){
+  for (t in treatments){
+    run(day = d, val = t)
+  }
+}
+```
+
