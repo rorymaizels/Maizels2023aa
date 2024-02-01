@@ -1,0 +1,827 @@
+Requirement already satisfied: pip in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (22.2.2)
+Collecting pip
+  Using cached pip-23.3.2-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.2.2
+    Uninstalling pip-22.2.2:
+      Successfully uninstalled pip-22.2.2
+Successfully installed pip-23.3.2
+Collecting scanpy==1.9.*
+  Downloading scanpy-1.9.6-py3-none-any.whl.metadata (6.0 kB)
+Collecting anndata>=0.7.4 (from scanpy==1.9.*)
+  Downloading anndata-0.10.4-py3-none-any.whl.metadata (6.4 kB)
+Collecting h5py>=3 (from scanpy==1.9.*)
+  Downloading h5py-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+Collecting joblib (from scanpy==1.9.*)
+  Downloading joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting matplotlib>=3.4 (from scanpy==1.9.*)
+  Downloading matplotlib-3.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+Collecting natsort (from scanpy==1.9.*)
+  Downloading natsort-8.4.0-py3-none-any.whl.metadata (21 kB)
+Collecting networkx>=2.3 (from scanpy==1.9.*)
+  Downloading networkx-3.2.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting numba>=0.41.0 (from scanpy==1.9.*)
+  Downloading numba-0.58.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+Collecting numpy>=1.17.0 (from scanpy==1.9.*)
+  Downloading numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 8.4 MB/s eta 0:00:00
+Collecting packaging (from scanpy==1.9.*)
+  Downloading packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pandas!=2.1.2,>=1.1.1 (from scanpy==1.9.*)
+  Downloading pandas-2.1.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting patsy (from scanpy==1.9.*)
+  Downloading patsy-0.5.6-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting scikit-learn>=0.24 (from scanpy==1.9.*)
+  Downloading scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting scipy>=1.4 (from scanpy==1.9.*)
+  Downloading scipy-1.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 kB 15.2 MB/s eta 0:00:00
+Collecting seaborn!=0.13.0 (from scanpy==1.9.*)
+  Downloading seaborn-0.13.1-py3-none-any.whl.metadata (5.4 kB)
+Collecting session-info (from scanpy==1.9.*)
+  Downloading session_info-1.0.0.tar.gz (24 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting statsmodels>=0.10.0rc2 (from scanpy==1.9.*)
+  Downloading statsmodels-0.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting tqdm (from scanpy==1.9.*)
+  Downloading tqdm-4.66.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 216.6 MB/s eta 0:00:00
+Collecting umap-learn>=0.3.10 (from scanpy==1.9.*)
+  Downloading umap-learn-0.5.5.tar.gz (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.9/90.9 kB 76.8 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting array-api-compat (from anndata>=0.7.4->scanpy==1.9.*)
+  Downloading array_api_compat-1.4-py3-none-any.whl.metadata (13 kB)
+Collecting exceptiongroup (from anndata>=0.7.4->scanpy==1.9.*)
+  Downloading exceptiongroup-1.2.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting contourpy>=1.0.1 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading contourpy-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+Collecting cycler>=0.10 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading fonttools-4.47.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (157 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.6/157.6 kB 96.4 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (6.4 kB)
+Collecting pillow>=8 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading pillow-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.7 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading pyparsing-3.1.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting python-dateutil>=2.7 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 219.0 MB/s eta 0:00:00
+Collecting llvmlite<0.42,>=0.41.0dev0 (from numba>=0.41.0->scanpy==1.9.*)
+  Downloading llvmlite-0.41.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.8 kB)
+Collecting pytz>=2020.1 (from pandas!=2.1.2,>=1.1.1->scanpy==1.9.*)
+  Downloading pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.1 (from pandas!=2.1.2,>=1.1.1->scanpy==1.9.*)
+  Downloading tzdata-2023.4-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn>=0.24->scanpy==1.9.*)
+  Downloading threadpoolctl-3.2.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting six (from patsy->scanpy==1.9.*)
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting pynndescent>=0.5 (from umap-learn>=0.3.10->scanpy==1.9.*)
+  Downloading pynndescent-0.5.11-py3-none-any.whl.metadata (6.8 kB)
+Collecting stdlib-list (from session-info->scanpy==1.9.*)
+  Downloading stdlib_list-0.10.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading scanpy-1.9.6-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 123.0 MB/s eta 0:00:00
+Downloading anndata-0.10.4-py3-none-any.whl (119 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.9/119.9 kB 220.1 MB/s eta 0:00:00
+Downloading h5py-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 204.8 MB/s eta 0:00:00
+Downloading matplotlib-3.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 222.3 MB/s eta 0:00:00
+Downloading networkx-3.2.1-py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 264.2 MB/s eta 0:00:00
+Downloading numba-0.58.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 238.2 MB/s eta 0:00:00
+Downloading numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 226.1 MB/s eta 0:00:00
+Downloading packaging-23.2-py3-none-any.whl (53 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.0/53.0 kB 185.5 MB/s eta 0:00:00
+Downloading pandas-2.1.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 227.9 MB/s eta 0:00:00
+Downloading scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 222.3 MB/s eta 0:00:00
+Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 kB 260.4 MB/s eta 0:00:00
+Downloading scipy-1.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.4/36.4 MB 223.5 MB/s eta 0:00:00
+Downloading seaborn-0.13.1-py3-none-any.whl (294 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.8/294.8 kB 274.2 MB/s eta 0:00:00
+Downloading statsmodels-0.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 230.6 MB/s eta 0:00:00
+Downloading patsy-0.5.6-py2.py3-none-any.whl (233 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.9/233.9 kB 271.4 MB/s eta 0:00:00
+Downloading natsort-8.4.0-py3-none-any.whl (38 kB)
+Downloading tqdm-4.66.1-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 237.4 MB/s eta 0:00:00
+Downloading contourpy-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 277.3 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.47.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 241.5 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 269.4 MB/s eta 0:00:00
+Downloading llvmlite-0.41.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (43.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 MB 231.1 MB/s eta 0:00:00
+Downloading pillow-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 239.8 MB/s eta 0:00:00
+Downloading pynndescent-0.5.11-py3-none-any.whl (55 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 kB 217.3 MB/s eta 0:00:00
+Downloading pyparsing-3.1.1-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.1/103.1 kB 235.5 MB/s eta 0:00:00
+Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 kB 289.8 MB/s eta 0:00:00
+Downloading threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
+Downloading tzdata-2023.4-py2.py3-none-any.whl (346 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 346.6/346.6 kB 284.6 MB/s eta 0:00:00
+Downloading array_api_compat-1.4-py3-none-any.whl (29 kB)
+Downloading exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+Downloading stdlib_list-0.10.0-py3-none-any.whl (79 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.8/79.8 kB 244.8 MB/s eta 0:00:00
+Building wheels for collected packages: umap-learn, session-info
+  Building wheel for umap-learn (pyproject.toml): started
+  Building wheel for umap-learn (pyproject.toml): finished with status 'done'
+  Created wheel for umap-learn: filename=umap_learn-0.5.5-py3-none-any.whl size=86832 sha256=3fad247f76f95bcf371af33798da7a26b964df9af2c7b2d1a53856dd9d714a64
+  Stored in directory: /tmp/slurm_63538246/pip-ephem-wheel-cache-qnfj925d/wheels/3a/70/07/428d2b58660a1a3b431db59b806a10da736612ebbc66c1bcc5
+  Building wheel for session-info (pyproject.toml): started
+  Building wheel for session-info (pyproject.toml): finished with status 'done'
+  Created wheel for session-info: filename=session_info-1.0.0-py3-none-any.whl size=8023 sha256=60cb5fb55aaf5891faaa98691385688cdafb780bb8ed1e78c1577f2c2ca79660
+  Stored in directory: /tmp/slurm_63538246/pip-ephem-wheel-cache-qnfj925d/wheels/6a/aa/b9/eb5d4031476ec10802795b97ccf937b9bd998d68a9b268765a
+Successfully built umap-learn session-info
+Installing collected packages: pytz, tzdata, tqdm, threadpoolctl, stdlib-list, six, pyparsing, pillow, packaging, numpy, networkx, natsort, llvmlite, kiwisolver, joblib, fonttools, exceptiongroup, cycler, array-api-compat, session-info, scipy, python-dateutil, patsy, numba, h5py, contourpy, scikit-learn, pandas, matplotlib, statsmodels, seaborn, pynndescent, anndata, umap-learn, scanpy
+Successfully installed anndata-0.10.4 array-api-compat-1.4 contourpy-1.2.0 cycler-0.12.1 exceptiongroup-1.2.0 fonttools-4.47.2 h5py-3.10.0 joblib-1.3.2 kiwisolver-1.4.5 llvmlite-0.41.1 matplotlib-3.8.2 natsort-8.4.0 networkx-3.2.1 numba-0.58.1 numpy-1.26.3 packaging-23.2 pandas-2.1.4 patsy-0.5.6 pillow-10.2.0 pynndescent-0.5.11 pyparsing-3.1.1 python-dateutil-2.8.2 pytz-2023.3.post1 scanpy-1.9.6 scikit-learn-1.3.2 scipy-1.11.4 seaborn-0.13.1 session-info-1.0.0 six-1.16.0 statsmodels-0.14.1 stdlib-list-0.10.0 threadpoolctl-3.2.0 tqdm-4.66.1 tzdata-2023.4 umap-learn-0.5.5
+Collecting scvelo==0.2.*
+  Downloading scvelo-0.2.5-py3-none-any.whl (219 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.0/220.0 kB 34.5 MB/s eta 0:00:00
+Collecting typing-extensions (from scvelo==0.2.*)
+  Downloading typing_extensions-4.9.0-py3-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: anndata>=0.7.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (0.10.4)
+Requirement already satisfied: scanpy>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.9.6)
+Collecting loompy>=2.0.12 (from scvelo==0.2.*)
+  Downloading loompy-3.0.7.tar.gz (4.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 113.9 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: umap-learn>=0.3.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (0.5.5)
+Requirement already satisfied: numba>=0.41.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (0.58.1)
+Requirement already satisfied: numpy>=1.17 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.26.3)
+Requirement already satisfied: scipy>=1.4.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.11.4)
+Requirement already satisfied: pandas!=1.4.0,>=0.23 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (2.1.4)
+Requirement already satisfied: scikit-learn>=0.21.2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.3.2)
+Requirement already satisfied: matplotlib>=3.3.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.*) (3.8.2)
+Requirement already satisfied: array-api-compat in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (1.4)
+Requirement already satisfied: exceptiongroup in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (1.2.0)
+Requirement already satisfied: h5py>=3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (3.10.0)
+Requirement already satisfied: natsort in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (8.4.0)
+Requirement already satisfied: packaging>=20 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (23.2)
+Requirement already satisfied: setuptools in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from loompy>=2.0.12->scvelo==0.2.*) (63.2.0)
+Collecting click (from loompy>=2.0.12->scvelo==0.2.*)
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting numpy-groupies (from loompy>=2.0.12->scvelo==0.2.*)
+  Downloading numpy_groupies-0.10.2-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: contourpy>=1.0.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (1.2.0)
+Requirement already satisfied: cycler>=0.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.3.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (1.4.5)
+Requirement already satisfied: pillow>=8 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (10.2.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (3.1.1)
+Requirement already satisfied: python-dateutil>=2.7 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (2.8.2)
+Requirement already satisfied: llvmlite<0.42,>=0.41.0dev0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from numba>=0.41.0->scvelo==0.2.*) (0.41.1)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas!=1.4.0,>=0.23->scvelo==0.2.*) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas!=1.4.0,>=0.23->scvelo==0.2.*) (2023.4)
+Requirement already satisfied: joblib in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (1.3.2)
+Requirement already satisfied: networkx>=2.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (3.2.1)
+Requirement already satisfied: patsy in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (0.5.6)
+Requirement already satisfied: seaborn!=0.13.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (0.13.1)
+Requirement already satisfied: session-info in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (1.0.0)
+Requirement already satisfied: statsmodels>=0.10.0rc2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (0.14.1)
+Requirement already satisfied: tqdm in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (4.66.1)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scikit-learn>=0.21.2->scvelo==0.2.*) (3.2.0)
+Requirement already satisfied: pynndescent>=0.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from umap-learn>=0.3.10->scvelo==0.2.*) (0.5.11)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->scvelo==0.2.*) (1.16.0)
+Requirement already satisfied: stdlib-list in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from session-info->scanpy>=1.5->scvelo==0.2.*) (0.10.0)
+Downloading typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 209.6 MB/s eta 0:00:00
+Downloading numpy_groupies-0.10.2-py3-none-any.whl (39 kB)
+Building wheels for collected packages: loompy
+  Building wheel for loompy (pyproject.toml): started
+  Building wheel for loompy (pyproject.toml): finished with status 'done'
+  Created wheel for loompy: filename=loompy-3.0.7-py3-none-any.whl size=52018 sha256=6a36bda52017869377cd9ee83d86295578f70829c888b2bbc6c594a0f9642f63
+  Stored in directory: /tmp/slurm_63538246/pip-ephem-wheel-cache-v48laqn_/wheels/2c/22/1f/792a4621bb631e538bf1c21feae9bbaa6b19fd6d6ab382d1fd
+Successfully built loompy
+Installing collected packages: typing-extensions, numpy-groupies, click, loompy, scvelo
+Successfully installed click-8.1.7 loompy-3.0.7 numpy-groupies-0.10.2 scvelo-0.2.5 typing-extensions-4.9.0
+Collecting anndata==0.8.0
+  Downloading anndata-0.8.0-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.1/96.1 kB 27.8 MB/s eta 0:00:00
+Requirement already satisfied: pandas>=1.1.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0) (2.1.4)
+Requirement already satisfied: numpy>=1.16.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0) (1.26.3)
+Requirement already satisfied: scipy>1.4 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0) (1.11.4)
+Requirement already satisfied: h5py>=3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0) (3.10.0)
+Requirement already satisfied: natsort in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0) (8.4.0)
+Requirement already satisfied: packaging>=20 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0) (23.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas>=1.1.1->anndata==0.8.0) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas>=1.1.1->anndata==0.8.0) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas>=1.1.1->anndata==0.8.0) (2023.4)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas>=1.1.1->anndata==0.8.0) (1.16.0)
+Installing collected packages: anndata
+  Attempting uninstall: anndata
+    Found existing installation: anndata 0.10.4
+    Uninstalling anndata-0.10.4:
+      Successfully uninstalled anndata-0.10.4
+Successfully installed anndata-0.8.0
+Collecting numpy==1.23.5
+  Downloading numpy-1.23.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 91.9 MB/s eta 0:00:00
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.3
+    Uninstalling numpy-1.26.3:
+      Successfully uninstalled numpy-1.26.3
+Successfully installed numpy-1.23.5
+Collecting matplotlib==3.5.2
+  Downloading matplotlib-3.5.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.9/11.9 MB 176.8 MB/s eta 0:00:00
+Requirement already satisfied: cycler>=0.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (1.4.5)
+Requirement already satisfied: numpy>=1.17 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (1.23.5)
+Requirement already satisfied: packaging>=20.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (23.2)
+Requirement already satisfied: pillow>=6.2.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (10.2.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (3.1.1)
+Requirement already satisfied: python-dateutil>=2.7 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2) (2.8.2)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib==3.5.2) (1.16.0)
+Installing collected packages: matplotlib
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.8.2
+    Uninstalling matplotlib-3.8.2:
+      Successfully uninstalled matplotlib-3.8.2
+Successfully installed matplotlib-3.5.2
+Collecting pandas==1.5.3
+  Downloading pandas-1.5.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 267.1 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.8.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas==1.5.3) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas==1.5.3) (2023.3.post1)
+Requirement already satisfied: numpy>=1.21.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas==1.5.3) (1.23.5)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from python-dateutil>=2.8.1->pandas==1.5.3) (1.16.0)
+Installing collected packages: pandas
+  Attempting uninstall: pandas
+    Found existing installation: pandas 2.1.4
+    Uninstalling pandas-2.1.4:
+      Successfully uninstalled pandas-2.1.4
+Successfully installed pandas-1.5.3
+Collecting scipy==1.8.*
+  Downloading scipy-1.8.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (42.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 MB 219.8 MB/s eta 0:00:00
+Requirement already satisfied: numpy<1.25.0,>=1.17.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scipy==1.8.*) (1.23.5)
+Installing collected packages: scipy
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.11.4
+    Uninstalling scipy-1.11.4:
+      Successfully uninstalled scipy-1.11.4
+Successfully installed scipy-1.8.1
+Requirement already satisfied: scikit-learn==1.3.* in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (1.3.2)
+Requirement already satisfied: numpy<2.0,>=1.17.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (1.23.5)
+Requirement already satisfied: scipy>=1.5.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (1.8.1)
+Requirement already satisfied: joblib>=1.1.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (1.3.2)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (3.2.0)
+Collecting seaborn==0.12.*
+  Downloading seaborn-0.12.2-py3-none-any.whl (293 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 293.3/293.3 kB 24.2 MB/s eta 0:00:00
+Requirement already satisfied: numpy!=1.24.0,>=1.17 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from seaborn==0.12.*) (1.23.5)
+Requirement already satisfied: pandas>=0.25 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from seaborn==0.12.*) (1.5.3)
+Requirement already satisfied: matplotlib!=3.6.1,>=3.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from seaborn==0.12.*) (3.5.2)
+Requirement already satisfied: cycler>=0.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (1.4.5)
+Requirement already satisfied: packaging>=20.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (23.2)
+Requirement already satisfied: pillow>=6.2.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (10.2.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (3.1.1)
+Requirement already satisfied: python-dateutil>=2.7 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas>=0.25->seaborn==0.12.*) (2023.3.post1)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (1.16.0)
+Installing collected packages: seaborn
+  Attempting uninstall: seaborn
+    Found existing installation: seaborn 0.13.1
+    Uninstalling seaborn-0.13.1:
+      Successfully uninstalled seaborn-0.13.1
+Successfully installed seaborn-0.12.2
+Requirement already satisfied: tqdm in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (4.66.1)
+Collecting ipykernel
+  Downloading ipykernel-6.28.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting comm>=0.1.1 (from ipykernel)
+  Downloading comm-0.2.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting debugpy>=1.6.5 (from ipykernel)
+  Downloading debugpy-1.8.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.0 kB)
+Collecting ipython>=7.23.1 (from ipykernel)
+  Downloading ipython-8.20.0-py3-none-any.whl.metadata (5.9 kB)
+Collecting jupyter-client>=6.1.12 (from ipykernel)
+  Downloading jupyter_client-8.6.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting jupyter-core!=5.0.*,>=4.12 (from ipykernel)
+  Downloading jupyter_core-5.7.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting matplotlib-inline>=0.1 (from ipykernel)
+  Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting nest-asyncio (from ipykernel)
+  Downloading nest_asyncio-1.5.8-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipykernel) (23.2)
+Collecting psutil (from ipykernel)
+  Downloading psutil-5.9.7-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (21 kB)
+Collecting pyzmq>=24 (from ipykernel)
+  Downloading pyzmq-25.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting tornado>=6.1 (from ipykernel)
+  Downloading tornado-6.4-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+Collecting traitlets>=5.4.0 (from ipykernel)
+  Downloading traitlets-5.14.1-py3-none-any.whl.metadata (10 kB)
+Collecting decorator (from ipython>=7.23.1->ipykernel)
+  Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting jedi>=0.16 (from ipython>=7.23.1->ipykernel)
+  Downloading jedi-0.19.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting prompt-toolkit<3.1.0,>=3.0.41 (from ipython>=7.23.1->ipykernel)
+  Downloading prompt_toolkit-3.0.43-py3-none-any.whl.metadata (6.5 kB)
+Collecting pygments>=2.4.0 (from ipython>=7.23.1->ipykernel)
+  Downloading pygments-2.17.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting stack-data (from ipython>=7.23.1->ipykernel)
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: exceptiongroup in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=7.23.1->ipykernel) (1.2.0)
+Collecting pexpect>4.3 (from ipython>=7.23.1->ipykernel)
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from jupyter-client>=6.1.12->ipykernel) (2.8.2)
+Collecting platformdirs>=2.5 (from jupyter-core!=5.0.*,>=4.12->ipykernel)
+  Downloading platformdirs-4.1.0-py3-none-any.whl.metadata (11 kB)
+Collecting parso<0.9.0,>=0.8.3 (from jedi>=0.16->ipython>=7.23.1->ipykernel)
+  Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 216.1 MB/s eta 0:00:00
+Collecting ptyprocess>=0.5 (from pexpect>4.3->ipython>=7.23.1->ipykernel)
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting wcwidth (from prompt-toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel)
+  Downloading wcwidth-0.2.13-py2.py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from python-dateutil>=2.8.2->jupyter-client>=6.1.12->ipykernel) (1.16.0)
+Collecting executing>=1.2.0 (from stack-data->ipython>=7.23.1->ipykernel)
+  Downloading executing-2.0.1-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting asttokens>=2.1.0 (from stack-data->ipython>=7.23.1->ipykernel)
+  Downloading asttokens-2.4.1-py2.py3-none-any.whl.metadata (5.2 kB)
+Collecting pure-eval (from stack-data->ipython>=7.23.1->ipykernel)
+  Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Downloading ipykernel-6.28.0-py3-none-any.whl (114 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.1/114.1 kB 226.6 MB/s eta 0:00:00
+Downloading comm-0.2.1-py3-none-any.whl (7.2 kB)
+Downloading debugpy-1.8.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 262.1 MB/s eta 0:00:00
+Downloading ipython-8.20.0-py3-none-any.whl (809 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 809.2/809.2 kB 276.7 MB/s eta 0:00:00
+Downloading jupyter_client-8.6.0-py3-none-any.whl (105 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.9/105.9 kB 221.6 MB/s eta 0:00:00
+Downloading jupyter_core-5.7.1-py3-none-any.whl (28 kB)
+Downloading pyzmq-25.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 277.5 MB/s eta 0:00:00
+Downloading tornado-6.4-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (435 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 435.4/435.4 kB 273.0 MB/s eta 0:00:00
+Downloading traitlets-5.14.1-py3-none-any.whl (85 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 220.0 MB/s eta 0:00:00
+Downloading nest_asyncio-1.5.8-py3-none-any.whl (5.3 kB)
+Downloading psutil-5.9.7-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (285 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 285.5/285.5 kB 265.0 MB/s eta 0:00:00
+Downloading jedi-0.19.1-py2.py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 275.2 MB/s eta 0:00:00
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 220.7 MB/s eta 0:00:00
+Downloading platformdirs-4.1.0-py3-none-any.whl (17 kB)
+Downloading prompt_toolkit-3.0.43-py3-none-any.whl (386 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.1/386.1 kB 270.6 MB/s eta 0:00:00
+Downloading pygments-2.17.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 284.5 MB/s eta 0:00:00
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading asttokens-2.4.1-py2.py3-none-any.whl (27 kB)
+Downloading executing-2.0.1-py2.py3-none-any.whl (24 kB)
+Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Installing collected packages: wcwidth, pure-eval, ptyprocess, traitlets, tornado, pyzmq, pygments, psutil, prompt-toolkit, platformdirs, pexpect, parso, nest-asyncio, executing, decorator, debugpy, asttokens, stack-data, matplotlib-inline, jupyter-core, jedi, comm, jupyter-client, ipython, ipykernel
+Successfully installed asttokens-2.4.1 comm-0.2.1 debugpy-1.8.0 decorator-5.1.1 executing-2.0.1 ipykernel-6.28.0 ipython-8.20.0 jedi-0.19.1 jupyter-client-8.6.0 jupyter-core-5.7.1 matplotlib-inline-0.1.6 nest-asyncio-1.5.8 parso-0.8.3 pexpect-4.9.0 platformdirs-4.1.0 prompt-toolkit-3.0.43 psutil-5.9.7 ptyprocess-0.7.0 pure-eval-0.2.2 pygments-2.17.2 pyzmq-25.1.2 stack-data-0.6.3 tornado-6.4 traitlets-5.14.1 wcwidth-0.2.13
+Collecting git+https://github.com/BayraktarLab/cell2fate
+  Cloning https://github.com/BayraktarLab/cell2fate to /tmp/slurm_63538246/pip-req-build-97pkdtan
+  Running command git clone --quiet https://github.com/BayraktarLab/cell2fate /tmp/slurm_63538246/pip-req-build-97pkdtan
+  Resolved https://github.com/BayraktarLab/cell2fate to commit ab5a32b03cf733679f3d76eecf230befe5681a2e
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pyro-ppl>=1.8.0 (from cell2fate==0.1a0)
+  Downloading pyro_ppl-1.8.6-py3-none-any.whl.metadata (7.8 kB)
+Collecting scvi-tools==0.16.1 (from cell2fate==0.1a0)
+  Downloading scvi_tools-0.16.1-py3-none-any.whl (262 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 262.6/262.6 kB 61.3 MB/s eta 0:00:00
+Requirement already satisfied: anndata==0.8.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from cell2fate==0.1a0) (0.8.0)
+Collecting importlib-metadata==3.10.0 (from cell2fate==0.1a0)
+  Downloading importlib_metadata-3.10.0-py3-none-any.whl (14 kB)
+Requirement already satisfied: matplotlib==3.5.2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from cell2fate==0.1a0) (3.5.2)
+Requirement already satisfied: numpy==1.23.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from cell2fate==0.1a0) (1.23.5)
+Collecting pandas==1.4.2 (from cell2fate==0.1a0)
+  Downloading pandas-1.4.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 102.3 MB/s eta 0:00:00
+Collecting rich==12.3.0 (from cell2fate==0.1a0)
+  Downloading rich-12.3.0-py3-none-any.whl (232 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.1/232.1 kB 262.6 MB/s eta 0:00:00
+Collecting scanpy==1.9.1 (from cell2fate==0.1a0)
+  Downloading scanpy-1.9.1-py3-none-any.whl (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 23.9 MB/s eta 0:00:00
+Collecting scipy==1.8.0 (from cell2fate==0.1a0)
+  Downloading scipy-1.8.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (42.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 MB 76.4 MB/s eta 0:00:00
+Collecting scvelo==0.2.4 (from cell2fate==0.1a0)
+  Downloading scvelo-0.2.4-py3-none-any.whl (196 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.3/196.3 kB 247.2 MB/s eta 0:00:00
+Requirement already satisfied: setuptools in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from cell2fate==0.1a0) (63.2.0)
+Collecting torch==1.11.0 (from cell2fate==0.1a0)
+  Downloading torch-1.11.0-cp310-cp310-manylinux1_x86_64.whl (750.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 750.6/750.6 MB 12.6 MB/s eta 0:00:00
+Collecting ml-dtypes==0.2.0 (from cell2fate==0.1a0)
+  Downloading ml_dtypes-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting jax==0.4.10 (from cell2fate==0.1a0)
+  Downloading jax-0.4.10.tar.gz (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 270.4 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting jaxlib==0.4.10 (from cell2fate==0.1a0)
+  Downloading jaxlib-0.4.10-cp310-cp310-manylinux2014_x86_64.whl.metadata (999 bytes)
+Collecting leidenalg==0.10.1 (from cell2fate==0.1a0)
+  Downloading leidenalg-0.10.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+Collecting einops (from cell2fate==0.1a0)
+  Downloading einops-0.7.0-py3-none-any.whl.metadata (13 kB)
+Collecting gseapy (from cell2fate==0.1a0)
+  Downloading gseapy-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Requirement already satisfied: h5py>=3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0->cell2fate==0.1a0) (3.10.0)
+Requirement already satisfied: natsort in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0->cell2fate==0.1a0) (8.4.0)
+Requirement already satisfied: packaging>=20 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from anndata==0.8.0->cell2fate==0.1a0) (23.2)
+Collecting zipp>=0.5 (from importlib-metadata==3.10.0->cell2fate==0.1a0)
+  Downloading zipp-3.17.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting opt-einsum (from jax==0.4.10->cell2fate==0.1a0)
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 192.4 MB/s eta 0:00:00
+Collecting igraph<0.11,>=0.10.0 (from leidenalg==0.10.1->cell2fate==0.1a0)
+  Downloading igraph-0.10.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
+Requirement already satisfied: cycler>=0.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2->cell2fate==0.1a0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2->cell2fate==0.1a0) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2->cell2fate==0.1a0) (1.4.5)
+Requirement already satisfied: pillow>=6.2.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2->cell2fate==0.1a0) (10.2.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2->cell2fate==0.1a0) (3.1.1)
+Requirement already satisfied: python-dateutil>=2.7 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from matplotlib==3.5.2->cell2fate==0.1a0) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pandas==1.4.2->cell2fate==0.1a0) (2023.3.post1)
+Collecting commonmark<0.10.0,>=0.9.0 (from rich==12.3.0->cell2fate==0.1a0)
+  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 kB 214.7 MB/s eta 0:00:00
+Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from rich==12.3.0->cell2fate==0.1a0) (2.17.2)
+Requirement already satisfied: seaborn in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (0.12.2)
+Requirement already satisfied: tqdm in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (4.66.1)
+Requirement already satisfied: scikit-learn>=0.22 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (1.3.2)
+Requirement already satisfied: statsmodels>=0.10.0rc2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (0.14.1)
+Requirement already satisfied: patsy in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (0.5.6)
+Requirement already satisfied: networkx>=2.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (3.2.1)
+Requirement already satisfied: joblib in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (1.3.2)
+Requirement already satisfied: numba>=0.41.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (0.58.1)
+Requirement already satisfied: umap-learn>=0.3.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (0.5.5)
+Requirement already satisfied: session-info in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scanpy==1.9.1->cell2fate==0.1a0) (1.0.0)
+Requirement already satisfied: typing-extensions in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.4->cell2fate==0.1a0) (4.9.0)
+Requirement already satisfied: loompy>=2.0.12 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scvelo==0.2.4->cell2fate==0.1a0) (3.0.7)
+Collecting docrep>=0.3.2 (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading docrep-0.3.2.tar.gz (33 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting flax (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading flax-0.7.5-py3-none-any.whl.metadata (10 kB)
+Collecting ipywidgets (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading ipywidgets-8.1.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting numpyro (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading numpyro-0.13.2-py3-none-any.whl.metadata (36 kB)
+Collecting openpyxl>=3.0 (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading openpyxl-3.1.2-py2.py3-none-any.whl (249 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.0/250.0 kB 271.1 MB/s eta 0:00:00
+Collecting optax (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading optax-0.1.7-py3-none-any.whl.metadata (13 kB)
+Collecting pytorch-lightning<1.6,>=1.5 (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading pytorch_lightning-1.5.10-py3-none-any.whl (527 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 527.7/527.7 kB 266.0 MB/s eta 0:00:00
+Collecting torchmetrics>=0.6.0 (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading torchmetrics-1.3.0-py3-none-any.whl.metadata (21 kB)
+Collecting pyro-api>=0.1.1 (from pyro-ppl>=1.8.0->cell2fate==0.1a0)
+  Downloading pyro_api-0.1.2-py3-none-any.whl (11 kB)
+Collecting requests (from gseapy->cell2fate==0.1a0)
+  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: six in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from docrep>=0.3.2->scvi-tools==0.16.1->cell2fate==0.1a0) (1.16.0)
+Collecting texttable>=1.6.2 (from igraph<0.11,>=0.10.0->leidenalg==0.10.1->cell2fate==0.1a0)
+  Downloading texttable-1.7.0-py2.py3-none-any.whl.metadata (9.8 kB)
+Requirement already satisfied: click in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from loompy>=2.0.12->scvelo==0.2.4->cell2fate==0.1a0) (8.1.7)
+Requirement already satisfied: numpy-groupies in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from loompy>=2.0.12->scvelo==0.2.4->cell2fate==0.1a0) (0.10.2)
+Requirement already satisfied: llvmlite<0.42,>=0.41.0dev0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from numba>=0.41.0->scanpy==1.9.1->cell2fate==0.1a0) (0.41.1)
+Collecting et-xmlfile (from openpyxl>=3.0->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading et_xmlfile-1.1.0-py3-none-any.whl (4.7 kB)
+Collecting future>=0.17.1 (from pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading future-0.18.3.tar.gz (840 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 840.9/840.9 kB 278.4 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting PyYAML>=5.1 (from pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting fsspec!=2021.06.0,>=2021.05.0 (from fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading fsspec-2023.12.2-py3-none-any.whl.metadata (6.8 kB)
+Collecting tensorboard>=2.2.0 (from pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading tensorboard-2.15.1-py3-none-any.whl.metadata (1.7 kB)
+Collecting pyDeprecate==0.3.1 (from pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading pyDeprecate-0.3.1-py3-none-any.whl (10 kB)
+Collecting setuptools (from cell2fate==0.1a0)
+  Downloading setuptools-59.5.0-py3-none-any.whl (952 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 952.4/952.4 kB 278.3 MB/s eta 0:00:00
+Requirement already satisfied: threadpoolctl>=2.0.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from scikit-learn>=0.22->scanpy==1.9.1->cell2fate==0.1a0) (3.2.0)
+Collecting lightning-utilities>=0.8.0 (from torchmetrics>=0.6.0->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading lightning_utilities-0.10.0-py3-none-any.whl.metadata (4.8 kB)
+Requirement already satisfied: pynndescent>=0.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from umap-learn>=0.3.10->scanpy==1.9.1->cell2fate==0.1a0) (0.5.11)
+INFO: pip is looking at multiple versions of flax to determine which version is compatible with other requirements. This could take a while.
+Collecting flax (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading flax-0.7.4-py3-none-any.whl.metadata (10 kB)
+Collecting msgpack (from flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading msgpack-1.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.1 kB)
+Collecting orbax-checkpoint (from flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading orbax_checkpoint-0.4.8-py3-none-any.whl.metadata (1.7 kB)
+Collecting tensorstore (from flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading tensorstore-0.1.52-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Requirement already satisfied: comm>=0.1.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.2.1)
+Requirement already satisfied: ipython>=6.1.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (8.20.0)
+Requirement already satisfied: traitlets>=4.3.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (5.14.1)
+Collecting widgetsnbextension~=4.0.9 (from ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading widgetsnbextension-4.0.9-py3-none-any.whl.metadata (1.6 kB)
+Collecting jupyterlab-widgets~=3.0.9 (from ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading jupyterlab_widgets-3.0.9-py3-none-any.whl.metadata (4.1 kB)
+INFO: pip is looking at multiple versions of numpyro to determine which version is compatible with other requirements. This could take a while.
+Collecting numpyro (from scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading numpyro-0.13.1-py3-none-any.whl.metadata (36 kB)
+  Downloading numpyro-0.13.0-py3-none-any.whl.metadata (36 kB)
+  Downloading numpyro-0.12.1-py3-none-any.whl.metadata (36 kB)
+Collecting multipledispatch (from numpyro->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading multipledispatch-1.0.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting absl-py>=0.7.1 (from optax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading absl_py-2.0.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting chex>=0.1.5 (from optax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading chex-0.1.85-py3-none-any.whl.metadata (17 kB)
+Collecting charset-normalizer<4,>=2 (from requests->gseapy->cell2fate==0.1a0)
+  Downloading charset_normalizer-3.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (33 kB)
+Collecting idna<4,>=2.5 (from requests->gseapy->cell2fate==0.1a0)
+  Downloading idna-3.6-py3-none-any.whl.metadata (9.9 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->gseapy->cell2fate==0.1a0)
+  Downloading urllib3-2.1.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting certifi>=2017.4.17 (from requests->gseapy->cell2fate==0.1a0)
+  Downloading certifi-2023.11.17-py3-none-any.whl.metadata (2.2 kB)
+Requirement already satisfied: stdlib-list in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from session-info->scanpy==1.9.1->cell2fate==0.1a0) (0.10.0)
+INFO: pip is looking at multiple versions of chex to determine which version is compatible with other requirements. This could take a while.
+Collecting chex>=0.1.5 (from optax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading chex-0.1.84-py3-none-any.whl.metadata (17 kB)
+  Downloading chex-0.1.83-py3-none-any.whl.metadata (17 kB)
+  Downloading chex-0.1.82-py3-none-any.whl.metadata (17 kB)
+  Downloading chex-0.1.81-py3-none-any.whl.metadata (17 kB)
+Collecting dm-tree>=0.1.5 (from chex>=0.1.5->optax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading dm_tree-0.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (152 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 152.8/152.8 kB 260.7 MB/s eta 0:00:00
+Collecting chex>=0.1.5 (from optax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading chex-0.1.7-py3-none-any.whl (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.6/89.6 kB 241.5 MB/s eta 0:00:00
+Collecting toolz>=0.9.0 (from chex>=0.1.5->optax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading toolz-0.12.0-py3-none-any.whl (55 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 kB 199.5 MB/s eta 0:00:00
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading aiohttp-3.9.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.4 kB)
+Requirement already satisfied: decorator in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (5.1.1)
+Requirement already satisfied: jedi>=0.16 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.19.1)
+Requirement already satisfied: matplotlib-inline in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.1.6)
+Requirement already satisfied: prompt-toolkit<3.1.0,>=3.0.41 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (3.0.43)
+Requirement already satisfied: stack-data in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.6.3)
+Requirement already satisfied: exceptiongroup in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (1.2.0)
+Requirement already satisfied: pexpect>4.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (4.9.0)
+Collecting grpcio>=1.48.2 (from tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading grpcio-1.60.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Collecting google-auth<3,>=1.6.3 (from tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading google_auth-2.26.2-py2.py3-none-any.whl.metadata (4.7 kB)
+Collecting google-auth-oauthlib<2,>=0.5 (from tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading google_auth_oauthlib-1.2.0-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting markdown>=2.6.8 (from tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading Markdown-3.5.2-py3-none-any.whl.metadata (7.0 kB)
+Collecting protobuf<4.24,>=3.19.6 (from tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading protobuf-4.23.4-cp37-abi3-manylinux2014_x86_64.whl.metadata (540 bytes)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading tensorboard_data_server-0.7.2-py3-none-any.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading werkzeug-3.0.1-py3-none-any.whl.metadata (4.1 kB)
+Collecting etils[epath,epy] (from orbax-checkpoint->flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading etils-1.6.0-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: nest_asyncio in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from orbax-checkpoint->flax->scvi-tools==0.16.1->cell2fate==0.1a0) (1.5.8)
+INFO: pip is looking at multiple versions of tensorstore to determine which version is compatible with other requirements. This could take a while.
+Collecting tensorstore (from flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading tensorstore-0.1.51-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Collecting orbax-checkpoint (from flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading orbax_checkpoint-0.4.7-py3-none-any.whl.metadata (1.7 kB)
+Collecting tensorstore (from flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading tensorstore-0.1.50-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+  Downloading tensorstore-0.1.49-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+  Downloading tensorstore-0.1.48-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.9 kB)
+  Downloading tensorstore-0.1.47-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.9 kB)
+INFO: pip is still looking at multiple versions of tensorstore to determine which version is compatible with other requirements. This could take a while.
+  Downloading tensorstore-0.1.46-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.9 kB)
+  Downloading tensorstore-0.1.45-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.9 kB)
+Collecting orbax-checkpoint (from flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading orbax_checkpoint-0.4.6-py3-none-any.whl.metadata (1.7 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Downloading orbax_checkpoint-0.4.5-py3-none-any.whl.metadata (1.7 kB)
+  Downloading orbax_checkpoint-0.4.4-py3-none-any.whl.metadata (1.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading attrs-23.2.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading multidict-6.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.5/114.5 kB 232.6 MB/s eta 0:00:00
+Collecting yarl<2.0,>=1.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading yarl-1.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (31 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading frozenlist-1.4.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting async-timeout<5.0,>=4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading async_timeout-4.0.3-py3-none-any.whl.metadata (4.2 kB)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth<3,>=1.6.3->tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading cachetools-5.3.2-py3-none-any.whl.metadata (5.2 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3,>=1.6.3->tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading pyasn1_modules-0.3.0-py2.py3-none-any.whl (181 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.3/181.3 kB 253.6 MB/s eta 0:00:00
+Collecting rsa<5,>=3.1.4 (from google-auth<3,>=1.6.3->tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading rsa-4.9-py3-none-any.whl (34 kB)
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<2,>=0.5->tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: parso<0.9.0,>=0.8.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from jedi>=0.16->ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.8.3)
+Requirement already satisfied: ptyprocess>=0.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from pexpect>4.3->ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.7.0)
+Requirement already satisfied: wcwidth in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from prompt-toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.2.13)
+Collecting MarkupSafe>=2.1.1 (from werkzeug>=1.0.1->tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading MarkupSafe-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Collecting importlib_resources (from etils[epath,epy]->orbax-checkpoint->flax->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading importlib_resources-6.1.1-py3-none-any.whl.metadata (4.1 kB)
+Requirement already satisfied: executing>=1.2.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from stack-data->ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (2.0.1)
+Requirement already satisfied: asttokens>=2.1.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from stack-data->ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (2.4.1)
+Requirement already satisfied: pure-eval in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/cell2fate_env/lib/python3.10/site-packages (from stack-data->ipython>=6.1.0->ipywidgets->scvi-tools==0.16.1->cell2fate==0.1a0) (0.2.2)
+Collecting pyasn1<0.6.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading pyasn1-0.5.1-py2.py3-none-any.whl.metadata (8.6 kB)
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<2,>=0.5->tensorboard>=2.2.0->pytorch-lightning<1.6,>=1.5->scvi-tools==0.16.1->cell2fate==0.1a0)
+  Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.7/151.7 kB 250.3 MB/s eta 0:00:00
+Downloading jaxlib-0.4.10-cp310-cp310-manylinux2014_x86_64.whl (69.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.9/69.9 MB 6.2 MB/s eta 0:00:00
+Downloading leidenalg-0.10.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 240.6 MB/s eta 0:00:00
+Downloading ml_dtypes-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 269.4 MB/s eta 0:00:00
+Downloading pyro_ppl-1.8.6-py3-none-any.whl (732 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 732.8/732.8 kB 279.5 MB/s eta 0:00:00
+Downloading einops-0.7.0-py3-none-any.whl (44 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 213.2 MB/s eta 0:00:00
+Downloading gseapy-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 261.8 MB/s eta 0:00:00
+Downloading igraph-0.10.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 238.8 MB/s eta 0:00:00
+Downloading torchmetrics-1.3.0-py3-none-any.whl (840 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 840.2/840.2 kB 281.4 MB/s eta 0:00:00
+Downloading zipp-3.17.0-py3-none-any.whl (7.4 kB)
+Downloading flax-0.7.4-py3-none-any.whl (233 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.5/233.5 kB 266.4 MB/s eta 0:00:00
+Downloading ipywidgets-8.1.1-py3-none-any.whl (139 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.4/139.4 kB 224.6 MB/s eta 0:00:00
+Downloading numpyro-0.12.1-py3-none-any.whl (304 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 304.6/304.6 kB 266.1 MB/s eta 0:00:00
+Downloading optax-0.1.7-py3-none-any.whl (154 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.1/154.1 kB 259.8 MB/s eta 0:00:00
+Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 226.5 MB/s eta 0:00:00
+Downloading absl_py-2.0.0-py3-none-any.whl (130 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.2/130.2 kB 264.5 MB/s eta 0:00:00
+Downloading certifi-2023.11.17-py3-none-any.whl (162 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.5/162.5 kB 245.9 MB/s eta 0:00:00
+Downloading charset_normalizer-3.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (142 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 142.1/142.1 kB 233.0 MB/s eta 0:00:00
+Downloading fsspec-2023.12.2-py3-none-any.whl (168 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 169.0/169.0 kB 253.7 MB/s eta 0:00:00
+Downloading idna-3.6-py3-none-any.whl (61 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB 219.5 MB/s eta 0:00:00
+Downloading jupyterlab_widgets-3.0.9-py3-none-any.whl (214 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.9/214.9 kB 251.3 MB/s eta 0:00:00
+Downloading lightning_utilities-0.10.0-py3-none-any.whl (24 kB)
+Downloading PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (705 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 705.5/705.5 kB 266.1 MB/s eta 0:00:00
+Downloading tensorboard-2.15.1-py3-none-any.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 201.9 MB/s eta 0:00:00
+Downloading texttable-1.7.0-py2.py3-none-any.whl (10 kB)
+Downloading urllib3-2.1.0-py3-none-any.whl (104 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.6/104.6 kB 235.3 MB/s eta 0:00:00
+Downloading widgetsnbextension-4.0.9-py3-none-any.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 246.2 MB/s eta 0:00:00
+Downloading msgpack-1.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (530 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 530.8/530.8 kB 271.3 MB/s eta 0:00:00
+Downloading multipledispatch-1.0.0-py3-none-any.whl (12 kB)
+Downloading tensorstore-0.1.45-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.5/13.5 MB 220.8 MB/s eta 0:00:00
+Downloading orbax_checkpoint-0.4.4-py3-none-any.whl (123 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.0/124.0 kB 246.4 MB/s eta 0:00:00
+Downloading aiohttp-3.9.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 266.5 MB/s eta 0:00:00
+Downloading google_auth-2.26.2-py2.py3-none-any.whl (186 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 186.5/186.5 kB 244.5 MB/s eta 0:00:00
+Downloading google_auth_oauthlib-1.2.0-py2.py3-none-any.whl (24 kB)
+Downloading grpcio-1.60.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 211.7 MB/s eta 0:00:00
+Downloading Markdown-3.5.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.9/103.9 kB 250.4 MB/s eta 0:00:00
+Downloading protobuf-4.23.4-cp37-abi3-manylinux2014_x86_64.whl (304 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 304.5/304.5 kB 261.6 MB/s eta 0:00:00
+Downloading tensorboard_data_server-0.7.2-py3-none-any.whl (2.4 kB)
+Downloading werkzeug-3.0.1-py3-none-any.whl (226 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 254.7 MB/s eta 0:00:00
+Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
+Downloading attrs-23.2.0-py3-none-any.whl (60 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 223.7 MB/s eta 0:00:00
+Downloading cachetools-5.3.2-py3-none-any.whl (9.3 kB)
+Downloading frozenlist-1.4.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (239 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.5/239.5 kB 257.6 MB/s eta 0:00:00
+Downloading MarkupSafe-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Downloading yarl-1.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (301 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.6/301.6 kB 261.5 MB/s eta 0:00:00
+Downloading etils-1.6.0-py3-none-any.whl (144 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.9/144.9 kB 249.8 MB/s eta 0:00:00
+Downloading importlib_resources-6.1.1-py3-none-any.whl (33 kB)
+Downloading pyasn1-0.5.1-py2.py3-none-any.whl (84 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.9/84.9 kB 217.0 MB/s eta 0:00:00
+Building wheels for collected packages: cell2fate, jax, docrep, future
+  Building wheel for cell2fate (pyproject.toml): started
+  Building wheel for cell2fate (pyproject.toml): finished with status 'done'
+  Created wheel for cell2fate: filename=cell2fate-0.1a0-py3-none-any.whl size=202204 sha256=0b6f19f9b232fbcdac799f066f07686dbeb3c1812f945a08738be2ce19a560e8
+  Stored in directory: /tmp/slurm_63538246/pip-ephem-wheel-cache-sv01c10j/wheels/58/99/4f/6a6ffb66fefb9840b961859112cbc70f34c953bc7debb11f56
+  Building wheel for jax (pyproject.toml): started
+  Building wheel for jax (pyproject.toml): finished with status 'done'
+  Created wheel for jax: filename=jax-0.4.10-py3-none-any.whl size=1480497 sha256=fb6896360c3fb5d4f2fb6ab8d4da31f093c738ca258b62e753a7f62d8fbc782b
+  Stored in directory: /tmp/slurm_63538246/pip-ephem-wheel-cache-sv01c10j/wheels/2f/04/51/ebc9c5225f0a0df1e56c231c1f4c9b7afd3e024ebb492eed99
+  Building wheel for docrep (pyproject.toml): started
+  Building wheel for docrep (pyproject.toml): finished with status 'done'
+  Created wheel for docrep: filename=docrep-0.3.2-py3-none-any.whl size=19878 sha256=c102552b3011a52bc7e703d4d78bca7a6fe738377622b9e9b3a4411bc7edffee
+  Stored in directory: /tmp/slurm_63538246/pip-ephem-wheel-cache-sv01c10j/wheels/c3/64/48/03c38d8d906159eaa210b3c548fdb590eb3e2a4a5745ae2172
+  Building wheel for future (pyproject.toml): started
+  Building wheel for future (pyproject.toml): finished with status 'done'
+  Created wheel for future: filename=future-0.18.3-py3-none-any.whl size=492024 sha256=f6dbe053643c31c11f8b89d8240e88721ee65d2c9276ecaadac814a54eb426be
+  Stored in directory: /tmp/slurm_63538246/pip-ephem-wheel-cache-sv01c10j/wheels/5e/a9/47/f118e66afd12240e4662752cc22cefae5d97275623aa8ef57d
+Successfully built cell2fate jax docrep future
+DEPRECATION: pytorch-lightning 1.5.10 has a non-standard dependency specifier torch>=1.7.*. pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of pytorch-lightning or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: texttable, pyro-api, multipledispatch, dm-tree, commonmark, zipp, widgetsnbextension, urllib3, torch, toolz, tensorstore, tensorboard-data-server, setuptools, scipy, rich, PyYAML, pyDeprecate, pyasn1, protobuf, opt-einsum, oauthlib, multidict, msgpack, ml-dtypes, MarkupSafe, markdown, jupyterlab-widgets, importlib_resources, igraph, idna, grpcio, future, fsspec, frozenlist, etils, et-xmlfile, einops, docrep, charset-normalizer, certifi, cachetools, attrs, async-timeout, absl-py, yarl, werkzeug, rsa, requests, pyro-ppl, pyasn1-modules, pandas, openpyxl, lightning-utilities, leidenalg, jaxlib, jax, importlib-metadata, aiosignal, torchmetrics, requests-oauthlib, numpyro, gseapy, google-auth, chex, aiohttp, orbax-checkpoint, optax, ipywidgets, google-auth-oauthlib, tensorboard, scanpy, flax, scvelo, pytorch-lightning, scvi-tools, cell2fate
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 63.2.0
+    Uninstalling setuptools-63.2.0:
+      Successfully uninstalled setuptools-63.2.0
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.8.1
+    Uninstalling scipy-1.8.1:
+      Successfully uninstalled scipy-1.8.1
+  Attempting uninstall: pandas
+    Found existing installation: pandas 1.5.3
+    Uninstalling pandas-1.5.3:
+      Successfully uninstalled pandas-1.5.3
+  Attempting uninstall: scanpy
+    Found existing installation: scanpy 1.9.6
+    Uninstalling scanpy-1.9.6:
+      Successfully uninstalled scanpy-1.9.6
+  Attempting uninstall: scvelo
+    Found existing installation: scvelo 0.2.5
+    Uninstalling scvelo-0.2.5:
+      Successfully uninstalled scvelo-0.2.5
+Successfully installed MarkupSafe-2.1.3 PyYAML-6.0.1 absl-py-2.0.0 aiohttp-3.9.1 aiosignal-1.3.1 async-timeout-4.0.3 attrs-23.2.0 cachetools-5.3.2 cell2fate-0.1a0 certifi-2023.11.17 charset-normalizer-3.3.2 chex-0.1.7 commonmark-0.9.1 dm-tree-0.1.8 docrep-0.3.2 einops-0.7.0 et-xmlfile-1.1.0 etils-1.6.0 flax-0.7.4 frozenlist-1.4.1 fsspec-2023.12.2 future-0.18.3 google-auth-2.26.2 google-auth-oauthlib-1.2.0 grpcio-1.60.0 gseapy-1.1.1 idna-3.6 igraph-0.10.8 importlib-metadata-3.10.0 importlib_resources-6.1.1 ipywidgets-8.1.1 jax-0.4.10 jaxlib-0.4.10 jupyterlab-widgets-3.0.9 leidenalg-0.10.1 lightning-utilities-0.10.0 markdown-3.5.2 ml-dtypes-0.2.0 msgpack-1.0.7 multidict-6.0.4 multipledispatch-1.0.0 numpyro-0.12.1 oauthlib-3.2.2 openpyxl-3.1.2 opt-einsum-3.3.0 optax-0.1.7 orbax-checkpoint-0.4.4 pandas-1.4.2 protobuf-4.23.4 pyDeprecate-0.3.1 pyasn1-0.5.1 pyasn1-modules-0.3.0 pyro-api-0.1.2 pyro-ppl-1.8.6 pytorch-lightning-1.5.10 requests-2.31.0 requests-oauthlib-1.3.1 rich-12.3.0 rsa-4.9 scanpy-1.9.1 scipy-1.8.0 scvelo-0.2.4 scvi-tools-0.16.1 setuptools-59.5.0 tensorboard-2.15.1 tensorboard-data-server-0.7.2 tensorstore-0.1.45 texttable-1.7.0 toolz-0.12.0 torch-1.11.0 torchmetrics-1.3.0 urllib3-2.1.0 werkzeug-3.0.1 widgetsnbextension-4.0.9 yarl-1.9.4 zipp-3.17.0
+Installed kernelspec cell2fate_env in /nemo/project/home/maizelr/.local/share/jupyter/kernels/cell2fate_env
+All done!

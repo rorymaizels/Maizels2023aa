@@ -1,0 +1,646 @@
+
+The following have been reloaded with a version change:
+  1) GCCcore/12.2.0 => GCCcore/10.2.0
+  2) binutils/2.39-GCCcore-12.2.0 => binutils/2.35-GCCcore-10.2.0
+  3) zlib/1.2.12-GCCcore-12.2.0 => zlib/1.2.11-GCCcore-10.2.0
+
+/camp/apps/eb/software/Python/3.10.8-GCCcore-12.2.0/bin/python
+/camp/apps/eb/software/Anaconda2/2019.03/condabin/conda
+Tue Jan 16 15:11:41 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-SXM2-32GB           On  | 00000000:1C:00.0 Off |                    0 |
+| N/A   33C    P0              40W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2020 NVIDIA Corporation
+Built on Mon_Oct_12_20:09:46_PDT_2020
+Cuda compilation tools, release 11.1, V11.1.105
+Build cuda_11.1.TC455_06.29190527_0
+[rank: 0] Global seed set to 0
+  0%|          | 0/6 [00:00<?, ?it/s]An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ 17%|█▋        | 1/6 [02:04<10:20, 124.02s/it]/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ 33%|███▎      | 2/6 [04:10<08:22, 125.75s/it]/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ 50%|█████     | 3/6 [07:38<08:09, 163.05s/it]/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ 67%|██████▋   | 4/6 [11:22<06:14, 187.01s/it]/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ 83%|████████▎ | 5/6 [15:40<03:32, 212.76s/it]/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+100%|██████████| 6/6 [31:03<00:00, 454.38s/it]100%|██████████| 6/6 [31:03<00:00, 310.66s/it]
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 1.2315e+08 patience = 45
+step  100 loss = 8.92247e+07 patience = 45
+step  200 loss = 7.81476e+07 patience = 45
+step  300 loss = 7.10529e+07 patience = 45
+step  400 loss = 6.64536e+07 patience = 45
+step  500 loss = 6.35651e+07 patience = 44
+step  600 loss = 6.17814e+07 patience = 39
+step  700 loss = 6.07421e+07 patience = 43
+step  800 loss = 6.005e+07 patience = 33
+step  831 loss = 5.98842e+07 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 740784
+u_read_depth before 740784
+s_read_depth before 740784
+cell_gene_state before 944316144
+ut before 944316144
+st before 944316144
+u before 944316144
+s before 944316144
+computing neighbors
+    finished (0:00:05) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_V3
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 1.27873e+08 patience = 45
+step  100 loss = 9.28997e+07 patience = 45
+step  200 loss = 8.02684e+07 patience = 45
+step  300 loss = 7.31484e+07 patience = 45
+step  400 loss = 6.89435e+07 patience = 45
+step  500 loss = 6.63061e+07 patience = 44
+step  600 loss = 6.47082e+07 patience = 40
+step  700 loss = 6.36842e+07 patience = 35
+step  800 loss = 6.30273e+07 patience = 36
+step  900 loss = 6.25739e+07 patience = 29
+step  999 loss = 6.24127e+07 patience = 43
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 767064
+u_read_depth before 767064
+s_read_depth before 767064
+cell_gene_state before 957883224
+ut before 957883224
+st before 957883224
+u before 957883224
+s before 957883224
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MN
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 1.5356e+08 patience = 45
+step  100 loss = 1.0731e+08 patience = 45
+step  200 loss = 9.58254e+07 patience = 44
+step  300 loss = 8.9894e+07 patience = 44
+step  400 loss = 8.69558e+07 patience = 45
+step  500 loss = 8.55087e+07 patience = 40
+step  600 loss = 8.46627e+07 patience = 44
+step  700 loss = 8.43645e+07 patience = 43
+step  800 loss = 8.42423e+07 patience = 45
+step  900 loss = 8.41664e+07 patience = 42
+step  999 loss = 8.40239e+07 patience = 45
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 1203024
+u_read_depth before 1203024
+s_read_depth before 1203024
+cell_gene_state before 1425412944
+ut before 1425412944
+st before 1425412944
+u before 1425412944
+s before 1425412944
+computing neighbors
+    finished (0:00:16) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MD
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 2.83854e+08 patience = 45
+step  100 loss = 1.92629e+08 patience = 45
+step  200 loss = 1.78152e+08 patience = 39
+step  300 loss = 1.7348e+08 patience = 44
+step  400 loss = 1.72098e+08 patience = 27
+step  500 loss = 1.71732e+08 patience = 38
+step  579 loss = 1.71596e+08 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 2182344
+u_read_depth before 2182344
+s_read_depth before 2182344
+cell_gene_state before 2555356344
+ut before 2555356344
+st before 2555356344
+u before 2555356344
+s before 2555356344
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_NM
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 4.05233e+08 patience = 45
+step  100 loss = 2.83718e+08 patience = 45
+step  200 loss = 2.65722e+08 patience = 44
+step  300 loss = 2.61325e+08 patience = 39
+step  400 loss = 2.60393e+08 patience = 36
+step  490 loss = 2.60385e+08 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 2689704
+u_read_depth before 2689704
+s_read_depth before 2689704
+cell_gene_state before 3663180864
+ut before 3663180864
+st before 3663180864
+u before 3663180864
+s before 3663180864
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_Ne
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 6.98575e+08 patience = 45
+step  100 loss = 5.10528e+08 patience = 45
+step  200 loss = 5.03893e+08 patience = 42
+step  300 loss = 5.03209e+08 patience = 41
+step  400 loss = 5.03892e+08 patience = 43
+step  500 loss = 5.02639e+08 patience = 36
+step  600 loss = 5.03402e+08 patience = 40
+step  700 loss = 5.03038e+08 patience = 40
+step  800 loss = 5.0234e+08 patience = 39
+step  900 loss = 5.03918e+08 patience = 45
+step  999 loss = 5.02654e+08 patience = 45
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 5365704
+u_read_depth before 5365704
+s_read_depth before 5365704
+cell_gene_state before 7425935184
+ut before 7425935184
+st before 7425935184
+u before 7425935184
+s before 7425935184
+computing neighbors
+    finished (0:00:08) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_maxi
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [01:08<05:42, 68.42s/it] 33%|███▎      | 2/6 [01:57<03:47, 56.76s/it] 50%|█████     | 3/6 [02:39<02:30, 50.24s/it]/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ 67%|██████▋   | 4/6 [07:10<04:34, 137.23s/it]/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ 83%|████████▎ | 5/6 [10:57<02:49, 169.64s/it]100%|██████████| 6/6 [11:32<00:00, 124.06s/it]100%|██████████| 6/6 [11:32<00:00, 115.46s/it]
+-----------
+auto
+auto_t0_constraint
+train_faster
+TraceEnum
+torch.Size([3696])
+torch.Size([3696, 3000])
+torch.Size([3696])
+step    1 loss = 3.65138 patience = 45
+step  100 loss = 2.57683 patience = 45
+step  200 loss = 2.20399 patience = 45
+step  300 loss = 1.952 patience = 45
+step  400 loss = 1.77655 patience = 45
+step  500 loss = 1.63964 patience = 43
+step  600 loss = 1.53788 patience = 44
+step  700 loss = 1.45869 patience = 40
+step  800 loss = 1.39548 patience = 44
+step  900 loss = 1.34519 patience = 45
+step 1000 loss = 1.30741 patience = 44
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 443664
+u_read_depth before 443664
+s_read_depth before 443664
+cell_gene_state before 1330560144
+ut before 1330560144
+st before 1330560144
+u before 1330560144
+s before 1330560144
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+pancreas
+
+-----------
+auto
+auto_t0_constraint
+train_faster
+TraceEnum
+torch.Size([2272])
+torch.Size([2272, 3000])
+torch.Size([2272])
+step    1 loss = 2.19344 patience = 45
+step  100 loss = 1.475 patience = 45
+step  200 loss = 1.26993 patience = 45
+step  300 loss = 1.15535 patience = 45
+step  400 loss = 1.06934 patience = 45
+step  500 loss = 0.996204 patience = 44
+step  600 loss = 0.939637 patience = 44
+step  700 loss = 0.893184 patience = 43
+step  800 loss = 0.858766 patience = 45
+step  900 loss = 0.83173 patience = 45
+step 1000 loss = 0.808803 patience = 44
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 272784
+u_read_depth before 272784
+s_read_depth before 272784
+cell_gene_state before 817920144
+ut before 817920144
+st before 817920144
+u before 817920144
+s before 817920144
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+dentategyrus
+
+-----------
+auto
+auto_t0_constraint
+train_faster
+TraceEnum
+torch.Size([1720])
+torch.Size([1720, 3000])
+torch.Size([1720])
+step    1 loss = 4.02835 patience = 45
+step  100 loss = 2.83971 patience = 45
+step  200 loss = 2.42995 patience = 45
+step  300 loss = 2.15039 patience = 45
+step  400 loss = 1.95224 patience = 45
+step  500 loss = 1.79744 patience = 45
+step  600 loss = 1.68331 patience = 44
+step  700 loss = 1.59408 patience = 38
+step  800 loss = 1.52424 patience = 44
+step  900 loss = 1.46694 patience = 45
+step 1000 loss = 1.42351 patience = 44
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 206544
+u_read_depth before 206544
+s_read_depth before 206544
+cell_gene_state before 619200144
+ut before 619200144
+st before 619200144
+u before 619200144
+s before 619200144
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+forebrain
+
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 3.09245e+08 patience = 45
+step  100 loss = 1.99464e+08 patience = 45
+step  200 loss = 1.78679e+08 patience = 42
+step  300 loss = 1.68808e+08 patience = 43
+step  400 loss = 1.63968e+08 patience = 42
+step  500 loss = 1.61448e+08 patience = 40
+step  600 loss = 1.60257e+08 patience = 42
+step  686 loss = 1.59607e+08 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 1352664
+u_read_depth before 1352664
+s_read_depth before 1352664
+cell_gene_state before 4057560144
+ut before 4057560144
+st before 4057560144
+u before 4057560144
+s before 4057560144
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+dentategyrus_lamanno
+
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 2.52585e+08 patience = 45
+step  100 loss = 1.50262e+08 patience = 45
+step  200 loss = 1.32764e+08 patience = 44
+step  300 loss = 1.24874e+08 patience = 45
+step  400 loss = 1.2102e+08 patience = 45
+step  500 loss = 1.19051e+08 patience = 40
+step  591 loss = 1.18192e+08 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 1177944
+u_read_depth before 1177944
+s_read_depth before 1177944
+cell_gene_state before 3433287144
+ut before 3433287144
+st before 3433287144
+u before 3433287144
+s before 3433287144
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+gastrulation_erythroid
+
+-----------
+auto
+auto_t0_constraint
+train_faster
+TraceEnum
+torch.Size([1192])
+torch.Size([1192, 3000])
+torch.Size([1192])
+step    1 loss = 6.48236 patience = 45
+step  100 loss = 4.73522 patience = 45
+step  200 loss = 4.08192 patience = 45
+step  300 loss = 3.64677 patience = 45
+step  400 loss = 3.33409 patience = 45
+step  500 loss = 3.0889 patience = 45
+step  600 loss = 2.90437 patience = 44
+step  700 loss = 2.76126 patience = 38
+step  800 loss = 2.64712 patience = 44
+step  900 loss = 2.55386 patience = 44
+step 1000 loss = 2.4872 patience = 43
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 143184
+u_read_depth before 143184
+s_read_depth before 143184
+cell_gene_state before 429120144
+ut before 429120144
+st before 429120144
+u before 429120144
+s before 429120144
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+mouse_motor_neuron
+
+GENE SCORE: splicing_mini_MN
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 1.27873e+08 patience = 45
+step  100 loss = 9.28997e+07 patience = 45
+step  200 loss = 8.02684e+07 patience = 45
+step  300 loss = 7.31484e+07 patience = 45
+step  400 loss = 6.89435e+07 patience = 45
+step  500 loss = 6.63061e+07 patience = 44
+step  600 loss = 6.47082e+07 patience = 40
+step  700 loss = 6.36842e+07 patience = 35
+step  800 loss = 6.30273e+07 patience = 36
+step  900 loss = 6.25739e+07 patience = 29
+step  999 loss = 6.24127e+07 patience = 43
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 767064
+u_read_depth before 767064
+s_read_depth before 767064
+cell_gene_state before 957883224
+ut before 957883224
+st before 957883224
+u before 957883224
+s before 957883224
+GENE SCORE: splicing_mini_V3
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 1.2315e+08 patience = 45
+step  100 loss = 8.92247e+07 patience = 45
+step  200 loss = 7.81476e+07 patience = 45
+step  300 loss = 7.10529e+07 patience = 45
+step  400 loss = 6.64536e+07 patience = 45
+step  500 loss = 6.35651e+07 patience = 44
+step  600 loss = 6.17814e+07 patience = 39
+step  700 loss = 6.07421e+07 patience = 43
+step  800 loss = 6.005e+07 patience = 33
+step  831 loss = 5.98842e+07 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 740784
+u_read_depth before 740784
+s_read_depth before 740784
+cell_gene_state before 944316144
+ut before 944316144
+st before 944316144
+u before 944316144
+s before 944316144
+GENE SCORE: splicing_mini_MD
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 1.5356e+08 patience = 45
+step  100 loss = 1.0731e+08 patience = 45
+step  200 loss = 9.58254e+07 patience = 44
+step  300 loss = 8.9894e+07 patience = 44
+step  400 loss = 8.69558e+07 patience = 45
+step  500 loss = 8.55087e+07 patience = 40
+step  600 loss = 8.46627e+07 patience = 44
+step  700 loss = 8.43645e+07 patience = 43
+step  800 loss = 8.42423e+07 patience = 45
+step  900 loss = 8.41664e+07 patience = 42
+step  999 loss = 8.40239e+07 patience = 45
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 1203024
+u_read_depth before 1203024
+s_read_depth before 1203024
+cell_gene_state before 1425412944
+ut before 1425412944
+st before 1425412944
+u before 1425412944
+s before 1425412944
+GENE SCORE: splicing_midi_NM
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 2.83854e+08 patience = 45
+step  100 loss = 1.92629e+08 patience = 45
+step  200 loss = 1.78152e+08 patience = 39
+step  300 loss = 1.7348e+08 patience = 44
+step  400 loss = 1.72098e+08 patience = 27
+step  500 loss = 1.71732e+08 patience = 38
+step  579 loss = 1.71596e+08 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 2182344
+u_read_depth before 2182344
+s_read_depth before 2182344
+cell_gene_state before 2555356344
+ut before 2555356344
+st before 2555356344
+u before 2555356344
+s before 2555356344
+GENE SCORE: splicing_midi_Ne
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 4.05233e+08 patience = 45
+step  100 loss = 2.83718e+08 patience = 45
+step  200 loss = 2.65722e+08 patience = 44
+step  300 loss = 2.61325e+08 patience = 39
+step  400 loss = 2.60393e+08 patience = 36
+step  490 loss = 2.60385e+08 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 2689704
+u_read_depth before 2689704
+s_read_depth before 2689704
+cell_gene_state before 3663180864
+ut before 3663180864
+st before 3663180864
+u before 3663180864
+s before 3663180864
+
+# # # # # # # # # # # # # # # # # # # # # # # # # 
+~ ~ ~ ~ ~ ~ ~ BENCHMARKING COMPLETE ~ ~ ~ ~ ~ ~ ~ 
+ # # # # # # # # # # # # # # # # # # # # # # # # #

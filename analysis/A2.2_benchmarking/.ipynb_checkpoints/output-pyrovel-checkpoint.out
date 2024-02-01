@@ -1,0 +1,83 @@
+
+The following have been reloaded with a version change:
+  1) GCCcore/12.2.0 => GCCcore/10.2.0
+  2) binutils/2.39-GCCcore-12.2.0 => binutils/2.35-GCCcore-10.2.0
+  3) zlib/1.2.12-GCCcore-12.2.0 => zlib/1.2.11-GCCcore-10.2.0
+
+/camp/apps/eb/software/Python/3.10.8-GCCcore-12.2.0/bin/python
+/camp/apps/eb/software/Anaconda2/2019.03/condabin/conda
+Tue Jan 16 00:08:17 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-SXM2-32GB           On  | 00000000:1A:00.0 Off |                    0 |
+| N/A   43C    P0              46W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2020 NVIDIA Corporation
+Built on Mon_Oct_12_20:09:46_PDT_2020
+Cuda compilation tools, release 11.1, V11.1.105
+Build cuda_11.1.TC455_06.29190527_0
+[rank: 0] Global seed set to 0
+  0%|          | 0/6 [00:00<?, ?it/s]An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/camp/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+  0%|          | 0/6 [02:04<?, ?it/s]
+-----------
+auto
+auto_t0_constraint
+train_faster_with_batch
+step    1 loss = 1.2315e+08 patience = 45
+step  100 loss = 8.92247e+07 patience = 45
+step  200 loss = 7.81476e+07 patience = 45
+step  300 loss = 7.10529e+07 patience = 45
+step  400 loss = 6.64536e+07 patience = 45
+step  500 loss = 6.35651e+07 patience = 44
+step  600 loss = 6.17814e+07 patience = 39
+step  700 loss = 6.07421e+07 patience = 43
+step  800 loss = 6.005e+07 patience = 33
+step  831 loss = 5.98842e+07 patience = 0
+alpha before 144
+gamma before 144
+beta before 144
+t0 before 144
+dt_switching before 144
+u_inf before 144
+s_inf before 144
+switching before 144
+cell_time before 740784
+u_read_depth before 740784
+s_read_depth before 740784
+cell_gene_state before 944316144
+ut before 944316144
+st before 944316144
+u before 944316144
+s before 944316144
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_V3
+Traceback (most recent call last):
+  File "/nemo/lab/briscoej/home/users/maizelr/transcriptomics/SVM23/analysis/A2.2_benchmarking/B12_pyrovelocity_benchmarking.py", line 74, in <module>
+    bench_func(
+  File "/nemo/lab/briscoej/home/users/maizelr/transcriptomics/SVM23/analysis/A2.2_benchmarking/benchmarking_functions.py", line 325, in perform_benchmark_splicing
+    cbd, icc, crs, pts = run_tests(bm_data)
+  File "/nemo/lab/briscoej/home/users/maizelr/transcriptomics/SVM23/analysis/A2.2_benchmarking/benchmarking_functions.py", line 265, in run_tests
+    cbd = cross_boundary_correctness(
+  File "/nemo/lab/briscoej/home/users/maizelr/transcriptomics/SVM23/analysis/A2.2_benchmarking/eval_functions.py", line 70, in unitvelo_cross_boundary_correctness
+    if x_emb == "X_umap":
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()

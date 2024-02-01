@@ -1,0 +1,419 @@
+Requirement already satisfied: pip in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (22.2.2)
+Collecting pip
+  Using cached pip-23.3.2-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.2.2
+    Uninstalling pip-22.2.2:
+      Successfully uninstalled pip-22.2.2
+Successfully installed pip-23.3.2
+Collecting scanpy==1.9.*
+  Downloading scanpy-1.9.6-py3-none-any.whl.metadata (6.0 kB)
+Collecting anndata>=0.7.4 (from scanpy==1.9.*)
+  Downloading anndata-0.10.4-py3-none-any.whl.metadata (6.4 kB)
+Collecting h5py>=3 (from scanpy==1.9.*)
+  Downloading h5py-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+Collecting joblib (from scanpy==1.9.*)
+  Downloading joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting matplotlib>=3.4 (from scanpy==1.9.*)
+  Downloading matplotlib-3.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+Collecting natsort (from scanpy==1.9.*)
+  Downloading natsort-8.4.0-py3-none-any.whl.metadata (21 kB)
+Collecting networkx>=2.3 (from scanpy==1.9.*)
+  Downloading networkx-3.2.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting numba>=0.41.0 (from scanpy==1.9.*)
+  Downloading numba-0.58.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+Collecting numpy>=1.17.0 (from scanpy==1.9.*)
+  Downloading numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 195.0 MB/s eta 0:00:00
+Collecting packaging (from scanpy==1.9.*)
+  Downloading packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pandas!=2.1.2,>=1.1.1 (from scanpy==1.9.*)
+  Downloading pandas-2.1.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting patsy (from scanpy==1.9.*)
+  Downloading patsy-0.5.6-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting scikit-learn>=0.24 (from scanpy==1.9.*)
+  Downloading scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting scipy>=1.4 (from scanpy==1.9.*)
+  Downloading scipy-1.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 kB 239.5 MB/s eta 0:00:00
+Collecting seaborn!=0.13.0 (from scanpy==1.9.*)
+  Downloading seaborn-0.13.1-py3-none-any.whl.metadata (5.4 kB)
+Collecting session-info (from scanpy==1.9.*)
+  Downloading session_info-1.0.0.tar.gz (24 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting statsmodels>=0.10.0rc2 (from scanpy==1.9.*)
+  Downloading statsmodels-0.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting tqdm (from scanpy==1.9.*)
+  Downloading tqdm-4.66.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 210.1 MB/s eta 0:00:00
+Collecting umap-learn>=0.3.10 (from scanpy==1.9.*)
+  Downloading umap-learn-0.5.5.tar.gz (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.9/90.9 kB 228.6 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting array-api-compat (from anndata>=0.7.4->scanpy==1.9.*)
+  Downloading array_api_compat-1.4-py3-none-any.whl.metadata (13 kB)
+Collecting exceptiongroup (from anndata>=0.7.4->scanpy==1.9.*)
+  Downloading exceptiongroup-1.2.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting contourpy>=1.0.1 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading contourpy-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+Collecting cycler>=0.10 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading fonttools-4.47.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (157 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.6/157.6 kB 250.7 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (6.4 kB)
+Collecting pillow>=8 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading pillow-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.7 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading pyparsing-3.1.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting python-dateutil>=2.7 (from matplotlib>=3.4->scanpy==1.9.*)
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 269.4 MB/s eta 0:00:00
+Collecting llvmlite<0.42,>=0.41.0dev0 (from numba>=0.41.0->scanpy==1.9.*)
+  Downloading llvmlite-0.41.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.8 kB)
+Collecting pytz>=2020.1 (from pandas!=2.1.2,>=1.1.1->scanpy==1.9.*)
+  Downloading pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.1 (from pandas!=2.1.2,>=1.1.1->scanpy==1.9.*)
+  Downloading tzdata-2023.4-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn>=0.24->scanpy==1.9.*)
+  Downloading threadpoolctl-3.2.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting six (from patsy->scanpy==1.9.*)
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting pynndescent>=0.5 (from umap-learn>=0.3.10->scanpy==1.9.*)
+  Downloading pynndescent-0.5.11-py3-none-any.whl.metadata (6.8 kB)
+Collecting stdlib-list (from session-info->scanpy==1.9.*)
+  Downloading stdlib_list-0.10.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading scanpy-1.9.6-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 238.4 MB/s eta 0:00:00
+Downloading anndata-0.10.4-py3-none-any.whl (119 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.9/119.9 kB 263.0 MB/s eta 0:00:00
+Downloading h5py-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 231.2 MB/s eta 0:00:00
+Downloading matplotlib-3.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 228.5 MB/s eta 0:00:00
+Downloading networkx-3.2.1-py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 289.6 MB/s eta 0:00:00
+Downloading numba-0.58.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 234.9 MB/s eta 0:00:00
+Downloading numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 174.5 MB/s eta 0:00:00
+Downloading packaging-23.2-py3-none-any.whl (53 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.0/53.0 kB 230.6 MB/s eta 0:00:00
+Downloading pandas-2.1.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 163.6 MB/s eta 0:00:00
+Downloading scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 229.2 MB/s eta 0:00:00
+Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 kB 287.1 MB/s eta 0:00:00
+Downloading scipy-1.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.4/36.4 MB 195.1 MB/s eta 0:00:00
+Downloading seaborn-0.13.1-py3-none-any.whl (294 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.8/294.8 kB 290.5 MB/s eta 0:00:00
+Downloading statsmodels-0.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 226.0 MB/s eta 0:00:00
+Downloading patsy-0.5.6-py2.py3-none-any.whl (233 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.9/233.9 kB 286.7 MB/s eta 0:00:00
+Downloading natsort-8.4.0-py3-none-any.whl (38 kB)
+Downloading tqdm-4.66.1-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 249.6 MB/s eta 0:00:00
+Downloading contourpy-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 260.7 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.47.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 212.6 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 266.9 MB/s eta 0:00:00
+Downloading llvmlite-0.41.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (43.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 MB 192.9 MB/s eta 0:00:00
+Downloading pillow-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 229.8 MB/s eta 0:00:00
+Downloading pynndescent-0.5.11-py3-none-any.whl (55 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 kB 227.2 MB/s eta 0:00:00
+Downloading pyparsing-3.1.1-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.1/103.1 kB 257.5 MB/s eta 0:00:00
+Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 kB 296.3 MB/s eta 0:00:00
+Downloading threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
+Downloading tzdata-2023.4-py2.py3-none-any.whl (346 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 346.6/346.6 kB 292.6 MB/s eta 0:00:00
+Downloading array_api_compat-1.4-py3-none-any.whl (29 kB)
+Downloading exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+Downloading stdlib_list-0.10.0-py3-none-any.whl (79 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.8/79.8 kB 265.4 MB/s eta 0:00:00
+Building wheels for collected packages: umap-learn, session-info
+  Building wheel for umap-learn (pyproject.toml): started
+  Building wheel for umap-learn (pyproject.toml): finished with status 'done'
+  Created wheel for umap-learn: filename=umap_learn-0.5.5-py3-none-any.whl size=86832 sha256=275a2729fc218d82bb024e09da35d13d5fcbd010037f15c6a158cc09b82326f8
+  Stored in directory: /tmp/slurm_63527610/pip-ephem-wheel-cache-nhhw1p64/wheels/3a/70/07/428d2b58660a1a3b431db59b806a10da736612ebbc66c1bcc5
+  Building wheel for session-info (pyproject.toml): started
+  Building wheel for session-info (pyproject.toml): finished with status 'done'
+  Created wheel for session-info: filename=session_info-1.0.0-py3-none-any.whl size=8023 sha256=e6607c96462b6eb03b1d42dd57df5a55deeea9bc46a8cd6002d3684a276b73d7
+  Stored in directory: /tmp/slurm_63527610/pip-ephem-wheel-cache-nhhw1p64/wheels/6a/aa/b9/eb5d4031476ec10802795b97ccf937b9bd998d68a9b268765a
+Successfully built umap-learn session-info
+Installing collected packages: pytz, tzdata, tqdm, threadpoolctl, stdlib-list, six, pyparsing, pillow, packaging, numpy, networkx, natsort, llvmlite, kiwisolver, joblib, fonttools, exceptiongroup, cycler, array-api-compat, session-info, scipy, python-dateutil, patsy, numba, h5py, contourpy, scikit-learn, pandas, matplotlib, statsmodels, seaborn, pynndescent, anndata, umap-learn, scanpy
+Successfully installed anndata-0.10.4 array-api-compat-1.4 contourpy-1.2.0 cycler-0.12.1 exceptiongroup-1.2.0 fonttools-4.47.2 h5py-3.10.0 joblib-1.3.2 kiwisolver-1.4.5 llvmlite-0.41.1 matplotlib-3.8.2 natsort-8.4.0 networkx-3.2.1 numba-0.58.1 numpy-1.26.3 packaging-23.2 pandas-2.1.4 patsy-0.5.6 pillow-10.2.0 pynndescent-0.5.11 pyparsing-3.1.1 python-dateutil-2.8.2 pytz-2023.3.post1 scanpy-1.9.6 scikit-learn-1.3.2 scipy-1.11.4 seaborn-0.13.1 session-info-1.0.0 six-1.16.0 statsmodels-0.14.1 stdlib-list-0.10.0 threadpoolctl-3.2.0 tqdm-4.66.1 tzdata-2023.4 umap-learn-0.5.5
+Collecting scvelo==0.2.*
+  Downloading scvelo-0.2.5-py3-none-any.whl (219 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.0/220.0 kB 17.7 MB/s eta 0:00:00
+Collecting typing-extensions (from scvelo==0.2.*)
+  Downloading typing_extensions-4.9.0-py3-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: anndata>=0.7.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (0.10.4)
+Requirement already satisfied: scanpy>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.9.6)
+Collecting loompy>=2.0.12 (from scvelo==0.2.*)
+  Downloading loompy-3.0.7.tar.gz (4.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 241.3 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: umap-learn>=0.3.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (0.5.5)
+Requirement already satisfied: numba>=0.41.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (0.58.1)
+Requirement already satisfied: numpy>=1.17 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.26.3)
+Requirement already satisfied: scipy>=1.4.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.11.4)
+Requirement already satisfied: pandas!=1.4.0,>=0.23 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (2.1.4)
+Requirement already satisfied: scikit-learn>=0.21.2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (1.3.2)
+Requirement already satisfied: matplotlib>=3.3.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scvelo==0.2.*) (3.8.2)
+Requirement already satisfied: array-api-compat in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (1.4)
+Requirement already satisfied: exceptiongroup in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (1.2.0)
+Requirement already satisfied: h5py>=3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (3.10.0)
+Requirement already satisfied: natsort in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (8.4.0)
+Requirement already satisfied: packaging>=20 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata>=0.7.5->scvelo==0.2.*) (23.2)
+Requirement already satisfied: setuptools in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from loompy>=2.0.12->scvelo==0.2.*) (63.2.0)
+Collecting click (from loompy>=2.0.12->scvelo==0.2.*)
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting numpy-groupies (from loompy>=2.0.12->scvelo==0.2.*)
+  Downloading numpy_groupies-0.10.2-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: contourpy>=1.0.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (1.2.0)
+Requirement already satisfied: cycler>=0.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.3.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (1.4.5)
+Requirement already satisfied: pillow>=8 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (10.2.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (3.1.1)
+Requirement already satisfied: python-dateutil>=2.7 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib>=3.3.0->scvelo==0.2.*) (2.8.2)
+Requirement already satisfied: llvmlite<0.42,>=0.41.0dev0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from numba>=0.41.0->scvelo==0.2.*) (0.41.1)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas!=1.4.0,>=0.23->scvelo==0.2.*) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas!=1.4.0,>=0.23->scvelo==0.2.*) (2023.4)
+Requirement already satisfied: joblib in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (1.3.2)
+Requirement already satisfied: networkx>=2.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (3.2.1)
+Requirement already satisfied: patsy in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (0.5.6)
+Requirement already satisfied: seaborn!=0.13.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (0.13.1)
+Requirement already satisfied: session-info in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (1.0.0)
+Requirement already satisfied: statsmodels>=0.10.0rc2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (0.14.1)
+Requirement already satisfied: tqdm in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scanpy>=1.5->scvelo==0.2.*) (4.66.1)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scikit-learn>=0.21.2->scvelo==0.2.*) (3.2.0)
+Requirement already satisfied: pynndescent>=0.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from umap-learn>=0.3.10->scvelo==0.2.*) (0.5.11)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->scvelo==0.2.*) (1.16.0)
+Requirement already satisfied: stdlib-list in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from session-info->scanpy>=1.5->scvelo==0.2.*) (0.10.0)
+Downloading typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 249.1 MB/s eta 0:00:00
+Downloading numpy_groupies-0.10.2-py3-none-any.whl (39 kB)
+Building wheels for collected packages: loompy
+  Building wheel for loompy (pyproject.toml): started
+  Building wheel for loompy (pyproject.toml): finished with status 'done'
+  Created wheel for loompy: filename=loompy-3.0.7-py3-none-any.whl size=52018 sha256=cfc2099e241cfd6c5f1747963abc4548111819cb3767b90d711317a672395da2
+  Stored in directory: /tmp/slurm_63527610/pip-ephem-wheel-cache-a3jgujam/wheels/2c/22/1f/792a4621bb631e538bf1c21feae9bbaa6b19fd6d6ab382d1fd
+Successfully built loompy
+Installing collected packages: typing-extensions, numpy-groupies, click, loompy, scvelo
+Successfully installed click-8.1.7 loompy-3.0.7 numpy-groupies-0.10.2 scvelo-0.2.5 typing-extensions-4.9.0
+Collecting anndata==0.8.0
+  Downloading anndata-0.8.0-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.1/96.1 kB 12.7 MB/s eta 0:00:00
+Requirement already satisfied: pandas>=1.1.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata==0.8.0) (2.1.4)
+Requirement already satisfied: numpy>=1.16.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata==0.8.0) (1.26.3)
+Requirement already satisfied: scipy>1.4 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata==0.8.0) (1.11.4)
+Requirement already satisfied: h5py>=3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata==0.8.0) (3.10.0)
+Requirement already satisfied: natsort in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata==0.8.0) (8.4.0)
+Requirement already satisfied: packaging>=20 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from anndata==0.8.0) (23.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas>=1.1.1->anndata==0.8.0) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas>=1.1.1->anndata==0.8.0) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas>=1.1.1->anndata==0.8.0) (2023.4)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas>=1.1.1->anndata==0.8.0) (1.16.0)
+Installing collected packages: anndata
+  Attempting uninstall: anndata
+    Found existing installation: anndata 0.10.4
+    Uninstalling anndata-0.10.4:
+      Successfully uninstalled anndata-0.10.4
+Successfully installed anndata-0.8.0
+Collecting numpy==1.23.5
+  Downloading numpy-1.23.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 215.2 MB/s eta 0:00:00
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.3
+    Uninstalling numpy-1.26.3:
+      Successfully uninstalled numpy-1.26.3
+Successfully installed numpy-1.23.5
+Collecting matplotlib==3.5.3
+  Downloading matplotlib-3.5.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.9/11.9 MB 208.9 MB/s eta 0:00:00
+Requirement already satisfied: cycler>=0.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (1.4.5)
+Requirement already satisfied: numpy>=1.17 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (1.23.5)
+Requirement already satisfied: packaging>=20.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (23.2)
+Requirement already satisfied: pillow>=6.2.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (10.2.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (3.1.1)
+Requirement already satisfied: python-dateutil>=2.7 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib==3.5.3) (2.8.2)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib==3.5.3) (1.16.0)
+Installing collected packages: matplotlib
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.8.2
+    Uninstalling matplotlib-3.8.2:
+      Successfully uninstalled matplotlib-3.8.2
+Successfully installed matplotlib-3.5.3
+Collecting pandas==1.5.3
+  Downloading pandas-1.5.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 50.7 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.8.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas==1.5.3) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas==1.5.3) (2023.3.post1)
+Requirement already satisfied: numpy>=1.21.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas==1.5.3) (1.23.5)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from python-dateutil>=2.8.1->pandas==1.5.3) (1.16.0)
+Installing collected packages: pandas
+  Attempting uninstall: pandas
+    Found existing installation: pandas 2.1.4
+    Uninstalling pandas-2.1.4:
+      Successfully uninstalled pandas-2.1.4
+Successfully installed pandas-1.5.3
+Collecting scipy==1.8.*
+  Downloading scipy-1.8.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (42.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 MB 248.7 MB/s eta 0:00:00
+Requirement already satisfied: numpy<1.25.0,>=1.17.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scipy==1.8.*) (1.23.5)
+Installing collected packages: scipy
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.11.4
+    Uninstalling scipy-1.11.4:
+      Successfully uninstalled scipy-1.11.4
+Successfully installed scipy-1.8.1
+Requirement already satisfied: scikit-learn==1.3.* in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (1.3.2)
+Requirement already satisfied: numpy<2.0,>=1.17.3 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (1.23.5)
+Requirement already satisfied: scipy>=1.5.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (1.8.1)
+Requirement already satisfied: joblib>=1.1.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (1.3.2)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from scikit-learn==1.3.*) (3.2.0)
+Collecting seaborn==0.12.*
+  Downloading seaborn-0.12.2-py3-none-any.whl (293 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 293.3/293.3 kB 53.4 MB/s eta 0:00:00
+Requirement already satisfied: numpy!=1.24.0,>=1.17 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from seaborn==0.12.*) (1.23.5)
+Requirement already satisfied: pandas>=0.25 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from seaborn==0.12.*) (1.5.3)
+Requirement already satisfied: matplotlib!=3.6.1,>=3.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from seaborn==0.12.*) (3.5.3)
+Requirement already satisfied: cycler>=0.10 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (1.4.5)
+Requirement already satisfied: packaging>=20.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (23.2)
+Requirement already satisfied: pillow>=6.2.0 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (10.2.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (3.1.1)
+Requirement already satisfied: python-dateutil>=2.7 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from pandas>=0.25->seaborn==0.12.*) (2023.3.post1)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib!=3.6.1,>=3.1->seaborn==0.12.*) (1.16.0)
+Installing collected packages: seaborn
+  Attempting uninstall: seaborn
+    Found existing installation: seaborn 0.13.1
+    Uninstalling seaborn-0.13.1:
+      Successfully uninstalled seaborn-0.13.1
+Successfully installed seaborn-0.12.2
+Requirement already satisfied: tqdm in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (4.66.1)
+Collecting ipykernel
+  Downloading ipykernel-6.28.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting comm>=0.1.1 (from ipykernel)
+  Downloading comm-0.2.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting debugpy>=1.6.5 (from ipykernel)
+  Downloading debugpy-1.8.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.0 kB)
+Collecting ipython>=7.23.1 (from ipykernel)
+  Downloading ipython-8.20.0-py3-none-any.whl.metadata (5.9 kB)
+Collecting jupyter-client>=6.1.12 (from ipykernel)
+  Downloading jupyter_client-8.6.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting jupyter-core!=5.0.*,>=4.12 (from ipykernel)
+  Downloading jupyter_core-5.7.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting matplotlib-inline>=0.1 (from ipykernel)
+  Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting nest-asyncio (from ipykernel)
+  Downloading nest_asyncio-1.5.8-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from ipykernel) (23.2)
+Collecting psutil (from ipykernel)
+  Downloading psutil-5.9.7-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (21 kB)
+Collecting pyzmq>=24 (from ipykernel)
+  Downloading pyzmq-25.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting tornado>=6.1 (from ipykernel)
+  Downloading tornado-6.4-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+Collecting traitlets>=5.4.0 (from ipykernel)
+  Downloading traitlets-5.14.1-py3-none-any.whl.metadata (10 kB)
+Collecting decorator (from ipython>=7.23.1->ipykernel)
+  Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting jedi>=0.16 (from ipython>=7.23.1->ipykernel)
+  Downloading jedi-0.19.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting prompt-toolkit<3.1.0,>=3.0.41 (from ipython>=7.23.1->ipykernel)
+  Downloading prompt_toolkit-3.0.43-py3-none-any.whl.metadata (6.5 kB)
+Collecting pygments>=2.4.0 (from ipython>=7.23.1->ipykernel)
+  Downloading pygments-2.17.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting stack-data (from ipython>=7.23.1->ipykernel)
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: exceptiongroup in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from ipython>=7.23.1->ipykernel) (1.2.0)
+Collecting pexpect>4.3 (from ipython>=7.23.1->ipykernel)
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from jupyter-client>=6.1.12->ipykernel) (2.8.2)
+Collecting platformdirs>=2.5 (from jupyter-core!=5.0.*,>=4.12->ipykernel)
+  Downloading platformdirs-4.1.0-py3-none-any.whl.metadata (11 kB)
+Collecting parso<0.9.0,>=0.8.3 (from jedi>=0.16->ipython>=7.23.1->ipykernel)
+  Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 228.4 MB/s eta 0:00:00
+Collecting ptyprocess>=0.5 (from pexpect>4.3->ipython>=7.23.1->ipykernel)
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting wcwidth (from prompt-toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel)
+  Downloading wcwidth-0.2.13-py2.py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: six>=1.5 in /nemo/lab/briscoej/home/users/maizelr/envs_for_svm23/pyrovel_env/lib/python3.10/site-packages (from python-dateutil>=2.8.2->jupyter-client>=6.1.12->ipykernel) (1.16.0)
+Collecting executing>=1.2.0 (from stack-data->ipython>=7.23.1->ipykernel)
+  Downloading executing-2.0.1-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting asttokens>=2.1.0 (from stack-data->ipython>=7.23.1->ipykernel)
+  Downloading asttokens-2.4.1-py2.py3-none-any.whl.metadata (5.2 kB)
+Collecting pure-eval (from stack-data->ipython>=7.23.1->ipykernel)
+  Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Downloading ipykernel-6.28.0-py3-none-any.whl (114 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.1/114.1 kB 250.0 MB/s eta 0:00:00
+Downloading comm-0.2.1-py3-none-any.whl (7.2 kB)
+Downloading debugpy-1.8.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 222.3 MB/s eta 0:00:00
+Downloading ipython-8.20.0-py3-none-any.whl (809 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 809.2/809.2 kB 286.7 MB/s eta 0:00:00
+Downloading jupyter_client-8.6.0-py3-none-any.whl (105 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.9/105.9 kB 218.1 MB/s eta 0:00:00
+Downloading jupyter_core-5.7.1-py3-none-any.whl (28 kB)
+Downloading pyzmq-25.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 271.8 MB/s eta 0:00:00
+Downloading tornado-6.4-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (435 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 435.4/435.4 kB 268.3 MB/s eta 0:00:00
+Downloading traitlets-5.14.1-py3-none-any.whl (85 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 213.5 MB/s eta 0:00:00
+Downloading nest_asyncio-1.5.8-py3-none-any.whl (5.3 kB)
+Downloading psutil-5.9.7-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (285 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 285.5/285.5 kB 270.6 MB/s eta 0:00:00
+Downloading jedi-0.19.1-py2.py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 268.9 MB/s eta 0:00:00
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 219.5 MB/s eta 0:00:00
+Downloading platformdirs-4.1.0-py3-none-any.whl (17 kB)
+Downloading prompt_toolkit-3.0.43-py3-none-any.whl (386 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.1/386.1 kB 262.3 MB/s eta 0:00:00
+Downloading pygments-2.17.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 274.1 MB/s eta 0:00:00
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading asttokens-2.4.1-py2.py3-none-any.whl (27 kB)
+Downloading executing-2.0.1-py2.py3-none-any.whl (24 kB)
+Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Installing collected packages: wcwidth, pure-eval, ptyprocess, traitlets, tornado, pyzmq, pygments, psutil, prompt-toolkit, platformdirs, pexpect, parso, nest-asyncio, executing, decorator, debugpy, asttokens, stack-data, matplotlib-inline, jupyter-core, jedi, comm, jupyter-client, ipython, ipykernel
+Successfully installed asttokens-2.4.1 comm-0.2.1 debugpy-1.8.0 decorator-5.1.1 executing-2.0.1 ipykernel-6.28.0 ipython-8.20.0 jedi-0.19.1 jupyter-client-8.6.0 jupyter-core-5.7.1 matplotlib-inline-0.1.6 nest-asyncio-1.5.8 parso-0.8.3 pexpect-4.9.0 platformdirs-4.1.0 prompt-toolkit-3.0.43 psutil-5.9.7 ptyprocess-0.7.0 pure-eval-0.2.2 pygments-2.17.2 pyzmq-25.1.2 stack-data-0.6.3 tornado-6.4 traitlets-5.14.1 wcwidth-0.2.13
+Installed kernelspec pyrovel_env in /nemo/project/home/maizelr/.local/share/jupyter/kernels/pyrovel_env
+All done!

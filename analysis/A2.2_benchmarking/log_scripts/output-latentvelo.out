@@ -1,0 +1,1290 @@
+/usr/bin/python
+/camp/apps/eb/software/Anaconda2/2019.03/condabin/conda
+Wed Jan 17 10:55:55 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-SXM2-32GB           On  | 00000000:1C:00.0 Off |                    0 |
+| N/A   33C    P0              43W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2020 NVIDIA Corporation
+Built on Mon_Oct_12_20:09:46_PDT_2020
+Cuda compilation tools, release 11.1, V11.1.105
+Build cuda_11.1.TC455_06.29190527_0
+Global seed set to 0
+/camp/home/maizelr/.local/lib/python3.10/site-packages/pytorch_lightning/utilities/warnings.py:53: LightningDeprecationWarning: pytorch_lightning.utilities.warnings.rank_zero_deprecation has been deprecated in v1.6 and will be removed in v1.8. Use the equivalent function from the pytorch_lightning.utilities.rank_zero module instead.
+  new_rank_zero_deprecation(
+/camp/home/maizelr/.local/lib/python3.10/site-packages/pytorch_lightning/utilities/warnings.py:58: LightningDeprecationWarning: The `pytorch_lightning.loggers.base.rank_zero_experiment` is deprecated in v1.7 and will be removed in v1.9. Please use `pytorch_lightning.loggers.logger.rank_zero_experiment` instead.
+  return new_rank_zero_deprecation(*args, **kwargs)
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [12:10<1:00:50, 730.14s/it] 33%|███▎      | 2/6 [17:45<33:11, 497.94s/it]   50%|█████     | 3/6 [37:32<40:38, 812.70s/it] 67%|██████▋   | 4/6 [1:11:36<43:17, 1298.63s/it] 83%|████████▎ | 5/6 [1:18:04<16:10, 970.43s/it] 100%|██████████| 6/6 [2:32:46<00:00, 2164.35s/it]100%|██████████| 6/6 [2:32:46<00:00, 1527.80s/it]
+computing neighbors
+    finished (0:00:10) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Warning, folder already exists. This may overwrite a previous fit.
+1275 velocity genes used
+epoch 0, full loss 177.851, val loss 40.191, recon MSE 0.132, traj MSE 0.022, reg loss -1.979
+epoch 1, full loss 82.081, val loss 22.818, recon MSE 0.117, traj MSE 0.012, reg loss -3.165
+epoch 2, full loss 63.741, val loss 10.254, recon MSE 0.094, traj MSE 0.006, reg loss -3.743
+epoch 3, full loss 59.060, val loss -2.125, recon MSE 0.060, traj MSE 0.004, reg loss -4.051
+epoch 4, full loss 60.214, val loss -14.420, recon MSE 0.038, traj MSE 0.004, reg loss -4.091
+epoch 5, full loss 69.685, val loss -26.201, recon MSE 0.021, traj MSE 0.004, reg loss -4.252
+epoch 6, full loss 86.799, val loss -37.214, recon MSE 0.014, traj MSE 0.004, reg loss -4.288
+epoch 7, full loss 105.530, val loss -47.029, recon MSE 0.011, traj MSE 0.004, reg loss -4.212
+epoch 8, full loss 127.723, val loss -55.609, recon MSE 0.010, traj MSE 0.004, reg loss -4.266
+epoch 9, full loss 150.844, val loss -62.899, recon MSE 0.008, traj MSE 0.003, reg loss -3.769
+epoch 10, full loss 164.888, val loss -67.999, recon MSE 0.007, traj MSE 0.003, reg loss -3.465
+epoch 11, full loss 174.083, val loss -70.862, recon MSE 0.006, traj MSE 0.003, reg loss -3.579
+epoch 12, full loss 159.801, val loss -70.738, recon MSE 0.005, traj MSE 0.003, reg loss -3.152
+epoch 13, full loss 155.776, val loss -70.812, recon MSE 0.005, traj MSE 0.003, reg loss -3.371
+epoch 14, full loss 156.564, val loss -68.469, recon MSE 0.004, traj MSE 0.003, reg loss -3.527
+epoch 15, full loss 124.268, val loss -63.987, recon MSE 0.004, traj MSE 0.003, reg loss -3.682
+epoch 16, full loss 117.197, val loss -61.328, recon MSE 0.004, traj MSE 0.003, reg loss -3.690
+epoch 17, full loss 96.881, val loss -56.445, recon MSE 0.004, traj MSE 0.003, reg loss -3.687
+epoch 18, full loss 86.932, val loss -51.775, recon MSE 0.004, traj MSE 0.003, reg loss -3.714
+epoch 19, full loss 67.764, val loss -46.921, recon MSE 0.004, traj MSE 0.003, reg loss -3.765
+epoch 20, full loss 58.651, val loss -41.242, recon MSE 0.003, traj MSE 0.003, reg loss -3.568
+epoch 21, full loss 48.203, val loss -36.765, recon MSE 0.003, traj MSE 0.003, reg loss -3.715
+epoch 22, full loss 41.205, val loss -31.238, recon MSE 0.003, traj MSE 0.003, reg loss -3.594
+epoch 23, full loss 33.301, val loss -25.968, recon MSE 0.003, traj MSE 0.003, reg loss -3.615
+epoch 24, full loss 26.523, val loss -20.912, recon MSE 0.003, traj MSE 0.003, reg loss -3.564
+Epoch 00025: reducing learning rate of group 0 to 7.5000e-03.
+epoch 25, full loss 22.282, val loss -16.295, recon MSE 0.003, traj MSE 0.003, reg loss -3.787
+epoch 26, full loss 19.819, val loss -16.424, recon MSE 0.003, traj MSE 0.003, reg loss -3.654
+epoch 27, full loss 18.552, val loss -16.072, recon MSE 0.003, traj MSE 0.003, reg loss -3.684
+epoch 28, full loss 14.980, val loss -16.361, recon MSE 0.003, traj MSE 0.003, reg loss -3.700
+epoch 29, full loss 13.156, val loss -16.467, recon MSE 0.003, traj MSE 0.003, reg loss -3.658
+epoch 30, full loss 10.931, val loss -16.742, recon MSE 0.003, traj MSE 0.003, reg loss -3.758
+epoch 31, full loss 13.228, val loss -16.429, recon MSE 0.003, traj MSE 0.003, reg loss -3.688
+epoch 32, full loss 9.330, val loss -16.851, recon MSE 0.003, traj MSE 0.003, reg loss -3.686
+epoch 33, full loss 8.164, val loss -16.751, recon MSE 0.003, traj MSE 0.003, reg loss -3.616
+epoch 34, full loss 7.330, val loss -16.365, recon MSE 0.003, traj MSE 0.003, reg loss -3.723
+epoch 35, full loss 5.901, val loss -16.654, recon MSE 0.003, traj MSE 0.003, reg loss -3.662
+epoch 36, full loss 3.114, val loss -16.536, recon MSE 0.003, traj MSE 0.003, reg loss -3.614
+Epoch 00037: reducing learning rate of group 0 to 5.6250e-03.
+epoch 37, full loss 5.085, val loss -16.734, recon MSE 0.003, traj MSE 0.003, reg loss -3.767
+epoch 38, full loss 5.119, val loss -16.901, recon MSE 0.003, traj MSE 0.003, reg loss -3.742
+epoch 39, full loss 2.914, val loss -16.930, recon MSE 0.003, traj MSE 0.003, reg loss -3.725
+epoch 40, full loss 3.821, val loss -17.275, recon MSE 0.003, traj MSE 0.003, reg loss -3.767
+epoch 41, full loss 3.648, val loss -16.657, recon MSE 0.003, traj MSE 0.003, reg loss -3.769
+epoch 42, full loss 3.000, val loss -16.913, recon MSE 0.003, traj MSE 0.003, reg loss -3.767
+Epoch 00043: reducing learning rate of group 0 to 4.2188e-03.
+epoch 43, full loss 2.458, val loss -17.048, recon MSE 0.003, traj MSE 0.003, reg loss -3.938
+epoch 44, full loss 3.363, val loss -17.070, recon MSE 0.003, traj MSE 0.003, reg loss -3.871
+epoch 45, full loss 2.533, val loss -16.985, recon MSE 0.003, traj MSE 0.003, reg loss -3.883
+epoch 46, full loss 1.202, val loss -17.219, recon MSE 0.003, traj MSE 0.003, reg loss -3.843
+epoch 47, full loss 2.182, val loss -17.333, recon MSE 0.003, traj MSE 0.003, reg loss -3.894
+epoch 48, full loss 2.124, val loss -17.361, recon MSE 0.003, traj MSE 0.003, reg loss -2.419
+Epoch 00049: reducing learning rate of group 0 to 3.1641e-03.
+epoch 49, full loss 2.061, val loss -17.428, recon MSE 0.003, traj MSE 0.003, reg loss -2.610
+Loading best model at 49 epochs.
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_V3
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1249 velocity genes used
+epoch 0, full loss 114.239, val loss 38.618, recon MSE 0.130, traj MSE 0.017, reg loss -2.056
+epoch 1, full loss 76.175, val loss 21.007, recon MSE 0.118, traj MSE 0.008, reg loss -3.389
+epoch 2, full loss 64.654, val loss 8.172, recon MSE 0.093, traj MSE 0.004, reg loss -3.799
+epoch 3, full loss 61.292, val loss -4.873, recon MSE 0.063, traj MSE 0.004, reg loss -3.360
+epoch 4, full loss 65.617, val loss -17.845, recon MSE 0.038, traj MSE 0.004, reg loss -4.096
+epoch 5, full loss 81.158, val loss -30.334, recon MSE 0.023, traj MSE 0.004, reg loss -4.026
+epoch 6, full loss 103.793, val loss -41.945, recon MSE 0.015, traj MSE 0.004, reg loss -4.126
+epoch 7, full loss 127.022, val loss -52.310, recon MSE 0.011, traj MSE 0.004, reg loss -4.175
+epoch 8, full loss 155.251, val loss -61.436, recon MSE 0.009, traj MSE 0.003, reg loss -4.147
+epoch 9, full loss 179.239, val loss -68.524, recon MSE 0.008, traj MSE 0.003, reg loss -3.957
+epoch 10, full loss 194.134, val loss -73.454, recon MSE 0.007, traj MSE 0.003, reg loss -3.973
+epoch 11, full loss 202.131, val loss -76.006, recon MSE 0.006, traj MSE 0.003, reg loss -3.685
+epoch 12, full loss 196.127, val loss -77.104, recon MSE 0.005, traj MSE 0.003, reg loss -3.541
+epoch 13, full loss 183.316, val loss -75.004, recon MSE 0.005, traj MSE 0.003, reg loss -3.458
+epoch 14, full loss 134.511, val loss -71.019, recon MSE 0.004, traj MSE 0.003, reg loss -3.314
+epoch 15, full loss 142.838, val loss -69.596, recon MSE 0.004, traj MSE 0.003, reg loss -3.813
+epoch 16, full loss 119.098, val loss -64.767, recon MSE 0.004, traj MSE 0.003, reg loss -4.029
+epoch 17, full loss 103.386, val loss -60.592, recon MSE 0.003, traj MSE 0.003, reg loss -3.782
+epoch 18, full loss 85.323, val loss -55.238, recon MSE 0.003, traj MSE 0.003, reg loss -3.978
+epoch 19, full loss 68.721, val loss -50.262, recon MSE 0.003, traj MSE 0.003, reg loss -4.015
+epoch 20, full loss 57.043, val loss -45.042, recon MSE 0.003, traj MSE 0.003, reg loss -4.013
+epoch 21, full loss 45.597, val loss -39.924, recon MSE 0.003, traj MSE 0.003, reg loss -3.986
+epoch 22, full loss 38.858, val loss -34.281, recon MSE 0.003, traj MSE 0.003, reg loss -3.902
+epoch 23, full loss 148.218, val loss 125.351, recon MSE 0.004, traj MSE 0.003, reg loss -1.820
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MN
+computing neighbors
+    finished (0:00:21) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1185 velocity genes used
+epoch 0, full loss 129.191, val loss 32.605, recon MSE 0.184, traj MSE 0.007, reg loss -2.104
+epoch 1, full loss 74.738, val loss 8.627, recon MSE 0.162, traj MSE 0.004, reg loss -3.426
+epoch 2, full loss 84.630, val loss -13.778, recon MSE 0.091, traj MSE 0.003, reg loss -3.296
+epoch 3, full loss 129.034, val loss -35.800, recon MSE 0.038, traj MSE 0.004, reg loss -3.860
+epoch 4, full loss 210.668, val loss -56.674, recon MSE 0.019, traj MSE 0.004, reg loss -4.090
+epoch 5, full loss 296.747, val loss -74.677, recon MSE 0.012, traj MSE 0.003, reg loss -4.125
+epoch 6, full loss 342.212, val loss -88.459, recon MSE 0.007, traj MSE 0.003, reg loss -4.008
+epoch 7, full loss 309.189, val loss -96.558, recon MSE 0.005, traj MSE 0.003, reg loss -4.000
+epoch 8, full loss 117.645, val loss -89.500, recon MSE 0.004, traj MSE 0.003, reg loss -3.090
+epoch 9, full loss 192.868, val loss -98.090, recon MSE 0.004, traj MSE 0.003, reg loss -3.932
+epoch 10, full loss 156.288, val loss -95.850, recon MSE 0.003, traj MSE 0.003, reg loss -4.069
+epoch 11, full loss 140.349, val loss -94.446, recon MSE 0.003, traj MSE 0.003, reg loss -4.266
+epoch 12, full loss 94.272, val loss -89.318, recon MSE 0.003, traj MSE 0.003, reg loss -4.330
+epoch 13, full loss 72.966, val loss -85.406, recon MSE 0.003, traj MSE 0.003, reg loss -4.374
+epoch 14, full loss 52.673, val loss -81.243, recon MSE 0.003, traj MSE 0.003, reg loss -4.429
+epoch 15, full loss 28.453, val loss -73.529, recon MSE 0.003, traj MSE 0.003, reg loss -4.410
+epoch 16, full loss 30.316, val loss -70.347, recon MSE 0.003, traj MSE 0.003, reg loss -4.407
+epoch 17, full loss 19.634, val loss -63.185, recon MSE 0.003, traj MSE 0.003, reg loss -4.319
+epoch 18, full loss 16.077, val loss -56.623, recon MSE 0.003, traj MSE 0.003, reg loss -4.296
+epoch 19, full loss 11.560, val loss -50.801, recon MSE 0.003, traj MSE 0.003, reg loss -4.206
+Epoch 00020: reducing learning rate of group 0 to 7.5000e-03.
+epoch 20, full loss 11.290, val loss -45.952, recon MSE 0.003, traj MSE 0.003, reg loss -4.235
+epoch 21, full loss 12.122, val loss -38.620, recon MSE 0.003, traj MSE 0.003, reg loss -4.190
+epoch 22, full loss 10.596, val loss -31.217, recon MSE 0.003, traj MSE 0.003, reg loss -4.054
+epoch 23, full loss 6.819, val loss -24.486, recon MSE 0.003, traj MSE 0.003, reg loss -4.092
+epoch 24, full loss 6.837, val loss -17.859, recon MSE 0.003, traj MSE 0.003, reg loss -3.028
+epoch 25, full loss 8.991, val loss -11.761, recon MSE 0.003, traj MSE 0.003, reg loss -2.840
+Epoch 00026: reducing learning rate of group 0 to 5.6250e-03.
+epoch 26, full loss 5.182, val loss -12.435, recon MSE 0.003, traj MSE 0.003, reg loss -3.036
+epoch 27, full loss 6.101, val loss -12.324, recon MSE 0.003, traj MSE 0.003, reg loss -3.123
+epoch 28, full loss 9.388, val loss -12.602, recon MSE 0.003, traj MSE 0.003, reg loss -3.345
+epoch 29, full loss 7.330, val loss -12.503, recon MSE 0.003, traj MSE 0.003, reg loss -3.450
+epoch 30, full loss 7.541, val loss -12.524, recon MSE 0.003, traj MSE 0.003, reg loss -3.624
+epoch 31, full loss 17.128, val loss -13.394, recon MSE 0.003, traj MSE 0.003, reg loss -3.368
+Epoch 00032: reducing learning rate of group 0 to 4.2188e-03.
+epoch 32, full loss 15.746, val loss -13.632, recon MSE 0.003, traj MSE 0.003, reg loss -3.451
+epoch 33, full loss 17.306, val loss -13.774, recon MSE 0.003, traj MSE 0.003, reg loss -3.592
+epoch 34, full loss 18.589, val loss -13.697, recon MSE 0.003, traj MSE 0.003, reg loss -3.544
+epoch 35, full loss 16.535, val loss -13.500, recon MSE 0.003, traj MSE 0.003, reg loss -3.585
+epoch 36, full loss 14.368, val loss -13.911, recon MSE 0.003, traj MSE 0.003, reg loss -3.625
+epoch 37, full loss 15.828, val loss -13.718, recon MSE 0.003, traj MSE 0.003, reg loss -3.609
+Epoch 00038: reducing learning rate of group 0 to 3.1641e-03.
+epoch 38, full loss 16.505, val loss -13.836, recon MSE 0.003, traj MSE 0.003, reg loss -3.765
+epoch 39, full loss 18.902, val loss -14.012, recon MSE 0.003, traj MSE 0.003, reg loss -3.644
+epoch 40, full loss 16.861, val loss -13.923, recon MSE 0.003, traj MSE 0.003, reg loss -3.793
+epoch 41, full loss 15.599, val loss -14.228, recon MSE 0.003, traj MSE 0.003, reg loss -3.761
+epoch 42, full loss 16.043, val loss -14.091, recon MSE 0.003, traj MSE 0.003, reg loss -3.765
+epoch 43, full loss 16.607, val loss -13.856, recon MSE 0.003, traj MSE 0.003, reg loss -3.768
+Epoch 00044: reducing learning rate of group 0 to 2.3730e-03.
+epoch 44, full loss 17.157, val loss -14.264, recon MSE 0.003, traj MSE 0.003, reg loss -3.820
+epoch 45, full loss 19.110, val loss -14.210, recon MSE 0.003, traj MSE 0.003, reg loss -3.848
+epoch 46, full loss 17.643, val loss -14.186, recon MSE 0.003, traj MSE 0.003, reg loss -3.811
+epoch 47, full loss 19.618, val loss -14.007, recon MSE 0.003, traj MSE 0.003, reg loss -3.852
+epoch 48, full loss 19.288, val loss -13.942, recon MSE 0.003, traj MSE 0.003, reg loss -3.831
+epoch 49, full loss 18.255, val loss -14.080, recon MSE 0.003, traj MSE 0.003, reg loss -3.809
+Loading best model at 45 epochs.
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MD
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1171 velocity genes used
+epoch 0, full loss 100.054, val loss 21.954, recon MSE 0.281, traj MSE 0.036, reg loss -2.233
+epoch 1, full loss 150.685, val loss -23.791, recon MSE 0.122, traj MSE 0.011, reg loss -3.869
+epoch 2, full loss 393.689, val loss -69.316, recon MSE 0.034, traj MSE 0.009, reg loss -3.994
+epoch 3, full loss 487.153, val loss -107.384, recon MSE 0.009, traj MSE 0.005, reg loss -3.872
+epoch 4, full loss 329.518, val loss -129.558, recon MSE 0.004, traj MSE 0.005, reg loss -4.112
+epoch 5, full loss 88.802, val loss -127.784, recon MSE 0.003, traj MSE 0.004, reg loss -4.179
+epoch 6, full loss 154.145, val loss -138.015, recon MSE 0.003, traj MSE 0.004, reg loss -4.250
+epoch 7, full loss 229.775, val loss -138.804, recon MSE 0.003, traj MSE 0.004, reg loss -4.434
+epoch 8, full loss 101.753, val loss -132.308, recon MSE 0.003, traj MSE 0.003, reg loss -4.511
+epoch 9, full loss 182.696, val loss -126.648, recon MSE 0.003, traj MSE 0.004, reg loss -4.178
+epoch 10, full loss 138.315, val loss -120.163, recon MSE 0.003, traj MSE 0.004, reg loss -4.141
+epoch 11, full loss 291.286, val loss -119.418, recon MSE 0.003, traj MSE 0.004, reg loss -4.130
+epoch 12, full loss 236.670, val loss -108.588, recon MSE 0.003, traj MSE 0.004, reg loss -4.128
+epoch 13, full loss 309.132, val loss -106.137, recon MSE 0.003, traj MSE 0.004, reg loss -4.079
+epoch 14, full loss 251.124, val loss -95.954, recon MSE 0.003, traj MSE 0.004, reg loss -4.114
+Epoch 00015: reducing learning rate of group 0 to 7.5000e-03.
+epoch 15, full loss 385.454, val loss -96.795, recon MSE 0.003, traj MSE 0.004, reg loss -4.101
+epoch 16, full loss 408.773, val loss -85.667, recon MSE 0.003, traj MSE 0.004, reg loss -4.084
+epoch 17, full loss 324.729, val loss -77.986, recon MSE 0.003, traj MSE 0.004, reg loss -4.129
+epoch 18, full loss 305.400, val loss -71.134, recon MSE 0.003, traj MSE 0.004, reg loss -4.193
+epoch 19, full loss 289.681, val loss -63.733, recon MSE 0.003, traj MSE 0.004, reg loss -4.171
+epoch 20, full loss 258.194, val loss -55.629, recon MSE 0.003, traj MSE 0.004, reg loss -4.178
+Epoch 00021: reducing learning rate of group 0 to 5.6250e-03.
+epoch 21, full loss 258.463, val loss -50.905, recon MSE 0.003, traj MSE 0.004, reg loss -4.174
+epoch 22, full loss 265.388, val loss -43.127, recon MSE 0.003, traj MSE 0.004, reg loss -4.274
+epoch 23, full loss 235.853, val loss -34.927, recon MSE 0.003, traj MSE 0.004, reg loss -4.235
+epoch 24, full loss 196.887, val loss -27.054, recon MSE 0.003, traj MSE 0.004, reg loss -4.288
+epoch 25, full loss 146.895, val loss -19.878, recon MSE 0.003, traj MSE 0.003, reg loss -4.223
+epoch 26, full loss 115.754, val loss -19.861, recon MSE 0.003, traj MSE 0.003, reg loss -4.301
+Epoch 00027: reducing learning rate of group 0 to 4.2188e-03.
+epoch 27, full loss 100.724, val loss -20.649, recon MSE 0.003, traj MSE 0.003, reg loss -4.291
+epoch 28, full loss 93.912, val loss -20.610, recon MSE 0.003, traj MSE 0.003, reg loss -4.235
+epoch 29, full loss 80.882, val loss -20.753, recon MSE 0.003, traj MSE 0.003, reg loss -4.264
+epoch 30, full loss 77.179, val loss -20.631, recon MSE 0.003, traj MSE 0.003, reg loss -4.204
+epoch 31, full loss 66.405, val loss -20.651, recon MSE 0.003, traj MSE 0.003, reg loss -4.184
+epoch 32, full loss 58.111, val loss -20.864, recon MSE 0.003, traj MSE 0.003, reg loss -4.210
+epoch 33, full loss 49.752, val loss -20.704, recon MSE 0.003, traj MSE 0.003, reg loss -4.187
+epoch 34, full loss 47.783, val loss -20.684, recon MSE 0.003, traj MSE 0.003, reg loss -4.263
+epoch 35, full loss 42.886, val loss -20.838, recon MSE 0.003, traj MSE 0.003, reg loss -4.286
+epoch 36, full loss 38.352, val loss -20.799, recon MSE 0.003, traj MSE 0.003, reg loss -4.331
+epoch 37, full loss 34.173, val loss -20.829, recon MSE 0.003, traj MSE 0.003, reg loss -4.322
+Epoch 00038: reducing learning rate of group 0 to 3.1641e-03.
+epoch 38, full loss 35.120, val loss -20.865, recon MSE 0.003, traj MSE 0.003, reg loss -4.330
+epoch 39, full loss 34.920, val loss -21.105, recon MSE 0.003, traj MSE 0.003, reg loss -4.320
+epoch 40, full loss 31.010, val loss -20.871, recon MSE 0.003, traj MSE 0.003, reg loss -4.316
+epoch 41, full loss 29.302, val loss -20.783, recon MSE 0.003, traj MSE 0.003, reg loss -4.299
+epoch 42, full loss 29.603, val loss -20.946, recon MSE 0.003, traj MSE 0.003, reg loss -4.297
+epoch 43, full loss 26.341, val loss -21.047, recon MSE 0.003, traj MSE 0.003, reg loss -4.262
+Epoch 00044: reducing learning rate of group 0 to 2.3730e-03.
+epoch 44, full loss 29.397, val loss -21.319, recon MSE 0.003, traj MSE 0.003, reg loss -4.267
+epoch 45, full loss 28.192, val loss -21.278, recon MSE 0.003, traj MSE 0.003, reg loss -4.297
+epoch 46, full loss 27.995, val loss -21.164, recon MSE 0.003, traj MSE 0.003, reg loss -4.269
+epoch 47, full loss 26.139, val loss -21.263, recon MSE 0.003, traj MSE 0.003, reg loss -4.081
+epoch 48, full loss 27.457, val loss -21.449, recon MSE 0.003, traj MSE 0.003, reg loss -4.106
+epoch 49, full loss 29.845, val loss -22.162, recon MSE 0.003, traj MSE 0.003, reg loss -4.062
+Epoch 00050: reducing learning rate of group 0 to 1.7798e-03.
+Loading best model at 49 epochs.
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_NM
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1362 velocity genes used
+epoch 0, full loss 99.290, val loss 15.421, recon MSE 0.279, traj MSE 0.023, reg loss -3.385
+epoch 1, full loss 267.975, val loss -41.277, recon MSE 0.088, traj MSE 0.015, reg loss -3.871
+epoch 2, full loss 618.320, val loss -95.001, recon MSE 0.020, traj MSE 0.011, reg loss -3.925
+epoch 3, full loss 120.930, val loss -99.507, recon MSE 0.005, traj MSE 0.006, reg loss -3.657
+epoch 4, full loss 219.348, val loss -131.812, recon MSE 0.004, traj MSE 0.006, reg loss -4.038
+epoch 5, full loss 306.687, val loss -138.190, recon MSE 0.004, traj MSE 0.006, reg loss -4.246
+epoch 6, full loss 447.893, val loss -140.676, recon MSE 0.004, traj MSE 0.006, reg loss -3.739
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_Ne
+computing neighbors
+    finished (0:00:08) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:06) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:08) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:06) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1384 velocity genes used
+epoch 0, full loss 299.124, val loss -13.836, recon MSE 0.113, traj MSE 0.086, reg loss -3.564
+epoch 1, full loss 1721.410, val loss -118.618, recon MSE 0.009, traj MSE 0.052, reg loss -4.065
+epoch 2, full loss 4747.074, val loss -140.015, recon MSE 0.004, traj MSE 0.047, reg loss -3.547
+epoch 3, full loss 18098.152, val loss -164.092, recon MSE 0.004, traj MSE 0.051, reg loss -3.625
+epoch 4, full loss 41170.129, val loss -167.853, recon MSE 0.004, traj MSE 0.058, reg loss -3.859
+epoch 5, full loss 66343.461, val loss -166.057, recon MSE 0.004, traj MSE 0.062, reg loss -3.996
+epoch 6, full loss 69629.734, val loss -158.529, recon MSE 0.004, traj MSE 0.064, reg loss -4.224
+epoch 7, full loss 85869.031, val loss -156.173, recon MSE 0.004, traj MSE 0.068, reg loss -4.358
+epoch 8, full loss 58635.504, val loss -128.113, recon MSE 0.004, traj MSE 0.062, reg loss -4.401
+Epoch 00009: reducing learning rate of group 0 to 7.5000e-03.
+epoch 9, full loss 127260.438, val loss -145.465, recon MSE 0.004, traj MSE 0.065, reg loss -4.474
+epoch 10, full loss 136940.266, val loss -136.645, recon MSE 0.004, traj MSE 0.068, reg loss -4.423
+epoch 11, full loss 163613.234, val loss -129.798, recon MSE 0.004, traj MSE 0.071, reg loss -4.487
+epoch 12, full loss 173210.484, val loss -121.844, recon MSE 0.004, traj MSE 0.073, reg loss -4.457
+epoch 13, full loss 158258.953, val loss -111.617, recon MSE 0.004, traj MSE 0.074, reg loss -4.585
+epoch 14, full loss 113536.750, val loss -100.752, recon MSE 0.004, traj MSE 0.076, reg loss -4.449
+Epoch 00015: reducing learning rate of group 0 to 5.6250e-03.
+epoch 15, full loss 189065.078, val loss -97.815, recon MSE 0.004, traj MSE 0.078, reg loss -4.457
+epoch 16, full loss 210404.922, val loss -89.591, recon MSE 0.004, traj MSE 0.080, reg loss -4.465
+epoch 17, full loss 208099.516, val loss -80.010, recon MSE 0.004, traj MSE 0.081, reg loss -4.477
+epoch 18, full loss 185307.516, val loss -70.544, recon MSE 0.004, traj MSE 0.082, reg loss -4.426
+epoch 19, full loss 157657.953, val loss -61.548, recon MSE 0.004, traj MSE 0.081, reg loss -4.482
+epoch 20, full loss 134319.453, val loss -52.645, recon MSE 0.004, traj MSE 0.081, reg loss -4.488
+Epoch 00021: reducing learning rate of group 0 to 4.2188e-03.
+epoch 21, full loss 137448.516, val loss -45.049, recon MSE 0.004, traj MSE 0.081, reg loss -4.455
+epoch 22, full loss 122964.078, val loss -36.288, recon MSE 0.004, traj MSE 0.080, reg loss -4.473
+epoch 23, full loss 85405.875, val loss -27.242, recon MSE 0.004, traj MSE 0.078, reg loss -4.472
+epoch 24, full loss 52692.957, val loss -18.847, recon MSE 0.004, traj MSE 0.074, reg loss -4.504
+epoch 25, full loss 27494.430, val loss -11.154, recon MSE 0.004, traj MSE 0.069, reg loss -4.419
+epoch 26, full loss 17328.389, val loss -11.680, recon MSE 0.004, traj MSE 0.063, reg loss -4.390
+Epoch 00027: reducing learning rate of group 0 to 3.1641e-03.
+epoch 27, full loss 13077.377, val loss -11.943, recon MSE 0.004, traj MSE 0.058, reg loss -4.401
+epoch 28, full loss 9836.584, val loss -12.235, recon MSE 0.004, traj MSE 0.053, reg loss -4.421
+epoch 29, full loss 7206.828, val loss -12.235, recon MSE 0.004, traj MSE 0.047, reg loss -4.361
+epoch 30, full loss 5104.179, val loss -12.283, recon MSE 0.004, traj MSE 0.041, reg loss -4.440
+epoch 31, full loss 3550.876, val loss -12.518, recon MSE 0.004, traj MSE 0.035, reg loss -4.299
+epoch 32, full loss 2476.586, val loss -12.637, recon MSE 0.004, traj MSE 0.028, reg loss -4.366
+epoch 33, full loss 1687.333, val loss -12.729, recon MSE 0.004, traj MSE 0.022, reg loss -4.330
+epoch 34, full loss 1175.962, val loss -12.974, recon MSE 0.004, traj MSE 0.017, reg loss -4.273
+epoch 35, full loss 1231.169, val loss -13.574, recon MSE 0.004, traj MSE 0.013, reg loss -3.754
+epoch 36, full loss 756.951, val loss -14.798, recon MSE 0.004, traj MSE 0.010, reg loss -4.287
+epoch 37, full loss 508.585, val loss -15.029, recon MSE 0.004, traj MSE 0.008, reg loss -4.219
+epoch 38, full loss 373.108, val loss -15.140, recon MSE 0.004, traj MSE 0.007, reg loss -4.235
+epoch 39, full loss 284.119, val loss -15.254, recon MSE 0.004, traj MSE 0.006, reg loss -4.264
+epoch 40, full loss 234.045, val loss -15.526, recon MSE 0.004, traj MSE 0.005, reg loss -4.200
+epoch 41, full loss 194.954, val loss -15.506, recon MSE 0.004, traj MSE 0.005, reg loss -4.123
+epoch 42, full loss 163.405, val loss -15.529, recon MSE 0.004, traj MSE 0.004, reg loss -4.132
+epoch 43, full loss 136.835, val loss -15.647, recon MSE 0.004, traj MSE 0.004, reg loss -4.066
+epoch 44, full loss 117.061, val loss -15.666, recon MSE 0.004, traj MSE 0.004, reg loss -4.121
+epoch 45, full loss 108.472, val loss -15.580, recon MSE 0.004, traj MSE 0.004, reg loss -4.089
+epoch 46, full loss 87.774, val loss -15.675, recon MSE 0.004, traj MSE 0.004, reg loss -4.109
+epoch 47, full loss 87.673, val loss -15.729, recon MSE 0.004, traj MSE 0.004, reg loss -4.055
+epoch 48, full loss 73.182, val loss -15.840, recon MSE 0.004, traj MSE 0.004, reg loss -4.051
+epoch 49, full loss 66.532, val loss -15.745, recon MSE 0.004, traj MSE 0.004, reg loss -3.986
+Loading best model at 49 epochs.
+computing neighbors
+    finished (0:00:07) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_maxi
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [12:37<1:03:08, 757.69s/it] 33%|███▎      | 2/6 [26:29<53:25, 801.29s/it]   50%|█████     | 3/6 [48:28<51:53, 1037.77s/it] 67%|██████▋   | 4/6 [1:27:58<52:07, 1563.73s/it] 83%|████████▎ | 5/6 [2:20:59<35:47, 2147.01s/it]100%|██████████| 6/6 [4:06:36<00:00, 3571.50s/it]100%|██████████| 6/6 [4:06:36<00:00, 2466.10s/it]
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1275 velocity genes used
+epoch 0, full loss 208.264, val loss 137.800, recon MSE 4.555, traj MSE 1.652, reg loss -2.453
+epoch 1, full loss 113.400, val loss 68.579, recon MSE 4.116, traj MSE 1.608, reg loss -2.553
+epoch 2, full loss 53.763, val loss 7.333, recon MSE 3.523, traj MSE 1.341, reg loss -0.421
+epoch 3, full loss 4.885, val loss -57.930, recon MSE 2.781, traj MSE 1.174, reg loss -0.169
+epoch 4, full loss -25.151, val loss -121.779, recon MSE 2.370, traj MSE 1.172, reg loss 0.806
+epoch 5, full loss -39.021, val loss -182.885, recon MSE 1.997, traj MSE 1.129, reg loss 0.679
+epoch 6, full loss -20.755, val loss -234.751, recon MSE 1.828, traj MSE 1.113, reg loss 0.776
+epoch 7, full loss 1.192, val loss -273.499, recon MSE 1.599, traj MSE 1.080, reg loss 0.832
+epoch 8, full loss 40.822, val loss -301.920, recon MSE 1.531, traj MSE 1.056, reg loss 0.481
+epoch 9, full loss 73.787, val loss -322.611, recon MSE 1.437, traj MSE 1.076, reg loss 0.259
+epoch 10, full loss 120.046, val loss -338.327, recon MSE 1.371, traj MSE 1.102, reg loss -0.106
+epoch 11, full loss 139.108, val loss -343.552, recon MSE 1.276, traj MSE 1.113, reg loss -0.244
+epoch 12, full loss 138.726, val loss -348.718, recon MSE 1.230, traj MSE 1.065, reg loss -0.225
+epoch 13, full loss 192.837, val loss -353.800, recon MSE 1.212, traj MSE 1.063, reg loss -0.262
+epoch 14, full loss 204.787, val loss -351.324, recon MSE 1.182, traj MSE 1.060, reg loss -0.400
+epoch 15, full loss 219.045, val loss -350.959, recon MSE 1.169, traj MSE 1.068, reg loss -0.270
+epoch 16, full loss 178.570, val loss -347.665, recon MSE 1.093, traj MSE 1.042, reg loss -0.431
+epoch 17, full loss 130.925, val loss -342.335, recon MSE 1.048, traj MSE 1.029, reg loss -0.489
+epoch 18, full loss 127.858, val loss -343.464, recon MSE 1.023, traj MSE 1.034, reg loss -0.544
+epoch 19, full loss 100.827, val loss -334.124, recon MSE 0.989, traj MSE 1.037, reg loss -0.482
+epoch 20, full loss 94.672, val loss -334.932, recon MSE 0.972, traj MSE 1.047, reg loss -0.562
+epoch 21, full loss 90.300, val loss -328.678, recon MSE 0.959, traj MSE 1.052, reg loss -0.584
+epoch 22, full loss 60.267, val loss -323.862, recon MSE 0.946, traj MSE 1.039, reg loss -0.646
+epoch 23, full loss 46.351, val loss -320.852, recon MSE 0.917, traj MSE 1.035, reg loss -0.680
+epoch 24, full loss 46.251, val loss -316.251, recon MSE 0.909, traj MSE 1.048, reg loss -0.650
+epoch 25, full loss 27.435, val loss -310.879, recon MSE 0.899, traj MSE 1.050, reg loss -0.645
+Epoch 00026: reducing learning rate of group 0 to 7.5000e-03.
+epoch 26, full loss 34.619, val loss -316.521, recon MSE 0.885, traj MSE 1.044, reg loss -0.729
+epoch 27, full loss 34.750, val loss -316.955, recon MSE 0.879, traj MSE 1.044, reg loss -0.726
+epoch 28, full loss 32.257, val loss -316.791, recon MSE 0.872, traj MSE 1.042, reg loss -0.642
+epoch 29, full loss 31.338, val loss -317.578, recon MSE 0.869, traj MSE 1.054, reg loss -0.767
+epoch 30, full loss 31.025, val loss -318.254, recon MSE 0.869, traj MSE 1.048, reg loss -0.729
+epoch 31, full loss 27.452, val loss -317.771, recon MSE 0.853, traj MSE 1.043, reg loss -0.760
+epoch 32, full loss 25.744, val loss -318.701, recon MSE 0.851, traj MSE 1.050, reg loss -0.763
+epoch 33, full loss 23.980, val loss -319.369, recon MSE 0.849, traj MSE 1.048, reg loss -0.749
+Epoch 00034: reducing learning rate of group 0 to 5.6250e-03.
+epoch 34, full loss 29.875, val loss -322.026, recon MSE 0.839, traj MSE 1.057, reg loss -0.878
+epoch 35, full loss 39.334, val loss -322.561, recon MSE 0.842, traj MSE 1.049, reg loss -0.851
+epoch 36, full loss 40.272, val loss -321.934, recon MSE 0.837, traj MSE 1.059, reg loss -0.869
+epoch 37, full loss 40.329, val loss -322.628, recon MSE 0.837, traj MSE 1.055, reg loss -0.896
+epoch 38, full loss 42.999, val loss -322.769, recon MSE 0.833, traj MSE 1.060, reg loss -0.867
+epoch 39, full loss 42.400, val loss -323.153, recon MSE 0.830, traj MSE 1.065, reg loss -0.970
+Epoch 00040: reducing learning rate of group 0 to 4.2188e-03.
+epoch 40, full loss 47.873, val loss -325.311, recon MSE 0.825, traj MSE 1.068, reg loss -0.959
+epoch 41, full loss 57.381, val loss -325.914, recon MSE 0.819, traj MSE 1.086, reg loss -1.010
+epoch 42, full loss 67.103, val loss -325.926, recon MSE 0.824, traj MSE 1.088, reg loss -0.973
+epoch 43, full loss 69.172, val loss -326.011, recon MSE 0.827, traj MSE 1.079, reg loss -1.026
+epoch 44, full loss 71.937, val loss -326.217, recon MSE 0.820, traj MSE 1.094, reg loss -1.011
+epoch 45, full loss 72.262, val loss -326.426, recon MSE 0.825, traj MSE 1.094, reg loss -1.003
+Epoch 00046: reducing learning rate of group 0 to 3.1641e-03.
+epoch 46, full loss 78.717, val loss -328.009, recon MSE 0.818, traj MSE 1.102, reg loss -1.101
+epoch 47, full loss 86.150, val loss -328.342, recon MSE 0.814, traj MSE 1.113, reg loss -1.040
+epoch 48, full loss 87.500, val loss -328.915, recon MSE 0.818, traj MSE 1.099, reg loss -1.074
+epoch 49, full loss 92.087, val loss -329.029, recon MSE 0.817, traj MSE 1.109, reg loss -1.058
+Loading best model at 37 epochs.
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_V3
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1249 velocity genes used
+epoch 0, full loss 199.012, val loss 149.338, recon MSE 4.981, traj MSE 1.694, reg loss -2.473
+epoch 1, full loss 111.274, val loss 69.936, recon MSE 4.502, traj MSE 1.645, reg loss -2.800
+epoch 2, full loss 48.696, val loss -0.665, recon MSE 4.282, traj MSE 1.647, reg loss -2.482
+epoch 3, full loss -12.033, val loss -69.416, recon MSE 3.149, traj MSE 1.299, reg loss -0.158
+epoch 4, full loss -50.233, val loss -142.954, recon MSE 2.611, traj MSE 1.213, reg loss -0.017
+epoch 5, full loss -75.909, val loss -204.073, recon MSE 2.235, traj MSE 1.193, reg loss 0.348
+epoch 6, full loss -71.020, val loss -260.981, recon MSE 2.361, traj MSE 1.086, reg loss -0.184
+epoch 7, full loss -52.700, val loss -303.706, recon MSE 2.023, traj MSE 1.058, reg loss 0.020
+epoch 8, full loss 6.626, val loss -334.810, recon MSE 2.102, traj MSE 1.084, reg loss -0.084
+epoch 9, full loss 59.119, val loss -354.399, recon MSE 2.004, traj MSE 1.077, reg loss -0.186
+epoch 10, full loss 122.487, val loss -369.483, recon MSE 2.001, traj MSE 1.112, reg loss -0.148
+epoch 11, full loss 150.948, val loss -376.696, recon MSE 1.961, traj MSE 1.039, reg loss -0.048
+epoch 12, full loss 161.444, val loss -377.775, recon MSE 1.892, traj MSE 1.036, reg loss 0.018
+epoch 13, full loss 178.640, val loss -381.586, recon MSE 1.865, traj MSE 1.021, reg loss -0.156
+epoch 14, full loss 170.804, val loss -379.192, recon MSE 1.812, traj MSE 0.995, reg loss -0.147
+epoch 15, full loss 178.702, val loss -376.666, recon MSE 1.811, traj MSE 0.982, reg loss -0.162
+epoch 16, full loss 154.575, val loss -374.688, recon MSE 1.754, traj MSE 0.990, reg loss -0.248
+epoch 17, full loss 179.720, val loss -372.847, recon MSE 1.770, traj MSE 0.990, reg loss -0.272
+epoch 18, full loss 174.583, val loss -369.124, recon MSE 1.784, traj MSE 0.989, reg loss -0.288
+epoch 19, full loss 134.503, val loss -364.447, recon MSE 1.673, traj MSE 0.982, reg loss -0.361
+epoch 20, full loss 138.461, val loss -361.595, recon MSE 1.657, traj MSE 0.996, reg loss -0.317
+epoch 21, full loss 117.092, val loss -356.745, recon MSE 1.643, traj MSE 0.981, reg loss -0.415
+epoch 22, full loss 101.253, val loss -351.518, recon MSE 1.583, traj MSE 0.986, reg loss -0.385
+epoch 23, full loss 83.283, val loss -347.165, recon MSE 1.537, traj MSE 0.987, reg loss -0.349
+epoch 24, full loss 61.853, val loss -341.644, recon MSE 1.513, traj MSE 0.980, reg loss -0.379
+epoch 25, full loss 41.090, val loss -337.372, recon MSE 1.470, traj MSE 0.988, reg loss -0.397
+epoch 26, full loss 26.618, val loss -339.004, recon MSE 1.442, traj MSE 0.990, reg loss -0.372
+epoch 27, full loss 17.556, val loss -339.537, recon MSE 1.412, traj MSE 0.980, reg loss -0.477
+epoch 28, full loss -10.331, val loss -338.746, recon MSE 1.343, traj MSE 0.980, reg loss -0.394
+epoch 29, full loss -9.055, val loss -339.808, recon MSE 1.331, traj MSE 0.987, reg loss -0.423
+epoch 30, full loss -19.693, val loss -339.143, recon MSE 1.314, traj MSE 0.979, reg loss -0.397
+epoch 31, full loss -24.340, val loss -340.382, recon MSE 1.283, traj MSE 0.977, reg loss -0.345
+epoch 32, full loss -19.480, val loss -341.573, recon MSE 1.284, traj MSE 0.981, reg loss -0.383
+epoch 33, full loss -36.712, val loss -341.794, recon MSE 1.221, traj MSE 0.967, reg loss -0.368
+epoch 34, full loss -36.330, val loss -341.846, recon MSE 1.222, traj MSE 0.982, reg loss -0.345
+epoch 35, full loss -43.819, val loss -341.827, recon MSE 1.198, traj MSE 0.986, reg loss -0.325
+epoch 36, full loss -51.715, val loss -342.224, recon MSE 1.183, traj MSE 0.965, reg loss -0.405
+epoch 37, full loss -58.318, val loss -343.262, recon MSE 1.169, traj MSE 0.966, reg loss -0.375
+epoch 38, full loss -48.780, val loss -343.663, recon MSE 1.172, traj MSE 0.966, reg loss -0.331
+epoch 39, full loss -53.854, val loss -342.683, recon MSE 1.159, traj MSE 0.987, reg loss -0.330
+Epoch 00040: reducing learning rate of group 0 to 7.5000e-03.
+epoch 40, full loss -62.008, val loss -345.083, recon MSE 1.134, traj MSE 0.962, reg loss -0.427
+epoch 41, full loss -49.278, val loss -347.006, recon MSE 1.142, traj MSE 0.964, reg loss -0.408
+epoch 42, full loss -54.934, val loss -346.120, recon MSE 1.125, traj MSE 0.968, reg loss -0.361
+epoch 43, full loss -57.716, val loss -346.151, recon MSE 1.114, traj MSE 0.958, reg loss -0.410
+epoch 44, full loss -57.165, val loss -346.410, recon MSE 1.112, traj MSE 0.950, reg loss -0.428
+epoch 45, full loss -63.867, val loss -346.300, recon MSE 1.091, traj MSE 0.947, reg loss -0.402
+epoch 46, full loss -56.537, val loss -347.052, recon MSE 1.097, traj MSE 0.952, reg loss -0.441
+epoch 47, full loss -58.769, val loss -346.877, recon MSE 1.090, traj MSE 0.949, reg loss -0.397
+epoch 48, full loss -64.030, val loss -347.331, recon MSE 1.079, traj MSE 0.952, reg loss -0.438
+epoch 49, full loss -67.246, val loss -346.555, recon MSE 1.079, traj MSE 0.942, reg loss -0.455
+Epoch 00050: reducing learning rate of group 0 to 5.6250e-03.
+Loading best model at 49 epochs.
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MN
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1185 velocity genes used
+epoch 0, full loss 167.617, val loss 111.693, recon MSE 6.308, traj MSE 1.344, reg loss -2.706
+epoch 1, full loss 62.791, val loss 6.770, recon MSE 5.621, traj MSE 1.347, reg loss -2.285
+epoch 2, full loss 26.902, val loss -94.392, recon MSE 4.380, traj MSE 1.144, reg loss -0.950
+epoch 3, full loss 42.469, val loss -187.923, recon MSE 3.210, traj MSE 1.161, reg loss -0.427
+epoch 4, full loss 184.722, val loss -263.934, recon MSE 3.260, traj MSE 1.126, reg loss -0.291
+epoch 5, full loss 262.036, val loss -304.596, recon MSE 2.669, traj MSE 1.084, reg loss -0.153
+epoch 6, full loss 374.801, val loss -329.443, recon MSE 2.500, traj MSE 1.047, reg loss -0.338
+epoch 7, full loss 366.525, val loss -336.755, recon MSE 2.197, traj MSE 1.044, reg loss -0.606
+epoch 8, full loss 391.175, val loss -348.723, recon MSE 1.903, traj MSE 1.017, reg loss -0.744
+epoch 9, full loss 360.275, val loss -352.282, recon MSE 1.683, traj MSE 1.035, reg loss -0.796
+epoch 10, full loss 292.112, val loss -352.585, recon MSE 1.526, traj MSE 0.992, reg loss -0.694
+epoch 11, full loss 138.885, val loss -347.009, recon MSE 1.350, traj MSE 0.997, reg loss -0.711
+epoch 12, full loss 178.866, val loss -350.892, recon MSE 1.304, traj MSE 1.006, reg loss -0.672
+epoch 13, full loss 80.022, val loss -342.172, recon MSE 1.195, traj MSE 0.994, reg loss -0.706
+epoch 14, full loss 52.840, val loss -339.552, recon MSE 1.128, traj MSE 0.976, reg loss -0.716
+epoch 15, full loss 38.127, val loss -337.539, recon MSE 1.091, traj MSE 1.010, reg loss -0.639
+epoch 16, full loss 30.866, val loss -334.380, recon MSE 1.041, traj MSE 0.998, reg loss -0.682
+epoch 17, full loss -14.013, val loss -327.348, recon MSE 1.009, traj MSE 0.997, reg loss -0.602
+epoch 18, full loss -25.717, val loss -321.162, recon MSE 0.994, traj MSE 0.993, reg loss -0.654
+epoch 19, full loss -34.067, val loss -318.225, recon MSE 0.976, traj MSE 0.992, reg loss -0.656
+epoch 20, full loss -35.771, val loss -311.970, recon MSE 0.973, traj MSE 1.007, reg loss -0.564
+epoch 21, full loss -64.710, val loss -302.793, recon MSE 0.955, traj MSE 0.998, reg loss -0.717
+epoch 22, full loss -63.711, val loss -300.494, recon MSE 0.939, traj MSE 1.017, reg loss -0.669
+Epoch 00023: reducing learning rate of group 0 to 7.5000e-03.
+epoch 23, full loss -61.606, val loss -297.072, recon MSE 0.935, traj MSE 1.000, reg loss -0.699
+epoch 24, full loss -53.451, val loss -291.633, recon MSE 0.933, traj MSE 0.998, reg loss -0.727
+epoch 25, full loss -60.285, val loss -285.121, recon MSE 0.926, traj MSE 1.001, reg loss -0.670
+epoch 26, full loss -69.182, val loss -285.788, recon MSE 0.924, traj MSE 0.998, reg loss -0.677
+epoch 27, full loss -73.697, val loss -285.615, recon MSE 0.917, traj MSE 0.997, reg loss -0.743
+epoch 28, full loss -80.699, val loss -285.613, recon MSE 0.919, traj MSE 0.993, reg loss -0.748
+epoch 29, full loss -77.837, val loss -286.360, recon MSE 0.905, traj MSE 1.007, reg loss -0.734
+Epoch 00030: reducing learning rate of group 0 to 5.6250e-03.
+epoch 30, full loss -72.211, val loss -287.789, recon MSE 0.903, traj MSE 1.003, reg loss -0.764
+epoch 31, full loss -69.777, val loss -288.250, recon MSE 0.900, traj MSE 1.006, reg loss -0.749
+epoch 32, full loss -69.789, val loss -286.973, recon MSE 0.903, traj MSE 1.009, reg loss -0.817
+epoch 33, full loss -73.345, val loss -287.985, recon MSE 0.896, traj MSE 1.009, reg loss -0.762
+epoch 34, full loss -70.261, val loss -288.914, recon MSE 0.897, traj MSE 1.001, reg loss -0.751
+epoch 35, full loss -64.274, val loss -288.991, recon MSE 0.894, traj MSE 1.013, reg loss -0.722
+Epoch 00036: reducing learning rate of group 0 to 4.2188e-03.
+epoch 36, full loss -65.151, val loss -289.360, recon MSE 0.889, traj MSE 1.001, reg loss -0.849
+epoch 37, full loss -61.568, val loss -290.872, recon MSE 0.889, traj MSE 1.005, reg loss -0.829
+epoch 38, full loss -58.760, val loss -290.466, recon MSE 0.888, traj MSE 1.002, reg loss -0.839
+epoch 39, full loss -57.172, val loss -290.824, recon MSE 0.888, traj MSE 1.006, reg loss -0.830
+epoch 40, full loss -56.128, val loss -290.500, recon MSE 0.894, traj MSE 1.003, reg loss -0.811
+epoch 41, full loss -53.231, val loss -290.933, recon MSE 0.892, traj MSE 1.010, reg loss -0.800
+Epoch 00042: reducing learning rate of group 0 to 3.1641e-03.
+epoch 42, full loss -52.050, val loss -291.459, recon MSE 0.888, traj MSE 1.004, reg loss -0.851
+epoch 43, full loss -51.215, val loss -291.831, recon MSE 0.887, traj MSE 1.003, reg loss -0.881
+epoch 44, full loss -48.383, val loss -291.895, recon MSE 0.886, traj MSE 1.004, reg loss -0.829
+epoch 45, full loss -48.357, val loss -292.260, recon MSE 0.885, traj MSE 1.004, reg loss -0.859
+epoch 46, full loss -44.205, val loss -292.335, recon MSE 0.886, traj MSE 1.005, reg loss -0.854
+epoch 47, full loss -45.553, val loss -292.493, recon MSE 0.884, traj MSE 1.005, reg loss -0.900
+Epoch 00048: reducing learning rate of group 0 to 2.3730e-03.
+epoch 48, full loss -42.234, val loss -293.060, recon MSE 0.882, traj MSE 1.003, reg loss -0.888
+epoch 49, full loss -38.456, val loss -293.141, recon MSE 0.882, traj MSE 1.008, reg loss -0.913
+Loading best model at 48 epochs.
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MD
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1171 velocity genes used
+epoch 0, full loss 93.868, val loss 75.677, recon MSE 7.974, traj MSE 1.263, reg loss -2.520
+epoch 1, full loss 97.408, val loss -140.070, recon MSE 6.329, traj MSE 1.293, reg loss -1.517
+epoch 2, full loss 467.068, val loss -318.529, recon MSE 5.323, traj MSE 1.129, reg loss -1.010
+epoch 3, full loss 1040.449, val loss -411.159, recon MSE 4.517, traj MSE 1.122, reg loss -1.053
+epoch 4, full loss 1140.501, val loss -440.813, recon MSE 3.441, traj MSE 1.156, reg loss -1.048
+epoch 5, full loss 1178.585, val loss -455.067, recon MSE 2.768, traj MSE 1.166, reg loss -1.155
+epoch 6, full loss 908.259, val loss -459.041, recon MSE 2.184, traj MSE 1.185, reg loss -1.232
+epoch 7, full loss 621.628, val loss -459.683, recon MSE 1.782, traj MSE 1.165, reg loss -1.293
+epoch 8, full loss 427.632, val loss -457.466, recon MSE 1.522, traj MSE 1.163, reg loss -1.276
+epoch 9, full loss 37.312, val loss -432.199, recon MSE 1.394, traj MSE 1.169, reg loss -1.207
+epoch 10, full loss 158.110, val loss -447.306, recon MSE 1.355, traj MSE 1.152, reg loss -1.170
+epoch 11, full loss 80.058, val loss -442.630, recon MSE 1.242, traj MSE 1.142, reg loss -1.168
+epoch 12, full loss 54.306, val loss -438.061, recon MSE 1.198, traj MSE 1.121, reg loss -1.163
+epoch 13, full loss -34.899, val loss -430.788, recon MSE 1.138, traj MSE 1.116, reg loss -1.291
+epoch 14, full loss -59.711, val loss -426.564, recon MSE 1.116, traj MSE 1.104, reg loss -1.144
+epoch 15, full loss -71.579, val loss -421.840, recon MSE 1.090, traj MSE 1.102, reg loss -1.166
+epoch 16, full loss -80.858, val loss -415.727, recon MSE 1.072, traj MSE 1.100, reg loss -1.140
+epoch 17, full loss -107.066, val loss -410.042, recon MSE 1.066, traj MSE 1.101, reg loss -1.156
+epoch 18, full loss -105.231, val loss -404.633, recon MSE 1.071, traj MSE 1.094, reg loss -1.118
+epoch 19, full loss -109.958, val loss -398.626, recon MSE 1.063, traj MSE 1.094, reg loss -1.119
+epoch 20, full loss -116.233, val loss -391.796, recon MSE 1.054, traj MSE 1.099, reg loss -1.160
+epoch 21, full loss -117.762, val loss -384.921, recon MSE 1.056, traj MSE 1.104, reg loss -1.199
+Epoch 00022: reducing learning rate of group 0 to 7.5000e-03.
+epoch 22, full loss -115.783, val loss -381.162, recon MSE 1.044, traj MSE 1.101, reg loss -1.229
+epoch 23, full loss -110.658, val loss -374.200, recon MSE 1.049, traj MSE 1.100, reg loss -1.223
+epoch 24, full loss -116.930, val loss -367.099, recon MSE 1.045, traj MSE 1.110, reg loss -1.277
+epoch 25, full loss -123.388, val loss -361.149, recon MSE 1.042, traj MSE 1.103, reg loss -1.285
+epoch 26, full loss -126.849, val loss -361.045, recon MSE 1.038, traj MSE 1.106, reg loss -1.304
+epoch 27, full loss -124.705, val loss -361.380, recon MSE 1.043, traj MSE 1.103, reg loss -1.265
+Epoch 00028: reducing learning rate of group 0 to 5.6250e-03.
+epoch 28, full loss -116.094, val loss -363.377, recon MSE 1.037, traj MSE 1.104, reg loss -1.330
+epoch 29, full loss -105.114, val loss -363.850, recon MSE 1.034, traj MSE 1.117, reg loss -1.334
+epoch 30, full loss -112.398, val loss -363.646, recon MSE 1.033, traj MSE 1.106, reg loss -1.329
+epoch 31, full loss -105.269, val loss -364.119, recon MSE 1.032, traj MSE 1.118, reg loss -1.380
+epoch 32, full loss -105.129, val loss -364.450, recon MSE 1.032, traj MSE 1.108, reg loss -1.354
+epoch 33, full loss -104.797, val loss -364.710, recon MSE 1.030, traj MSE 1.105, reg loss -1.352
+Epoch 00034: reducing learning rate of group 0 to 4.2188e-03.
+epoch 34, full loss -94.200, val loss -365.889, recon MSE 1.029, traj MSE 1.107, reg loss -1.397
+epoch 35, full loss -89.436, val loss -366.255, recon MSE 1.026, traj MSE 1.109, reg loss -1.407
+epoch 36, full loss -87.654, val loss -366.043, recon MSE 1.024, traj MSE 1.110, reg loss -1.409
+epoch 37, full loss -84.808, val loss -366.556, recon MSE 1.025, traj MSE 1.107, reg loss -1.394
+epoch 38, full loss -84.942, val loss -366.585, recon MSE 1.023, traj MSE 1.115, reg loss -1.426
+epoch 39, full loss -81.876, val loss -366.725, recon MSE 1.022, traj MSE 1.110, reg loss -1.379
+Epoch 00040: reducing learning rate of group 0 to 3.1641e-03.
+epoch 40, full loss -72.155, val loss -367.882, recon MSE 1.022, traj MSE 1.113, reg loss -1.418
+epoch 41, full loss -71.865, val loss -368.073, recon MSE 1.022, traj MSE 1.107, reg loss -1.425
+epoch 42, full loss -68.737, val loss -368.341, recon MSE 1.022, traj MSE 1.110, reg loss -1.420
+epoch 43, full loss -59.603, val loss -368.620, recon MSE 1.021, traj MSE 1.106, reg loss -1.403
+epoch 44, full loss -59.451, val loss -368.524, recon MSE 1.018, traj MSE 1.114, reg loss -1.410
+epoch 45, full loss -53.834, val loss -368.584, recon MSE 1.020, traj MSE 1.110, reg loss -1.401
+Epoch 00046: reducing learning rate of group 0 to 2.3730e-03.
+epoch 46, full loss -47.606, val loss -369.572, recon MSE 1.019, traj MSE 1.112, reg loss -1.446
+epoch 47, full loss -40.122, val loss -369.888, recon MSE 1.017, traj MSE 1.110, reg loss -1.418
+epoch 48, full loss -36.791, val loss -369.644, recon MSE 1.017, traj MSE 1.113, reg loss -1.442
+epoch 49, full loss -34.091, val loss -369.739, recon MSE 1.018, traj MSE 1.112, reg loss -1.438
+Loading best model at 43 epochs.
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_NM
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1362 velocity genes used
+epoch 0, full loss 82.542, val loss 47.324, recon MSE 6.904, traj MSE 1.930, reg loss -1.727
+epoch 1, full loss 237.416, val loss -166.024, recon MSE 5.859, traj MSE 1.821, reg loss -1.402
+epoch 2, full loss 599.377, val loss -296.450, recon MSE 4.436, traj MSE 2.273, reg loss -0.972
+epoch 3, full loss 715.632, val loss -349.420, recon MSE 2.949, traj MSE 2.300, reg loss -0.936
+epoch 4, full loss 566.810, val loss -367.928, recon MSE 2.096, traj MSE 2.382, reg loss -1.043
+epoch 5, full loss 632.944, val loss -377.614, recon MSE 1.788, traj MSE 2.384, reg loss -1.097
+epoch 6, full loss 676.440, val loss -377.227, recon MSE 1.654, traj MSE 2.422, reg loss -1.161
+epoch 7, full loss 651.037, val loss -376.898, recon MSE 1.574, traj MSE 2.360, reg loss -1.107
+epoch 8, full loss 770.943, val loss -373.993, recon MSE 1.556, traj MSE 2.341, reg loss -1.111
+epoch 9, full loss 817.596, val loss -371.484, recon MSE 1.541, traj MSE 2.376, reg loss -1.160
+epoch 10, full loss 989.374, val loss -366.775, recon MSE 1.517, traj MSE 2.412, reg loss -1.118
+epoch 11, full loss 962.635, val loss -361.198, recon MSE 1.525, traj MSE 2.432, reg loss -1.081
+epoch 12, full loss 897.058, val loss -357.335, recon MSE 1.512, traj MSE 2.416, reg loss -1.097
+epoch 13, full loss 820.134, val loss -350.342, recon MSE 1.521, traj MSE 2.438, reg loss -1.053
+Epoch 00014: reducing learning rate of group 0 to 7.5000e-03.
+epoch 14, full loss 1138.876, val loss -352.260, recon MSE 1.513, traj MSE 2.402, reg loss -1.127
+epoch 15, full loss 1034.318, val loss -344.874, recon MSE 1.510, traj MSE 2.426, reg loss -1.110
+epoch 16, full loss 1020.312, val loss -339.059, recon MSE 1.505, traj MSE 2.432, reg loss -1.039
+epoch 17, full loss 1048.054, val loss -332.518, recon MSE 1.508, traj MSE 2.484, reg loss -1.098
+epoch 18, full loss 970.782, val loss -325.870, recon MSE 1.507, traj MSE 2.452, reg loss -1.108
+epoch 19, full loss 897.261, val loss -318.964, recon MSE 1.511, traj MSE 2.461, reg loss -1.107
+Epoch 00020: reducing learning rate of group 0 to 5.6250e-03.
+epoch 20, full loss 1074.296, val loss -314.900, recon MSE 1.510, traj MSE 2.428, reg loss -1.115
+epoch 21, full loss 975.246, val loss -307.337, recon MSE 1.513, traj MSE 2.430, reg loss -1.151
+epoch 22, full loss 902.177, val loss -300.191, recon MSE 1.515, traj MSE 2.382, reg loss -1.155
+epoch 23, full loss 857.281, val loss -293.472, recon MSE 1.515, traj MSE 2.364, reg loss -1.117
+epoch 24, full loss 703.394, val loss -284.761, recon MSE 1.514, traj MSE 2.346, reg loss -1.140
+epoch 25, full loss 599.337, val loss -278.559, recon MSE 1.521, traj MSE 2.319, reg loss -1.150
+Epoch 00026: reducing learning rate of group 0 to 4.2188e-03.
+epoch 26, full loss 652.621, val loss -281.298, recon MSE 1.516, traj MSE 2.327, reg loss -1.164
+epoch 27, full loss 619.967, val loss -280.465, recon MSE 1.512, traj MSE 2.292, reg loss -1.166
+epoch 28, full loss 614.548, val loss -281.378, recon MSE 1.514, traj MSE 2.260, reg loss -1.177
+epoch 29, full loss 609.498, val loss -282.050, recon MSE 1.517, traj MSE 2.218, reg loss -1.140
+epoch 30, full loss 601.238, val loss -282.352, recon MSE 1.510, traj MSE 2.237, reg loss -1.136
+epoch 31, full loss 585.415, val loss -282.168, recon MSE 1.517, traj MSE 2.183, reg loss -1.162
+epoch 32, full loss 553.849, val loss -282.416, recon MSE 1.514, traj MSE 2.159, reg loss -1.149
+epoch 33, full loss 541.938, val loss -282.930, recon MSE 1.510, traj MSE 2.136, reg loss -1.151
+epoch 34, full loss 508.874, val loss -282.823, recon MSE 1.512, traj MSE 2.076, reg loss -1.164
+epoch 35, full loss 512.349, val loss -283.718, recon MSE 1.515, traj MSE 2.073, reg loss -1.130
+Epoch 00036: reducing learning rate of group 0 to 3.1641e-03.
+epoch 36, full loss 533.535, val loss -284.842, recon MSE 1.512, traj MSE 2.038, reg loss -1.199
+epoch 37, full loss 526.797, val loss -285.558, recon MSE 1.511, traj MSE 2.022, reg loss -1.189
+epoch 38, full loss 534.605, val loss -285.720, recon MSE 1.510, traj MSE 2.022, reg loss -1.214
+epoch 39, full loss 517.730, val loss -286.052, recon MSE 1.507, traj MSE 2.013, reg loss -1.215
+epoch 40, full loss 504.073, val loss -286.453, recon MSE 1.511, traj MSE 2.010, reg loss -1.206
+epoch 41, full loss 500.626, val loss -286.500, recon MSE 1.516, traj MSE 1.995, reg loss -1.225
+epoch 42, full loss 503.742, val loss -287.337, recon MSE 1.512, traj MSE 1.988, reg loss -1.226
+epoch 43, full loss 476.794, val loss -287.283, recon MSE 1.511, traj MSE 1.977, reg loss -1.198
+Epoch 00044: reducing learning rate of group 0 to 2.3730e-03.
+epoch 44, full loss 504.392, val loss -288.812, recon MSE 1.514, traj MSE 1.974, reg loss -1.246
+epoch 45, full loss 514.299, val loss -289.274, recon MSE 1.515, traj MSE 1.964, reg loss -1.256
+epoch 46, full loss 498.803, val loss -289.271, recon MSE 1.512, traj MSE 1.968, reg loss -1.248
+epoch 47, full loss 510.641, val loss -289.767, recon MSE 1.511, traj MSE 1.977, reg loss -1.263
+epoch 48, full loss 497.691, val loss -290.059, recon MSE 1.512, traj MSE 1.958, reg loss -1.248
+epoch 49, full loss 495.063, val loss -290.258, recon MSE 1.513, traj MSE 1.969, reg loss -1.272
+Epoch 00050: reducing learning rate of group 0 to 1.7798e-03.
+Loading best model at 48 epochs.
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_Ne
+computing neighbors
+    finished (0:00:07) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:06) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:08) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:06) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1384 velocity genes used
+epoch 0, full loss 324.342, val loss -52.894, recon MSE 7.415, traj MSE 1.806, reg loss -0.704
+epoch 1, full loss 724.340, val loss -290.079, recon MSE 3.810, traj MSE 2.022, reg loss -0.814
+epoch 2, full loss 440.811, val loss -341.005, recon MSE 2.098, traj MSE 1.991, reg loss -0.500
+epoch 3, full loss 444.428, val loss -355.338, recon MSE 1.816, traj MSE 2.003, reg loss -0.342
+epoch 4, full loss 482.690, val loss -357.918, recon MSE 1.780, traj MSE 1.993, reg loss -0.336
+epoch 5, full loss 613.104, val loss -359.824, recon MSE 1.795, traj MSE 2.080, reg loss -0.408
+epoch 6, full loss 532.325, val loss -357.005, recon MSE 1.772, traj MSE 2.011, reg loss -0.442
+epoch 7, full loss 581.696, val loss -353.140, recon MSE 1.758, traj MSE 1.994, reg loss -0.461
+epoch 8, full loss 658.422, val loss -349.814, recon MSE 1.813, traj MSE 2.015, reg loss -0.485
+epoch 9, full loss 583.244, val loss -343.806, recon MSE 1.785, traj MSE 2.021, reg loss -0.470
+Epoch 00010: reducing learning rate of group 0 to 7.5000e-03.
+epoch 10, full loss 718.320, val loss -343.964, recon MSE 1.773, traj MSE 2.027, reg loss -0.553
+epoch 11, full loss 843.864, val loss -338.498, recon MSE 1.785, traj MSE 2.064, reg loss -0.555
+epoch 12, full loss 784.228, val loss -330.992, recon MSE 1.779, traj MSE 2.092, reg loss -0.547
+epoch 13, full loss 737.060, val loss -321.466, recon MSE 1.780, traj MSE 2.106, reg loss -0.538
+epoch 14, full loss 754.054, val loss -314.669, recon MSE 1.804, traj MSE 2.081, reg loss -0.652
+epoch 15, full loss 694.519, val loss -307.729, recon MSE 1.793, traj MSE 2.090, reg loss -0.597
+Epoch 00016: reducing learning rate of group 0 to 5.6250e-03.
+epoch 16, full loss 859.567, val loss -303.806, recon MSE 1.783, traj MSE 2.124, reg loss -0.668
+epoch 17, full loss 895.975, val loss -295.945, recon MSE 1.808, traj MSE 2.170, reg loss -0.669
+epoch 18, full loss 808.206, val loss -287.801, recon MSE 1.792, traj MSE 2.178, reg loss -0.677
+epoch 19, full loss 734.504, val loss -279.277, recon MSE 1.792, traj MSE 2.181, reg loss -0.677
+epoch 20, full loss 749.890, val loss -271.196, recon MSE 1.839, traj MSE 2.188, reg loss -0.714
+epoch 21, full loss 676.182, val loss -263.297, recon MSE 1.808, traj MSE 2.202, reg loss -0.709
+Epoch 00022: reducing learning rate of group 0 to 4.2188e-03.
+epoch 22, full loss 769.753, val loss -258.825, recon MSE 1.800, traj MSE 2.194, reg loss -0.746
+epoch 23, full loss 724.983, val loss -251.392, recon MSE 1.814, traj MSE 2.198, reg loss -0.774
+epoch 24, full loss 661.838, val loss -244.008, recon MSE 1.801, traj MSE 2.185, reg loss -0.770
+epoch 25, full loss 616.513, val loss -236.441, recon MSE 1.815, traj MSE 2.164, reg loss -0.798
+epoch 26, full loss 607.679, val loss -237.073, recon MSE 1.821, traj MSE 2.170, reg loss -0.814
+epoch 27, full loss 594.630, val loss -237.618, recon MSE 1.807, traj MSE 2.156, reg loss -0.812
+Epoch 00028: reducing learning rate of group 0 to 3.1641e-03.
+epoch 28, full loss 705.211, val loss -239.300, recon MSE 1.814, traj MSE 2.208, reg loss -0.838
+epoch 29, full loss 684.460, val loss -239.674, recon MSE 1.820, traj MSE 2.205, reg loss -0.873
+epoch 30, full loss 670.404, val loss -240.016, recon MSE 1.820, traj MSE 2.191, reg loss -0.874
+epoch 31, full loss 690.383, val loss -240.600, recon MSE 1.818, traj MSE 2.191, reg loss -0.875
+epoch 32, full loss 686.934, val loss -240.845, recon MSE 1.796, traj MSE 2.193, reg loss -0.881
+epoch 33, full loss 687.213, val loss -241.080, recon MSE 1.803, traj MSE 2.185, reg loss -0.879
+Epoch 00034: reducing learning rate of group 0 to 2.3730e-03.
+epoch 34, full loss 754.918, val loss -242.468, recon MSE 1.797, traj MSE 2.188, reg loss -0.873
+epoch 35, full loss 768.548, val loss -242.956, recon MSE 1.802, traj MSE 2.185, reg loss -0.889
+epoch 36, full loss 785.658, val loss -243.196, recon MSE 1.808, traj MSE 2.181, reg loss -0.887
+epoch 37, full loss 797.918, val loss -243.426, recon MSE 1.800, traj MSE 2.192, reg loss -0.883
+epoch 38, full loss 781.904, val loss -243.838, recon MSE 1.799, traj MSE 2.175, reg loss -0.896
+epoch 39, full loss 774.072, val loss -244.260, recon MSE 1.801, traj MSE 2.185, reg loss -0.895
+Epoch 00040: reducing learning rate of group 0 to 1.7798e-03.
+epoch 40, full loss 848.947, val loss -245.525, recon MSE 1.797, traj MSE 2.176, reg loss -0.898
+epoch 41, full loss 892.462, val loss -245.833, recon MSE 1.799, traj MSE 2.177, reg loss -0.907
+epoch 42, full loss 894.407, val loss -246.155, recon MSE 1.805, traj MSE 2.186, reg loss -0.915
+epoch 43, full loss 894.353, val loss -246.397, recon MSE 1.804, traj MSE 2.182, reg loss -0.896
+epoch 44, full loss 896.474, val loss -246.580, recon MSE 1.795, traj MSE 2.188, reg loss -0.907
+epoch 45, full loss 905.118, val loss -246.946, recon MSE 1.801, traj MSE 2.186, reg loss -0.908
+Epoch 00046: reducing learning rate of group 0 to 1.3348e-03.
+epoch 46, full loss 995.927, val loss -247.897, recon MSE 1.797, traj MSE 2.185, reg loss -0.899
+epoch 47, full loss 1023.320, val loss -248.149, recon MSE 1.805, traj MSE 2.189, reg loss -0.896
+epoch 48, full loss 1035.753, val loss -248.265, recon MSE 1.802, traj MSE 2.195, reg loss -0.892
+epoch 49, full loss 1026.532, val loss -248.348, recon MSE 1.797, traj MSE 2.191, reg loss -0.906
+Loading best model at 7 epochs.
+computing neighbors
+    finished (0:00:07) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_maxi
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [25:40<2:08:23, 1540.61s/it] 33%|███▎      | 2/6 [25:46<42:32, 638.05s/it]    50%|█████     | 3/6 [25:51<17:26, 348.99s/it] 67%|██████▋   | 4/6 [26:27<07:30, 225.15s/it] 83%|████████▎ | 5/6 [26:57<02:35, 155.05s/it]100%|██████████| 6/6 [27:01<00:00, 103.64s/it]100%|██████████| 6/6 [27:01<00:00, 270.30s/it]
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Extracted 2000 highly variable genes.
+Choosing top 2000 genes
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+3000 velocity genes used
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+pancreas
+
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Extracted 2000 highly variable genes.
+Choosing top 2000 genes
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+3000 velocity genes used
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+dentategyrus
+
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Extracted 2000 highly variable genes.
+Choosing top 2000 genes
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+3000 velocity genes used
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+forebrain
+
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Extracted 2000 highly variable genes.
+Choosing top 2000 genes
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+3000 velocity genes used
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+dentategyrus_lamanno
+
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Extracted 2000 highly variable genes.
+Choosing top 2000 genes
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+2915 velocity genes used
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+gastrulation_erythroid
+
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Extracted 2000 highly variable genes.
+Choosing top 2000 genes
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+3000 velocity genes used
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+mouse_motor_neuron
+
+GENE SCORE: splicing_mini_MN
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1249 velocity genes used
+epoch 0, full loss 137.318, val loss 39.631, recon MSE 0.117, traj MSE 0.018, reg loss -2.748
+epoch 1, full loss 77.863, val loss 22.007, recon MSE 0.106, traj MSE 0.005, reg loss -3.360
+epoch 2, full loss 63.562, val loss 8.971, recon MSE 0.084, traj MSE 0.004, reg loss -3.464
+epoch 3, full loss 57.321, val loss -4.153, recon MSE 0.054, traj MSE 0.004, reg loss -3.767
+epoch 4, full loss 60.968, val loss -17.162, recon MSE 0.031, traj MSE 0.003, reg loss -4.176
+epoch 5, full loss 70.924, val loss -29.544, recon MSE 0.019, traj MSE 0.003, reg loss -4.238
+epoch 6, full loss 89.485, val loss -41.361, recon MSE 0.013, traj MSE 0.003, reg loss -4.235
+epoch 7, full loss 110.016, val loss -51.985, recon MSE 0.010, traj MSE 0.003, reg loss -4.181
+epoch 8, full loss 126.390, val loss -61.097, recon MSE 0.008, traj MSE 0.003, reg loss -4.102
+epoch 9, full loss 142.291, val loss -68.518, recon MSE 0.007, traj MSE 0.003, reg loss -4.016
+epoch 10, full loss 145.580, val loss -73.347, recon MSE 0.006, traj MSE 0.003, reg loss -3.443
+epoch 11, full loss 154.590, val loss -76.403, recon MSE 0.005, traj MSE 0.003, reg loss -3.412
+epoch 12, full loss 136.800, val loss -75.580, recon MSE 0.004, traj MSE 0.003, reg loss -2.583
+epoch 13, full loss 28.331, val loss -51.209, recon MSE 0.005, traj MSE 0.003, reg loss -1.497
+epoch 14, full loss 41.984, val loss -67.631, recon MSE 0.004, traj MSE 0.003, reg loss -2.243
+epoch 15, full loss 58.099, val loss -67.354, recon MSE 0.003, traj MSE 0.003, reg loss -3.246
+epoch 16, full loss 74.876, val loss -64.191, recon MSE 0.003, traj MSE 0.003, reg loss -3.309
+epoch 17, full loss 80.937, val loss -60.361, recon MSE 0.003, traj MSE 0.003, reg loss -3.437
+epoch 18, full loss 75.225, val loss -55.196, recon MSE 0.003, traj MSE 0.003, reg loss -3.465
+epoch 19, full loss 73.492, val loss -50.733, recon MSE 0.003, traj MSE 0.003, reg loss -3.565
+epoch 20, full loss 65.193, val loss -45.704, recon MSE 0.003, traj MSE 0.003, reg loss -3.660
+epoch 21, full loss 53.357, val loss -39.877, recon MSE 0.003, traj MSE 0.003, reg loss -3.569
+epoch 22, full loss 46.508, val loss -34.337, recon MSE 0.003, traj MSE 0.003, reg loss -3.462
+epoch 23, full loss 35.359, val loss -29.479, recon MSE 0.003, traj MSE 0.003, reg loss -3.518
+epoch 24, full loss 35.290, val loss -24.274, recon MSE 0.003, traj MSE 0.003, reg loss -3.328
+epoch 25, full loss 26.179, val loss -19.338, recon MSE 0.003, traj MSE 0.003, reg loss -3.327
+Epoch 00026: reducing learning rate of group 0 to 7.5000e-03.
+epoch 26, full loss 25.288, val loss -20.078, recon MSE 0.003, traj MSE 0.003, reg loss -3.546
+epoch 27, full loss 24.533, val loss -20.437, recon MSE 0.003, traj MSE 0.003, reg loss -3.508
+epoch 28, full loss 21.130, val loss -20.140, recon MSE 0.003, traj MSE 0.003, reg loss -3.550
+epoch 29, full loss 18.810, val loss -19.838, recon MSE 0.003, traj MSE 0.003, reg loss -3.543
+epoch 30, full loss 19.150, val loss -20.327, recon MSE 0.003, traj MSE 0.003, reg loss -3.455
+epoch 31, full loss 19.345, val loss -19.676, recon MSE 0.003, traj MSE 0.003, reg loss -3.411
+Epoch 00032: reducing learning rate of group 0 to 5.6250e-03.
+epoch 32, full loss 15.158, val loss -20.793, recon MSE 0.003, traj MSE 0.003, reg loss -3.663
+epoch 33, full loss 19.799, val loss -20.480, recon MSE 0.003, traj MSE 0.003, reg loss -3.651
+epoch 34, full loss 17.689, val loss -19.915, recon MSE 0.003, traj MSE 0.003, reg loss -3.620
+epoch 35, full loss 17.085, val loss -20.280, recon MSE 0.003, traj MSE 0.003, reg loss -3.599
+epoch 36, full loss 14.716, val loss -20.513, recon MSE 0.003, traj MSE 0.003, reg loss -3.617
+epoch 37, full loss 14.185, val loss -20.600, recon MSE 0.003, traj MSE 0.003, reg loss -3.598
+Epoch 00038: reducing learning rate of group 0 to 4.2188e-03.
+epoch 38, full loss 15.463, val loss -20.880, recon MSE 0.003, traj MSE 0.003, reg loss -3.840
+epoch 39, full loss 16.583, val loss -21.173, recon MSE 0.003, traj MSE 0.003, reg loss -3.785
+epoch 40, full loss 16.698, val loss -21.070, recon MSE 0.003, traj MSE 0.003, reg loss -3.752
+epoch 41, full loss 19.693, val loss -20.999, recon MSE 0.003, traj MSE 0.003, reg loss -3.734
+epoch 42, full loss 19.359, val loss -20.852, recon MSE 0.003, traj MSE 0.003, reg loss -3.647
+epoch 43, full loss 17.508, val loss -20.527, recon MSE 0.003, traj MSE 0.003, reg loss -3.657
+Epoch 00044: reducing learning rate of group 0 to 3.1641e-03.
+epoch 44, full loss 16.863, val loss -20.998, recon MSE 0.003, traj MSE 0.003, reg loss -3.877
+epoch 45, full loss 24.422, val loss -21.034, recon MSE 0.003, traj MSE 0.003, reg loss -3.821
+epoch 46, full loss 17.616, val loss -20.855, recon MSE 0.003, traj MSE 0.003, reg loss -3.881
+epoch 47, full loss 18.381, val loss -21.051, recon MSE 0.003, traj MSE 0.003, reg loss -3.834
+epoch 48, full loss 27.752, val loss -20.904, recon MSE 0.003, traj MSE 0.003, reg loss -3.702
+epoch 49, full loss 20.669, val loss -21.226, recon MSE 0.003, traj MSE 0.003, reg loss -3.874
+Loading best model at 49 epochs.
+GENE SCORE: splicing_mini_V3
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1275 velocity genes used
+epoch 0, full loss 156.742, val loss 40.405, recon MSE 0.126, traj MSE 0.020, reg loss -2.472
+epoch 1, full loss 76.074, val loss 23.123, recon MSE 0.118, traj MSE 0.011, reg loss -3.098
+epoch 2, full loss 65.083, val loss 10.724, recon MSE 0.094, traj MSE 0.004, reg loss -3.592
+epoch 3, full loss 58.027, val loss -1.674, recon MSE 0.064, traj MSE 0.004, reg loss -3.506
+epoch 4, full loss 61.242, val loss -13.948, recon MSE 0.037, traj MSE 0.003, reg loss -3.954
+epoch 5, full loss 68.369, val loss -25.814, recon MSE 0.022, traj MSE 0.004, reg loss -4.180
+epoch 6, full loss 86.016, val loss -37.049, recon MSE 0.016, traj MSE 0.004, reg loss -4.305
+epoch 7, full loss 105.092, val loss -46.947, recon MSE 0.011, traj MSE 0.004, reg loss -4.250
+epoch 8, full loss 129.014, val loss -55.710, recon MSE 0.009, traj MSE 0.003, reg loss -4.153
+epoch 9, full loss 150.353, val loss -62.838, recon MSE 0.008, traj MSE 0.003, reg loss -4.135
+epoch 10, full loss 164.684, val loss -67.911, recon MSE 0.007, traj MSE 0.003, reg loss -3.913
+epoch 11, full loss 167.884, val loss -70.803, recon MSE 0.006, traj MSE 0.003, reg loss -3.539
+epoch 12, full loss 168.815, val loss -71.510, recon MSE 0.005, traj MSE 0.003, reg loss -3.421
+epoch 13, full loss 156.737, val loss -70.850, recon MSE 0.005, traj MSE 0.003, reg loss -3.309
+epoch 14, full loss 145.258, val loss -68.097, recon MSE 0.004, traj MSE 0.003, reg loss -3.374
+epoch 15, full loss 127.864, val loss -64.657, recon MSE 0.004, traj MSE 0.003, reg loss -3.655
+epoch 16, full loss 107.493, val loss -61.367, recon MSE 0.004, traj MSE 0.003, reg loss -3.748
+epoch 17, full loss 95.205, val loss -56.613, recon MSE 0.004, traj MSE 0.003, reg loss -3.579
+epoch 18, full loss 74.929, val loss -51.877, recon MSE 0.004, traj MSE 0.003, reg loss -3.803
+epoch 19, full loss 62.783, val loss -46.641, recon MSE 0.003, traj MSE 0.003, reg loss -3.883
+epoch 20, full loss 53.549, val loss -42.433, recon MSE 0.003, traj MSE 0.003, reg loss -3.933
+epoch 21, full loss 43.376, val loss -36.748, recon MSE 0.003, traj MSE 0.003, reg loss -3.861
+epoch 22, full loss 37.134, val loss -31.583, recon MSE 0.003, traj MSE 0.003, reg loss -3.924
+epoch 23, full loss 29.605, val loss -26.420, recon MSE 0.003, traj MSE 0.003, reg loss -3.999
+epoch 24, full loss 23.789, val loss -21.018, recon MSE 0.003, traj MSE 0.003, reg loss -3.630
+epoch 25, full loss 15.051, val loss -15.629, recon MSE 0.003, traj MSE 0.003, reg loss -3.700
+epoch 26, full loss 12.380, val loss -15.751, recon MSE 0.003, traj MSE 0.003, reg loss -3.663
+Epoch 00027: reducing learning rate of group 0 to 7.5000e-03.
+epoch 27, full loss 12.165, val loss -16.424, recon MSE 0.003, traj MSE 0.003, reg loss -3.807
+epoch 28, full loss 9.097, val loss -16.665, recon MSE 0.003, traj MSE 0.003, reg loss -3.800
+epoch 29, full loss 8.520, val loss -16.486, recon MSE 0.003, traj MSE 0.003, reg loss -3.808
+epoch 30, full loss 7.367, val loss -16.265, recon MSE 0.003, traj MSE 0.003, reg loss -3.774
+epoch 31, full loss 5.347, val loss -16.751, recon MSE 0.003, traj MSE 0.003, reg loss -3.700
+epoch 32, full loss 3.210, val loss -16.586, recon MSE 0.003, traj MSE 0.003, reg loss -3.770
+Epoch 00033: reducing learning rate of group 0 to 5.6250e-03.
+epoch 33, full loss 4.192, val loss -16.681, recon MSE 0.003, traj MSE 0.003, reg loss -3.864
+epoch 34, full loss 2.867, val loss -16.956, recon MSE 0.003, traj MSE 0.003, reg loss -3.940
+epoch 35, full loss 4.907, val loss -16.596, recon MSE 0.003, traj MSE 0.003, reg loss -3.883
+epoch 36, full loss 2.557, val loss -17.131, recon MSE 0.003, traj MSE 0.003, reg loss -3.890
+epoch 37, full loss 2.097, val loss -17.286, recon MSE 0.003, traj MSE 0.003, reg loss -3.924
+epoch 38, full loss 0.674, val loss -16.632, recon MSE 0.003, traj MSE 0.003, reg loss -3.894
+Epoch 00039: reducing learning rate of group 0 to 4.2188e-03.
+epoch 39, full loss 1.249, val loss -17.085, recon MSE 0.003, traj MSE 0.003, reg loss -4.001
+epoch 40, full loss 0.883, val loss -17.218, recon MSE 0.003, traj MSE 0.003, reg loss -4.036
+epoch 41, full loss 0.591, val loss -17.356, recon MSE 0.003, traj MSE 0.003, reg loss -4.033
+epoch 42, full loss 1.097, val loss -17.054, recon MSE 0.003, traj MSE 0.003, reg loss -4.016
+epoch 43, full loss 0.751, val loss -17.346, recon MSE 0.003, traj MSE 0.003, reg loss -4.022
+epoch 44, full loss 2.204, val loss -17.051, recon MSE 0.003, traj MSE 0.003, reg loss -4.019
+epoch 45, full loss 0.614, val loss -17.057, recon MSE 0.003, traj MSE 0.003, reg loss -4.018
+Epoch 00046: reducing learning rate of group 0 to 3.1641e-03.
+epoch 46, full loss -0.296, val loss -16.929, recon MSE 0.003, traj MSE 0.003, reg loss -4.154
+epoch 47, full loss 0.551, val loss -17.288, recon MSE 0.003, traj MSE 0.003, reg loss -4.109
+epoch 48, full loss -0.859, val loss -17.285, recon MSE 0.003, traj MSE 0.003, reg loss -4.137
+epoch 49, full loss -0.262, val loss -16.930, recon MSE 0.003, traj MSE 0.003, reg loss -4.163
+Loading best model at 48 epochs.
+GENE SCORE: splicing_mini_MD
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1185 velocity genes used
+epoch 0, full loss 120.431, val loss 31.313, recon MSE 0.171, traj MSE 0.021, reg loss -2.990
+epoch 1, full loss 74.733, val loss 8.185, recon MSE 0.151, traj MSE 0.010, reg loss -3.633
+epoch 2, full loss 86.838, val loss -13.978, recon MSE 0.088, traj MSE 0.004, reg loss -3.830
+epoch 3, full loss 136.270, val loss -35.862, recon MSE 0.038, traj MSE 0.005, reg loss -4.131
+epoch 4, full loss 224.928, val loss -56.460, recon MSE 0.021, traj MSE 0.004, reg loss -4.127
+epoch 5, full loss 314.714, val loss -74.466, recon MSE 0.013, traj MSE 0.003, reg loss -4.136
+epoch 6, full loss 349.818, val loss -88.313, recon MSE 0.007, traj MSE 0.003, reg loss -4.015
+epoch 7, full loss 347.171, val loss -96.124, recon MSE 0.006, traj MSE 0.003, reg loss -3.683
+epoch 8, full loss 269.937, val loss -99.255, recon MSE 0.004, traj MSE 0.003, reg loss -3.987
+epoch 9, full loss 123.697, val loss -95.084, recon MSE 0.004, traj MSE 0.003, reg loss -3.701
+epoch 10, full loss 131.947, val loss -98.410, recon MSE 0.003, traj MSE 0.003, reg loss -4.135
+epoch 11, full loss 44.387, val loss 228.971, recon MSE 0.004, traj MSE 0.003, reg loss -1.783
+epoch 12, full loss 31.198, val loss -76.704, recon MSE 0.003, traj MSE 0.003, reg loss -2.899
+epoch 13, full loss 49.042, val loss -77.246, recon MSE 0.003, traj MSE 0.003, reg loss -3.554
+epoch 14, full loss 63.364, val loss -74.512, recon MSE 0.003, traj MSE 0.003, reg loss -3.731
+epoch 15, full loss 64.856, val loss -69.761, recon MSE 0.003, traj MSE 0.003, reg loss -3.979
+epoch 16, full loss 43.854, val loss -64.345, recon MSE 0.003, traj MSE 0.003, reg loss -4.170
+Epoch 00017: reducing learning rate of group 0 to 7.5000e-03.
+epoch 17, full loss 45.166, val loss -60.646, recon MSE 0.003, traj MSE 0.003, reg loss -4.343
+epoch 18, full loss 47.116, val loss -54.929, recon MSE 0.003, traj MSE 0.003, reg loss -4.289
+epoch 19, full loss 46.096, val loss -48.886, recon MSE 0.003, traj MSE 0.003, reg loss -4.341
+epoch 20, full loss 42.526, val loss -41.945, recon MSE 0.003, traj MSE 0.003, reg loss -4.327
+epoch 21, full loss 33.697, val loss -35.860, recon MSE 0.003, traj MSE 0.003, reg loss -4.321
+epoch 22, full loss 33.177, val loss -30.148, recon MSE 0.003, traj MSE 0.003, reg loss -4.209
+epoch 23, full loss 21.334, val loss -23.174, recon MSE 0.003, traj MSE 0.003, reg loss -4.190
+Epoch 00024: reducing learning rate of group 0 to 5.6250e-03.
+epoch 24, full loss 22.642, val loss -17.893, recon MSE 0.003, traj MSE 0.003, reg loss -4.136
+epoch 25, full loss 24.423, val loss -11.599, recon MSE 0.003, traj MSE 0.003, reg loss -4.158
+epoch 26, full loss 21.444, val loss -11.798, recon MSE 0.003, traj MSE 0.003, reg loss -4.032
+epoch 27, full loss 19.089, val loss -12.039, recon MSE 0.003, traj MSE 0.003, reg loss -4.147
+epoch 28, full loss 16.945, val loss -12.104, recon MSE 0.003, traj MSE 0.003, reg loss -4.124
+epoch 29, full loss 14.461, val loss -11.689, recon MSE 0.003, traj MSE 0.003, reg loss -4.113
+Epoch 00030: reducing learning rate of group 0 to 4.2188e-03.
+epoch 30, full loss 16.111, val loss -11.927, recon MSE 0.003, traj MSE 0.003, reg loss -4.085
+epoch 31, full loss 14.527, val loss -12.195, recon MSE 0.003, traj MSE 0.003, reg loss -4.183
+epoch 32, full loss 12.717, val loss -12.118, recon MSE 0.003, traj MSE 0.003, reg loss -4.172
+epoch 33, full loss 14.296, val loss -12.371, recon MSE 0.003, traj MSE 0.003, reg loss -4.063
+epoch 34, full loss 14.346, val loss -12.113, recon MSE 0.003, traj MSE 0.003, reg loss -4.121
+epoch 35, full loss 12.766, val loss -11.899, recon MSE 0.003, traj MSE 0.003, reg loss -4.071
+Epoch 00036: reducing learning rate of group 0 to 3.1641e-03.
+epoch 36, full loss 12.347, val loss -12.602, recon MSE 0.003, traj MSE 0.003, reg loss -4.261
+epoch 37, full loss 11.529, val loss -12.347, recon MSE 0.003, traj MSE 0.003, reg loss -4.246
+epoch 38, full loss 10.983, val loss -12.489, recon MSE 0.003, traj MSE 0.003, reg loss -4.240
+epoch 39, full loss 11.066, val loss -12.358, recon MSE 0.003, traj MSE 0.003, reg loss -4.219
+epoch 40, full loss 12.373, val loss -12.790, recon MSE 0.003, traj MSE 0.003, reg loss -4.160
+epoch 41, full loss 10.310, val loss -12.382, recon MSE 0.003, traj MSE 0.003, reg loss -4.238
+Epoch 00042: reducing learning rate of group 0 to 2.3730e-03.
+epoch 42, full loss 11.537, val loss -12.823, recon MSE 0.003, traj MSE 0.003, reg loss -4.276
+epoch 43, full loss 10.291, val loss -12.628, recon MSE 0.003, traj MSE 0.003, reg loss -4.304
+epoch 44, full loss 9.768, val loss -12.681, recon MSE 0.003, traj MSE 0.003, reg loss -4.280
+epoch 45, full loss 12.181, val loss -12.489, recon MSE 0.003, traj MSE 0.003, reg loss -4.274
+epoch 46, full loss 11.224, val loss -12.669, recon MSE 0.003, traj MSE 0.003, reg loss -4.296
+epoch 47, full loss 11.285, val loss -12.830, recon MSE 0.003, traj MSE 0.003, reg loss -4.279
+Epoch 00048: reducing learning rate of group 0 to 1.7798e-03.
+epoch 48, full loss 11.943, val loss -12.845, recon MSE 0.003, traj MSE 0.003, reg loss -4.354
+epoch 49, full loss 10.757, val loss -12.599, recon MSE 0.003, traj MSE 0.003, reg loss -4.351
+Loading best model at 48 epochs.
+GENE SCORE: splicing_midi_NM
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1171 velocity genes used
+epoch 0, full loss 103.259, val loss 21.383, recon MSE 0.303, traj MSE 0.034, reg loss -3.638
+epoch 1, full loss 145.092, val loss -24.251, recon MSE 0.134, traj MSE 0.014, reg loss -4.132
+epoch 2, full loss 333.605, val loss -69.828, recon MSE 0.034, traj MSE 0.011, reg loss -4.260
+epoch 3, full loss 365.200, val loss -108.015, recon MSE 0.008, traj MSE 0.006, reg loss -4.142
+GENE SCORE: splicing_midi_Ne
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+Skip filtering by dispersion since number of variables are less than `n_top_genes`.
+using all genes
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+1362 velocity genes used
+epoch 0, full loss 96.780, val loss 15.601, recon MSE 0.240, traj MSE 0.032, reg loss -3.510
+epoch 1, full loss 229.242, val loss -41.658, recon MSE 0.075, traj MSE 0.016, reg loss -4.033
+epoch 2, full loss 403.108, val loss -94.993, recon MSE 0.015, traj MSE 0.008, reg loss -4.081
+epoch 3, full loss 258.905, val loss -126.689, recon MSE 0.005, traj MSE 0.006, reg loss -3.932
+epoch 4, full loss 209.257, val loss -135.134, recon MSE 0.004, traj MSE 0.006, reg loss -4.099
+epoch 5, full loss 346.122, val loss -145.457, recon MSE 0.003, traj MSE 0.006, reg loss -4.241
+epoch 6, full loss 220.209, val loss -139.540, recon MSE 0.003, traj MSE 0.005, reg loss -4.540
+epoch 7, full loss 239.622, val loss -138.811, recon MSE 0.003, traj MSE 0.005, reg loss -4.276
+epoch 8, full loss 404.509, val loss -132.617, recon MSE 0.003, traj MSE 0.005, reg loss -4.129
+epoch 9, full loss 511.054, val loss -127.868, recon MSE 0.003, traj MSE 0.005, reg loss -4.213
+epoch 10, full loss 495.632, val loss -119.682, recon MSE 0.003, traj MSE 0.005, reg loss -4.145
+epoch 11, full loss 610.926, val loss -117.298, recon MSE 0.003, traj MSE 0.005, reg loss -4.224
+epoch 12, full loss 647.089, val loss -108.577, recon MSE 0.003, traj MSE 0.005, reg loss -4.010
+Epoch 00013: reducing learning rate of group 0 to 7.5000e-03.
+epoch 13, full loss 881.781, val loss -108.172, recon MSE 0.003, traj MSE 0.005, reg loss -4.265
+epoch 14, full loss 902.443, val loss -99.143, recon MSE 0.003, traj MSE 0.005, reg loss -4.128
+epoch 15, full loss 881.366, val loss -91.619, recon MSE 0.003, traj MSE 0.005, reg loss -4.100
+epoch 16, full loss 873.911, val loss -83.380, recon MSE 0.003, traj MSE 0.005, reg loss -4.134
+epoch 17, full loss 840.260, val loss -75.773, recon MSE 0.003, traj MSE 0.005, reg loss -4.154
+epoch 18, full loss 782.032, val loss -67.915, recon MSE 0.003, traj MSE 0.005, reg loss -4.027
+Epoch 00019: reducing learning rate of group 0 to 5.6250e-03.
+epoch 19, full loss 948.276, val loss -63.673, recon MSE 0.003, traj MSE 0.005, reg loss -4.188
+epoch 20, full loss 944.853, val loss -54.327, recon MSE 0.003, traj MSE 0.005, reg loss -4.259
+epoch 21, full loss 878.518, val loss -46.678, recon MSE 0.003, traj MSE 0.005, reg loss -4.205
+epoch 22, full loss 794.613, val loss -38.861, recon MSE 0.003, traj MSE 0.005, reg loss -4.218
+epoch 23, full loss 654.298, val loss -30.982, recon MSE 0.003, traj MSE 0.005, reg loss -4.235
+epoch 24, full loss 536.220, val loss -23.373, recon MSE 0.003, traj MSE 0.005, reg loss -4.138
+Epoch 00025: reducing learning rate of group 0 to 4.2188e-03.
+epoch 25, full loss 453.197, val loss -16.317, recon MSE 0.003, traj MSE 0.005, reg loss -4.192
+epoch 26, full loss 383.368, val loss -16.248, recon MSE 0.003, traj MSE 0.005, reg loss -4.130
+epoch 27, full loss 324.611, val loss -16.894, recon MSE 0.003, traj MSE 0.005, reg loss -4.124
+epoch 28, full loss 282.563, val loss -16.893, recon MSE 0.003, traj MSE 0.005, reg loss -4.081
+epoch 29, full loss 244.193, val loss -16.774, recon MSE 0.003, traj MSE 0.004, reg loss -4.123
+epoch 30, full loss 211.418, val loss -16.713, recon MSE 0.003, traj MSE 0.004, reg loss -3.992
+epoch 31, full loss 180.954, val loss -16.894, recon MSE 0.003, traj MSE 0.004, reg loss -3.908
+epoch 32, full loss 150.220, val loss -17.071, recon MSE 0.003, traj MSE 0.004, reg loss -4.023
+epoch 33, full loss 131.953, val loss -16.893, recon MSE 0.003, traj MSE 0.004, reg loss -4.064
+epoch 34, full loss 112.116, val loss -16.914, recon MSE 0.003, traj MSE 0.004, reg loss -4.044
+epoch 35, full loss 103.045, val loss -17.190, recon MSE 0.003, traj MSE 0.004, reg loss -3.919
+epoch 36, full loss 90.737, val loss -16.918, recon MSE 0.003, traj MSE 0.004, reg loss -3.942
+epoch 37, full loss 84.684, val loss -17.197, recon MSE 0.003, traj MSE 0.004, reg loss -3.966
+epoch 38, full loss 76.616, val loss -17.324, recon MSE 0.003, traj MSE 0.004, reg loss -3.913
+epoch 39, full loss 65.681, val loss -17.061, recon MSE 0.003, traj MSE 0.004, reg loss -4.119
+epoch 40, full loss 62.547, val loss -17.181, recon MSE 0.003, traj MSE 0.003, reg loss -4.070
+Epoch 00041: reducing learning rate of group 0 to 3.1641e-03.
+epoch 41, full loss 58.183, val loss -17.192, recon MSE 0.003, traj MSE 0.003, reg loss -4.059
+epoch 42, full loss 59.197, val loss -17.876, recon MSE 0.003, traj MSE 0.003, reg loss -4.151
+epoch 43, full loss 58.713, val loss -17.883, recon MSE 0.003, traj MSE 0.003, reg loss -4.290
+epoch 44, full loss 65.929, val loss -18.609, recon MSE 0.003, traj MSE 0.003, reg loss -4.005
+epoch 45, full loss 62.130, val loss -18.868, recon MSE 0.003, traj MSE 0.003, reg loss -4.022
+epoch 46, full loss 66.890, val loss -19.125, recon MSE 0.003, traj MSE 0.003, reg loss -3.959
+epoch 47, full loss 58.408, val loss -19.273, recon MSE 0.003, traj MSE 0.003, reg loss -3.993
+Epoch 00048: reducing learning rate of group 0 to 2.3730e-03.
+epoch 48, full loss 56.261, val loss -19.113, recon MSE 0.003, traj MSE 0.003, reg loss -3.933
+epoch 49, full loss 69.416, val loss -19.354, recon MSE 0.003, traj MSE 0.003, reg loss -3.790
+Loading best model at 49 epochs.
+
+# # # # # # # # # # # # # # # # # # # # # # # # # 
+~ ~ ~ ~ ~ ~ ~ BENCHMARKING COMPLETE ~ ~ ~ ~ ~ ~ ~ 
+ # # # # # # # # # # # # # # # # # # # # # # # # #

@@ -1,0 +1,257 @@
+Global seed set to 0
+/camp/home/maizelr/.local/lib/python3.10/site-packages/pytorch_lightning/utilities/warnings.py:53: LightningDeprecationWarning: pytorch_lightning.utilities.warnings.rank_zero_deprecation has been deprecated in v1.6 and will be removed in v1.8. Use the equivalent function from the pytorch_lightning.utilities.rank_zero module instead.
+  new_rank_zero_deprecation(
+/camp/home/maizelr/.local/lib/python3.10/site-packages/pytorch_lightning/utilities/warnings.py:58: LightningDeprecationWarning: The `pytorch_lightning.loggers.base.rank_zero_experiment` is deprecated in v1.7 and will be removed in v1.9. Please use `pytorch_lightning.loggers.logger.rank_zero_experiment` instead.
+  return new_rank_zero_deprecation(*args, **kwargs)
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [02:16<11:23, 136.71s/it] 33%|███▎      | 2/6 [02:35<04:28, 67.06s/it]  50%|█████     | 3/6 [03:49<03:30, 70.27s/it] 67%|██████▋   | 4/6 [04:43<02:07, 63.90s/it] 83%|████████▎ | 5/6 [05:51<01:05, 65.65s/it]100%|██████████| 6/6 [08:10<00:00, 90.39s/it]100%|██████████| 6/6 [08:10<00:00, 81.73s/it]
+computing neighbors
+    finished (0:01:59) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:01) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_V3
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:01) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MN
+computing neighbors
+    finished (0:00:49) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:01) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MD
+computing neighbors
+    finished (0:00:06) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:03) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_NM
+computing neighbors
+    finished (0:00:08) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:07) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:05) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_Ne
+computing neighbors
+    finished (0:00:17) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:15) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:10) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_maxi
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [00:19<01:37, 19.49s/it] 33%|███▎      | 2/6 [00:38<01:16, 19.20s/it] 50%|█████     | 3/6 [01:07<01:10, 23.56s/it] 67%|██████▋   | 4/6 [02:00<01:10, 35.10s/it] 83%|████████▎ | 5/6 [03:09<00:47, 47.56s/it]100%|██████████| 6/6 [05:33<00:00, 80.34s/it]100%|██████████| 6/6 [05:33<00:00, 55.61s/it]
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:02) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_V3
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:00) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:02) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MN
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:01) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:02) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_mini_MD
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:02) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:04) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_NM
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:10) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:04) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_midi_Ne
+computing neighbors
+    finished (0:00:09) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing moments based on connectivities
+    finished (0:00:06) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:21) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:09) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+splicing_maxi
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [00:13<01:09, 13.95s/it] 33%|███▎      | 2/6 [00:20<00:38,  9.71s/it] 50%|█████     | 3/6 [00:25<00:22,  7.41s/it] 67%|██████▋   | 4/6 [01:01<00:37, 18.56s/it] 83%|████████▎ | 5/6 [01:31<00:22, 22.94s/it]100%|██████████| 6/6 [01:34<00:00, 16.11s/it]100%|██████████| 6/6 [01:34<00:00, 15.76s/it]
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:01) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+pancreas
+
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:00) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+dentategyrus
+
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:00) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+forebrain
+
+computing neighbors
+    finished (0:00:06) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:05) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+dentategyrus_lamanno
+
+computing neighbors
+    finished (0:00:06) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:04) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+gastrulation_erythroid
+
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:00) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing neighbors
+    finished (0:00:00) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+
+mouse_motor_neuron
+
+GENE SCORE: splicing_mini_MN
+computing neighbors
+    finished (0:00:02) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:01) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+GENE SCORE: splicing_mini_V3
+computing neighbors
+    finished (0:00:01) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:01) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+GENE SCORE: splicing_mini_MD
+computing neighbors
+    finished (0:00:03) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:02) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+GENE SCORE: splicing_midi_NM
+computing neighbors
+    finished (0:00:06) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:02) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+GENE SCORE: splicing_midi_Ne
+computing neighbors
+    finished (0:00:08) --> added 
+    'distances' and 'connectivities', weighted adjacency matrices (adata.obsp)
+computing velocities
+    finished (0:00:06) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+
+# # # # # # # # # # # # # # # # # # # # # # # # # 
+~ ~ ~ ~ ~ ~ ~ BENCHMARKING COMPLETE ~ ~ ~ ~ ~ ~ ~ 
+ # # # # # # # # # # # # # # # # # # # # # # # # #
